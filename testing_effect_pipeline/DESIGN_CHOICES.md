@@ -59,17 +59,23 @@ This document records explicit and implicit design choices in the current implem
 32. Kept nonzero forgetting via per-touch decay.
 33. Added configurable Gaussian noise (`noise_std`) to make retrieval outcomes stochastic.
 34. Preserved separate study vs reinforce gains to reflect different update strengths.
+35. The mock's `_touch` decay applies on every call, including test. This means retrieval weakens item strength — the opposite of the testing effect in humans. This is intentional: the mock should not build in the hypothesis being tested. If the testing-effect method wins despite the mock penalizing retrieval, the result is more robust (conservative bias against the experimental condition).
 
 ## 9) Output/runner choices
 
-35. CLI outputs JSON metrics with snapshots, allocation logs, budget logs, and remastery stats.
-36. Runner supports multi-seed execution and method matrix in one command.
-37. Runner exposes budget/noise controls via CLI args.
+36. CLI outputs JSON metrics with snapshots, allocation logs, budget logs, and remastery stats.
+37. Runner supports multi-seed execution and method matrix in one command.
+38. Runner exposes budget/noise controls via CLI args.
+39. Added `--require-budget` flag that errors out if `--max-training-tokens` is not set. Replay baselines consume more training tokens per step than testing-effect methods (study batch + replay updates vs study + test-only overhead), so uncapped runs produce unfair comparisons. Real experiments should always use `--require-budget`.
 
-## 10) Known limitations and deferred items
+## 10) Retention horizon minimum-step requirements
 
-38. FSRS is an approximation, not canonical FSRS parameter fitting.
-39. No production LLM backend integrated yet (mock-first validation).
-40. No tokenization-accurate accounting yet (uses deterministic word-count proxy).
-41. No built-in plotting utility yet; JSON artifacts intended for downstream analysis.
-42. No CI unit tests yet; smoke checks currently validate runnability.
+40. Forgetting probes measure retention at T+5k, T+10k, and T+20k steps after mastery. For the 5k window to produce any signal, training must run at least ~5k steps past the first mastery event. For the 20k window to produce meaningful data, total steps should be at least 25k–30k. The example real config uses 20k steps; this is sufficient for 5k and 10k horizons but marginal for 20k. Scale `--steps` accordingly for the retention horizon you care about most.
+
+## 11) Known limitations and deferred items
+
+41. FSRS is an approximation, not canonical FSRS parameter fitting.
+42. No production LLM backend integrated yet (mock-first validation).
+43. No tokenization-accurate accounting yet (uses deterministic word-count proxy).
+44. No built-in plotting utility yet; JSON artifacts intended for downstream analysis.
+45. No CI unit tests yet; smoke checks currently validate runnability.

@@ -102,6 +102,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--seeds", type=int, default=3)
     p.add_argument("--scheduler", choices=["leitner", "fsrs"], default="leitner")
     p.add_argument("--max-training-tokens", type=int, default=None)
+    p.add_argument(
+        "--require-budget",
+        action="store_true",
+        help="Error out if --max-training-tokens is not set. Use for real runs to prevent unfair comparisons.",
+    )
     p.add_argument("--mock-noise-std", type=float, default=0.05)
     p.add_argument(
         "--methods",
@@ -114,6 +119,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    if args.require_budget and args.max_training_tokens is None:
+        raise SystemExit(
+            "ERROR: --require-budget is set but --max-training-tokens is not. "
+            "Real experiments must run with a token budget to ensure fair cross-method comparisons."
+        )
     result = run(args)
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)

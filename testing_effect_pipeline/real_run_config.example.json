@@ -6,6 +6,7 @@
     "seeds": 3,
     "scheduler": "fsrs",
     "max_training_tokens": 200000,
+    "require_budget": true,
     "mock_noise_std": 0.05,
     "methods": [
       "test_only",
