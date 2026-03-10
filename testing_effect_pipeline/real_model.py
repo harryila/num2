@@ -39,6 +39,7 @@ class RealModelConfig:
     grad_accum_steps: int = 4
     dtype: str = "bfloat16"
     hf_token: Optional[str] = None
+    gen_batch_size: int = 16
     system_prompt: str = "Answer the question with a short factual answer."
 
 
@@ -279,6 +280,98 @@ class RealModelAdapter(ModelAdapter):
         correct = any(normalize_nq_answer(t) == norm_pred for t in all_targets)
 
         return correct, loss
+
+    # ------------------------------------------------------------------
+    # Batched test (generation is the bottleneck — batch it)
+    # ------------------------------------------------------------------
+
+    @torch.no_grad()
+    def test_batch(self, items: list[QAItem]) -> list[tuple[bool, float]]:
+        """Batched test: sequential per-item loss + left-padded batched generation."""
+        if not items:
+            return []
+        self.flush()
+        self.model.eval()
+
+        losses = [self._forward_loss(it) for it in items]
+        predictions = self._generate_batch([it.prompt for it in items])
+
+        results: list[tuple[bool, float]] = []
+        for item, loss, pred in zip(items, losses, predictions):
+            all_targets = [t.strip() for t in item.target.split("|||")]
+            norm_pred = normalize_nq_answer(pred)
+            correct = any(normalize_nq_answer(t) == norm_pred for t in all_targets)
+            results.append((correct, loss))
+        return results
+
+    def _forward_loss(self, item: QAItem) -> float:
+        """Single-item forward pass returning scalar loss (no generation)."""
+        target = item.target.split("|||")[0].strip()
+        messages = self._build_messages(item.prompt, target)
+        full_text = self.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=False
+        )
+        enc = self.tokenizer(
+            full_text,
+            return_tensors="pt",
+            truncation=True,
+            max_length=self.config.max_seq_len,
+        )
+        input_ids = enc.input_ids.to(self.model.device)
+        attention_mask = enc.attention_mask.to(self.model.device)
+
+        prompt_len = self._prompt_token_length(item.prompt)
+        labels = input_ids.clone()
+        labels[0, :prompt_len] = -100
+
+        outputs = self.model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+        return outputs.loss.item()
+
+    def _generate_batch(self, questions: list[str]) -> list[str]:
+        """Batched greedy decode with left-padding. Returns one prediction per question."""
+        bs = self.config.gen_batch_size
+        all_preds: list[str] = []
+
+        orig_side = self.tokenizer.padding_side
+        self.tokenizer.padding_side = "left"
+
+        try:
+            for start in range(0, len(questions), bs):
+                chunk = questions[start : start + bs]
+                prompt_texts = [
+                    self.tokenizer.apply_chat_template(
+                        self._build_messages(q), tokenize=False, add_generation_prompt=True
+                    )
+                    for q in chunk
+                ]
+
+                enc = self.tokenizer(
+                    prompt_texts,
+                    return_tensors="pt",
+                    padding=True,
+                    truncation=True,
+                    max_length=self.config.max_seq_len,
+                )
+                input_ids = enc.input_ids.to(self.model.device)
+                attention_mask = enc.attention_mask.to(self.model.device)
+
+                gen_ids = self.model.generate(
+                    input_ids=input_ids,
+                    attention_mask=attention_mask,
+                    max_new_tokens=self.config.max_new_tokens,
+                    do_sample=False,
+                    pad_token_id=self.tokenizer.pad_token_id,
+                )
+
+                prompt_len = input_ids.shape[1]
+                for i in range(len(chunk)):
+                    tokens = gen_ids[i, prompt_len:]
+                    pred = self.tokenizer.decode(tokens, skip_special_tokens=True).strip()
+                    all_preds.append(pred)
+        finally:
+            self.tokenizer.padding_side = orig_side
+
+        return all_preds
 
     # ------------------------------------------------------------------
     # Difficulty calibration (run once on base model before training)

@@ -67,13 +67,11 @@ class TestingEffectTrainer:
         ]
         if not eligible:
             return 0.0
-        retained = 0
-        for item_id in eligible:
-            item = self.item_by_id[item_id]
+        items = [self.item_by_id[iid] for iid in eligible]
+        for item in items:
             self.budget.add_test_inference(item)
-            correct, _ = self.model.test(item)
-            retained += int(correct)
-        return retained / len(eligible)
+        results = self.model.test_batch(items)
+        return sum(int(c) for c, _ in results) / len(results)
 
     def _snapshot(self, step: int) -> None:
         mastered = sum(1 for st in self.state.values() if st.is_mastered)
@@ -122,36 +120,40 @@ class TestingEffectTrainer:
 
             test_items = due[:n_test] if n_test > 0 else []
             failures: list[QAItem] = []
-            for item in test_items:
-                self.budget.add_test_inference(item)
-                correct, loss = self.model.test(item)
-                st = self.state[item.item_id]
-                st.last_test_step = step
-                st.total_tests += 1
-                st.total_correct += int(correct)
-                alpha = 0.2
-                st.test_accuracy_ema = (1 - alpha) * st.test_accuracy_ema + alpha * float(correct)
-                st.test_loss_ema = (1 - alpha) * st.test_loss_ema + alpha * loss
 
-                if correct:
-                    st.success_streak += 1
-                else:
-                    if st.is_mastered:
-                        st.is_mastered = False
-                    st.success_streak = 0
-                    st.failure_count += 1
-                    failures.append(item)
+            if test_items:
+                for item in test_items:
+                    self.budget.add_test_inference(item)
+                test_results = self.model.test_batch(test_items)
 
-                self.scheduler.on_result(st, step, correct)
+                for item, (correct, loss) in zip(test_items, test_results):
+                    st = self.state[item.item_id]
+                    st.last_test_step = step
+                    st.total_tests += 1
+                    st.total_correct += int(correct)
+                    alpha = 0.2
+                    st.test_accuracy_ema = (1 - alpha) * st.test_accuracy_ema + alpha * float(correct)
+                    st.test_loss_ema = (1 - alpha) * st.test_loss_ema + alpha * loss
 
-                if st.success_streak >= cfg.mastery_k:
-                    if st.mastered_at_step is not None and not st.is_mastered:
-                        st.remastery_count += 1
-                        self.metrics.total_remastery_events += 1
-                        self.metrics.remastery_events.append((step, item.item_id))
-                    st.is_mastered = True
-                    if st.mastered_at_step is None:
-                        st.mastered_at_step = step
+                    if correct:
+                        st.success_streak += 1
+                    else:
+                        if st.is_mastered:
+                            st.is_mastered = False
+                        st.success_streak = 0
+                        st.failure_count += 1
+                        failures.append(item)
+
+                    self.scheduler.on_result(st, step, correct)
+
+                    if st.success_streak >= cfg.mastery_k:
+                        if st.mastered_at_step is not None and not st.is_mastered:
+                            st.remastery_count += 1
+                            self.metrics.total_remastery_events += 1
+                            self.metrics.remastery_events.append((step, item.item_id))
+                        st.is_mastered = True
+                        if st.mastered_at_step is None:
+                            st.mastered_at_step = step
 
             reinforced = 0
             if self.mode == "test_reinforce" and n_reinforce > 0 and failures:

@@ -26,6 +26,10 @@ class ModelAdapter(ABC):
     def flush(self) -> None:
         """Flush pending buffered updates (no-op for non-buffering adapters)."""
 
+    def test_batch(self, items: list[QAItem]) -> list[tuple[bool, float]]:
+        """Batched test. Override for GPU-parallel generation."""
+        return [self.test(item) for item in items]
+
 
 class MockMemoryModel(ModelAdapter):
     """Offline noisy memory model for validating scheduling mechanics without GPUs."""

@@ -78,13 +78,11 @@ class BaselineTrainer:
         ]
         if not eligible:
             return 0.0
-        retained = 0
-        for iid in eligible:
-            item = self.item_by_id[iid]
+        items = [self.item_by_id[iid] for iid in eligible]
+        for item in items:
             self.budget.add_test_inference(item)
-            ok, _ = self.model.test(item)
-            retained += int(ok)
-        return retained / len(eligible)
+        results = self.model.test_batch(items)
+        return sum(int(c) for c, _ in results) / len(results)
 
     def _snapshot(self, step: int) -> None:
         mastered = sum(1 for s in self.state.values() if s.is_mastered)
