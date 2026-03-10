@@ -1,21 +1,30 @@
 {
-    "dataset_path": "data/closed_book_squad.jsonl",
-    "steps": 20000,
+    "dataset_path": "data/nq_open_train.jsonl",
+    "steps": 25000,
     "batch_size": 16,
-    "eval_every": 500,
+    "eval_every": 1000,
     "seeds": 3,
     "scheduler": "fsrs",
-    "max_training_tokens": 200000,
+    "max_training_tokens": 500000,
     "require_budget": true,
-    "mock_noise_std": 0.05,
     "methods": [
-      "test_only",
-      "test_reinforce",
-      "standard_ft",
-      "random_replay",
-      "curriculum",
-      "loss_replay"
+        "test_only",
+        "test_reinforce",
+        "standard_ft",
+        "random_replay",
+        "curriculum",
+        "loss_replay"
     ],
-    "output": "artifacts/experiment_metrics.json"
-  }
-  
+    "output": "artifacts/nq_real_experiment_metrics.json",
+
+    "real": true,
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lr": 2e-4,
+    "max_seq_len": 256,
+    "max_new_tokens": 32,
+    "grad_accum_steps": 4,
+    "dtype": "bfloat16",
+    "hf_token": null
+}

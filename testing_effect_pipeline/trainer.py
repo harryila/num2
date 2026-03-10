@@ -171,4 +171,5 @@ class TestingEffectTrainer:
                 self.metrics.stopped_early_budget = True
                 break
 
+        self.model.flush()
         return self.metrics

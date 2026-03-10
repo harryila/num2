@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 from pathlib import Path
 
 from .baselines import BaselineConfig, BaselineTrainer
@@ -10,6 +11,8 @@ from .model import MockMemoryModel
 from .scheduler import FSRSScheduler, LeitnerScheduler
 from .trainer import TestingEffectTrainer, TrainConfig
 from .types import QAItem
+
+logger = logging.getLogger(__name__)
 
 
 def _metrics_to_dict(metrics):
@@ -25,9 +28,12 @@ def _metrics_to_dict(metrics):
     }
 
 
-def _with_model_relative_difficulty(items: list[QAItem], seed: int, noise_std: float) -> list[QAItem]:
-    """Assign difficulty from model loss on first exposure (before training)."""
+# ------------------------------------------------------------------
+# Difficulty calibration
+# ------------------------------------------------------------------
 
+def _with_mock_difficulty(items: list[QAItem], seed: int, noise_std: float) -> list[QAItem]:
+    """Assign difficulty from mock-model loss on first exposure."""
     calibrator = MockMemoryModel(seed=seed + 1000, noise_std=noise_std)
     out: list[QAItem] = []
     for item in items:
@@ -45,21 +51,75 @@ def _with_model_relative_difficulty(items: list[QAItem], seed: int, noise_std: f
     return out
 
 
+def _with_real_model_difficulty(items: list[QAItem], model) -> list[QAItem]:
+    """Assign difficulty from the real model's pre-training loss."""
+    logger.info("Calibrating item difficulty from real model (%d items)...", len(items))
+    out: list[QAItem] = []
+    for i, item in enumerate(items):
+        loss = model.compute_loss(item)
+        difficulty = item.difficulty if item.difficulty is not None else loss
+        out.append(
+            QAItem(
+                item_id=item.item_id,
+                prompt=item.prompt,
+                target=item.target,
+                domain_tag=item.domain_tag,
+                difficulty=difficulty,
+            )
+        )
+        if (i + 1) % 500 == 0:
+            logger.info("  calibrated %d / %d", i + 1, len(items))
+    return out
+
+
+# ------------------------------------------------------------------
+# Main run loop
+# ------------------------------------------------------------------
+
 def run(args: argparse.Namespace) -> dict:
     if args.dataset_path:
         items = load_closed_book_jsonl(args.dataset_path)
     else:
         items = build_sample_dataset(args.sample_size)
 
+    real_model = None
+    if args.real:
+        from .real_model import RealModelAdapter, RealModelConfig
+
+        rcfg = RealModelConfig(
+            model_name=args.model_name,
+            lora_r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lr=args.lr,
+            max_seq_len=args.max_seq_len,
+            max_new_tokens=args.max_new_tokens,
+            grad_accum_steps=args.grad_accum_steps,
+            dtype=args.dtype,
+            hf_token=args.hf_token,
+        )
+        real_model = RealModelAdapter(rcfg)
+        items = _with_real_model_difficulty(items, real_model)
+
     out: dict = {}
 
     for seed in range(args.seeds):
         seed_key = f"seed_{seed}"
         out[seed_key] = {}
-        items_seed = _with_model_relative_difficulty(items, seed=seed, noise_std=args.mock_noise_std)
+
+        if not args.real:
+            items_seed = _with_mock_difficulty(items, seed=seed, noise_std=args.mock_noise_std)
+        else:
+            items_seed = items
 
         for method in args.methods:
-            model = MockMemoryModel(seed=seed, noise_std=args.mock_noise_std)
+            logger.info("=== seed=%d  method=%s ===", seed, method)
+
+            if args.real:
+                real_model.reset_adapter()
+                model = real_model
+            else:
+                model = MockMemoryModel(seed=seed, noise_std=args.mock_noise_std)
+
             if method in {"test_only", "test_reinforce"}:
                 cfg = TrainConfig(
                     total_steps=args.steps,
@@ -92,10 +152,18 @@ def run(args: argparse.Namespace) -> dict:
     return out
 
 
+# ------------------------------------------------------------------
+# CLI
+# ------------------------------------------------------------------
+
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Run testing-effect pipeline experiment (offline mock).")
+    p = argparse.ArgumentParser(description="Run testing-effect pipeline experiment.")
+
+    # Dataset
     p.add_argument("--dataset-path", type=str, default=None)
     p.add_argument("--sample-size", type=int, default=200)
+
+    # Experiment matrix
     p.add_argument("--steps", type=int, default=5000)
     p.add_argument("--batch-size", type=int, default=16)
     p.add_argument("--eval-every", type=int, default=500)
@@ -105,7 +173,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--require-budget",
         action="store_true",
-        help="Error out if --max-training-tokens is not set. Use for real runs to prevent unfair comparisons.",
+        help="Error out if --max-training-tokens is not set.",
     )
     p.add_argument("--mock-noise-std", type=float, default=0.05)
     p.add_argument(
@@ -114,16 +182,35 @@ def parse_args() -> argparse.Namespace:
         default=["test_only", "test_reinforce", "standard_ft", "random_replay", "curriculum", "loss_replay"],
     )
     p.add_argument("--output", type=str, default="artifacts/experiment_metrics.json")
+
+    # Real model
+    p.add_argument("--real", action="store_true", help="Use real LLM + LoRA instead of mock model")
+    p.add_argument("--model-name", type=str, default="Qwen/Qwen2.5-1.5B-Instruct")
+    p.add_argument("--lora-r", type=int, default=16)
+    p.add_argument("--lora-alpha", type=int, default=32)
+    p.add_argument("--lr", type=float, default=2e-4)
+    p.add_argument("--max-seq-len", type=int, default=256)
+    p.add_argument("--max-new-tokens", type=int, default=32)
+    p.add_argument("--grad-accum-steps", type=int, default=4)
+    p.add_argument("--dtype", choices=["bfloat16", "float16", "float32"], default="bfloat16")
+    p.add_argument("--hf-token", type=str, default=None, help="HuggingFace API token")
+
     return p.parse_args()
 
 
 def main() -> None:
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
     args = parse_args()
+
     if args.require_budget and args.max_training_tokens is None:
         raise SystemExit(
             "ERROR: --require-budget is set but --max-training-tokens is not. "
             "Real experiments must run with a token budget to ensure fair cross-method comparisons."
         )
+
     result = run(args)
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)

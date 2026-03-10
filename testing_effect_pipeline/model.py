@@ -23,6 +23,9 @@ class ModelAdapter(ABC):
         """Return (correct, loss)."""
         raise NotImplementedError
 
+    def flush(self) -> None:
+        """Flush pending buffered updates (no-op for non-buffering adapters)."""
+
 
 class MockMemoryModel(ModelAdapter):
     """Offline noisy memory model for validating scheduling mechanics without GPUs."""
