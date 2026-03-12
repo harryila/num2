@@ -23,6 +23,12 @@ class ModelAdapter(ABC):
         """Return (correct, loss)."""
         raise NotImplementedError
 
+    def compute_loss(self, item: QAItem) -> float:
+        """Forward-only loss on an item (no gradient, no generation).
+        Override in subclasses that have side effects in test()."""
+        _, loss = self.test(item)
+        return loss
+
     def flush(self) -> None:
         """Flush pending buffered updates (no-op for non-buffering adapters)."""
 
@@ -61,3 +67,7 @@ class MockMemoryModel(ModelAdapter):
         correct = self.rng.random() < p
         loss = 1.0 - p if correct else min(1.5, 1.5 - p)
         return correct, loss
+
+    def compute_loss(self, item: QAItem) -> float:
+        p = self._noisy_prob(self.strength[item.item_id])
+        return 1.0 - p

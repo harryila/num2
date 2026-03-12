@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from collections import deque
 from dataclasses import dataclass
 import logging
 import random
+import statistics
 
 from .budget import TokenBudgetTracker
 from .model import ModelAdapter
@@ -10,6 +12,8 @@ from .scheduler import Scheduler
 from .types import BudgetSnapshot, ItemState, QAItem, RetentionSnapshot, StepAllocation, TrainingMetrics
 
 logger = logging.getLogger(__name__)
+
+VALID_MODES = {"test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy"}
 
 
 @dataclass
@@ -33,8 +37,8 @@ class TestingEffectTrainer:
         mode: str = "test_only",
         seed: int = 7,
     ) -> None:
-        if mode not in {"test_only", "test_reinforce"}:
-            raise ValueError("mode must be 'test_only' or 'test_reinforce'")
+        if mode not in VALID_MODES:
+            raise ValueError(f"mode must be one of {VALID_MODES}")
 
         self.items = items
         self.item_by_id = {i.item_id: i for i in items}
@@ -48,6 +52,7 @@ class TestingEffectTrainer:
         self.metrics = TrainingMetrics()
         self.budget = TokenBudgetTracker(max_training_tokens=config.max_training_tokens)
         self._study_cursor = 0
+        self._recent_losses: deque[float] = deque(maxlen=200)
 
     def _next_study_items(self, n: int) -> list[QAItem]:
         out: list[QAItem] = []
@@ -61,6 +66,42 @@ class TestingEffectTrainer:
         due = [self.item_by_id[item_id] for item_id, st in self.state.items() if st.next_due_step <= step]
         self.rng.shuffle(due)
         return due
+
+    def _loss_to_correct(self, loss: float) -> bool:
+        """Adaptive threshold: item is 'correct' if loss is below the running median."""
+        self._recent_losses.append(loss)
+        if len(self._recent_losses) < 10:
+            return loss < 1.0
+        return loss < statistics.median(self._recent_losses)
+
+    def _update_item_state(self, item: QAItem, step: int, correct: bool, loss: float) -> None:
+        """Update per-item scheduling and mastery state after evaluation."""
+        st = self.state[item.item_id]
+        st.last_test_step = step
+        st.total_tests += 1
+        st.total_correct += int(correct)
+        alpha = 0.2
+        st.test_accuracy_ema = (1 - alpha) * st.test_accuracy_ema + alpha * float(correct)
+        st.test_loss_ema = (1 - alpha) * st.test_loss_ema + alpha * loss
+
+        if correct:
+            st.success_streak += 1
+        else:
+            if st.is_mastered:
+                st.is_mastered = False
+            st.success_streak = 0
+            st.failure_count += 1
+
+        self.scheduler.on_result(st, step, correct)
+
+        if st.success_streak >= self.config.mastery_k:
+            if st.mastered_at_step is not None and not st.is_mastered:
+                st.remastery_count += 1
+                self.metrics.total_remastery_events += 1
+                self.metrics.remastery_events.append((step, item.item_id))
+            st.is_mastered = True
+            if st.mastered_at_step is None:
+                st.mastered_at_step = step
 
     def _retention_at_horizon(self, step: int, delta: int) -> float:
         eligible = [
@@ -102,81 +143,160 @@ class TestingEffectTrainer:
             throughput = (mastered - prev_mastered) / span * 1000.0
             self.metrics.mastery_throughput.append((step, throughput))
 
-    def train(self) -> TrainingMetrics:
+    def _step_test_only_or_reinforce(self, step: int, due: list[QAItem]) -> None:
+        """One training step for test_only / test_reinforce modes."""
         cfg = self.config
-        for step in range(1, cfg.total_steps + 1):
-            due = self._due_items(step)
-            due_pressure = min(1.0, len(due) / max(1, cfg.batch_size))
+        due_pressure = min(1.0, len(due) / max(1, cfg.batch_size))
 
-            test_fraction = min(cfg.max_test_fraction, due_pressure)
-            study_fraction = max(cfg.min_study_fraction, 1.0 - test_fraction)
+        test_fraction = min(cfg.max_test_fraction, due_pressure)
+        study_fraction = max(cfg.min_study_fraction, 1.0 - test_fraction)
 
-            n_test = int(cfg.batch_size * test_fraction)
-            n_study = int(cfg.batch_size * study_fraction)
+        n_test = int(cfg.batch_size * test_fraction)
+        n_study = int(cfg.batch_size * study_fraction)
 
-            study_items = self._next_study_items(n_study)
-            for item in study_items:
-                self.model.study_update(item)
-                self.budget.add_study(item)
-                self.state[item.item_id].last_study_step = step
+        study_items = self._next_study_items(n_study)
+        for item in study_items:
+            self.model.study_update(item)
+            self.budget.add_study(item)
+            self.state[item.item_id].last_study_step = step
 
-            test_items = due[:n_test] if n_test > 0 else []
-            failures: list[QAItem] = []
+        test_items = due[:n_test] if n_test > 0 else []
+        failures: list[QAItem] = []
 
-            if test_items:
-                for item in test_items:
-                    self.budget.add_test_inference(item)
-                test_results = self.model.test_batch(test_items)
+        if test_items:
+            for item in test_items:
+                self.budget.add_test_inference(item)
+            test_results = self.model.test_batch(test_items)
 
-                for item, (correct, loss) in zip(test_items, test_results):
-                    st = self.state[item.item_id]
-                    st.last_test_step = step
-                    st.total_tests += 1
-                    st.total_correct += int(correct)
-                    alpha = 0.2
-                    st.test_accuracy_ema = (1 - alpha) * st.test_accuracy_ema + alpha * float(correct)
-                    st.test_loss_ema = (1 - alpha) * st.test_loss_ema + alpha * loss
+            for item, (correct, loss) in zip(test_items, test_results):
+                self._update_item_state(item, step, correct, loss)
+                if not correct:
+                    failures.append(item)
 
-                    if correct:
-                        st.success_streak += 1
-                    else:
-                        if st.is_mastered:
-                            st.is_mastered = False
-                        st.success_streak = 0
-                        st.failure_count += 1
-                        failures.append(item)
+        reinforced = 0
+        if self.mode == "test_reinforce" and failures:
+            max_reinforce = max(1, n_study // 4)
+            for item in failures[:max_reinforce]:
+                self.model.reinforce_update(item)
+                self.budget.add_reinforce(item)
+                reinforced += 1
 
-                    self.scheduler.on_result(st, step, correct)
+        self.metrics.step_allocations.append(
+            StepAllocation(step=step, study_count=n_study, test_count=len(test_items), reinforce_count=reinforced)
+        )
 
-                    if st.success_streak >= cfg.mastery_k:
-                        if st.mastered_at_step is not None and not st.is_mastered:
-                            st.remastery_count += 1
-                            self.metrics.total_remastery_events += 1
-                            self.metrics.remastery_events.append((step, item.item_id))
-                        st.is_mastered = True
-                        if st.mastered_at_step is None:
-                            st.mastered_at_step = step
-
-            reinforced = 0
-            if self.mode == "test_reinforce" and failures:
-                max_reinforce = max(1, n_study // 4)
-                for item in failures[:max_reinforce]:
-                    self.model.reinforce_update(item)
-                    self.budget.add_reinforce(item)
-                    reinforced += 1
-
-            self.metrics.step_allocations.append(
-                StepAllocation(step=step, study_count=n_study, test_count=len(test_items), reinforce_count=reinforced)
+        if step % 50 == 0:
+            mastered = sum(1 for st in self.state.values() if st.is_mastered)
+            correct_count = sum(int(c) for c, _ in test_results) if test_items else 0
+            logger.info(
+                f"step {step}/{cfg.total_steps} | studied={n_study} tested={len(test_items)} correct={correct_count} "
+                f"reinforced={reinforced} due={len(due)} mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
             )
 
-            # Log progress every 50 steps
-            if step % 50 == 0:
-                mastered = sum(1 for st in self.state.values() if st.is_mastered)
-                correct_count = sum(int(c) for c, _ in test_results) if test_items else 0
-                logger.info(
-                    f"step {step}/{cfg.total_steps} | studied={n_study} tested={len(test_items)} correct={correct_count} "
-                    f"reinforced={reinforced} due={len(due)} mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
-                )
+    def _step_retrieval_practice(self, step: int, due: list[QAItem]) -> None:
+        """One training step for retrieval_practice mode.
+
+        For each due item: generate answer -> score -> update schedule -> gradient step.
+        The model attempts retrieval first, then learns from the answer.
+        """
+        cfg = self.config
+        due_pressure = min(1.0, len(due) / max(1, cfg.batch_size))
+        test_fraction = min(cfg.max_test_fraction, due_pressure)
+        study_fraction = max(cfg.min_study_fraction, 1.0 - test_fraction)
+
+        n_due = int(cfg.batch_size * test_fraction)
+        n_study = int(cfg.batch_size * study_fraction)
+
+        study_items = self._next_study_items(n_study)
+        for item in study_items:
+            self.model.study_update(item)
+            self.budget.add_study(item)
+            self.state[item.item_id].last_study_step = step
+
+        due_batch = due[:n_due] if n_due > 0 else []
+
+        if due_batch:
+            for item in due_batch:
+                self.budget.add_test_inference(item)
+            test_results = self.model.test_batch(due_batch)
+
+            for item, (correct, loss) in zip(due_batch, test_results):
+                self._update_item_state(item, step, correct, loss)
+                # Gradient step on every due item after retrieval attempt
+                self.model.study_update(item)
+                self.budget.add_study(item)
+
+        self.metrics.step_allocations.append(
+            StepAllocation(step=step, study_count=n_study + len(due_batch), test_count=len(due_batch), reinforce_count=0)
+        )
+
+        if step % 50 == 0:
+            mastered = sum(1 for st in self.state.values() if st.is_mastered)
+            correct_count = sum(int(c) for c, _ in test_results) if due_batch else 0
+            logger.info(
+                f"step {step}/{cfg.total_steps} | studied={n_study}+{len(due_batch)}due tested={len(due_batch)} "
+                f"correct={correct_count} due={len(due)} mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
+            )
+
+    def _step_scheduled_restudy(self, step: int, due: list[QAItem]) -> None:
+        """One training step for scheduled_restudy mode.
+
+        For each due item: compute_loss (forward-only, evaluate current knowledge) ->
+        derive correctness from adaptive median threshold -> update schedule ->
+        gradient step. No generation. Same items, same schedule, same gradient steps
+        as retrieval_practice -- only difference is no retrieval attempt before learning.
+
+        The compute_loss call happens before study_update intentionally: it mirrors the
+        temporal structure of retrieval_practice (evaluate current knowledge -> update
+        schedule -> then learn). Using loss from the training forward pass itself would
+        give the scheduler a signal from *during* learning, not *before* learning.
+        """
+        cfg = self.config
+        due_pressure = min(1.0, len(due) / max(1, cfg.batch_size))
+        test_fraction = min(cfg.max_test_fraction, due_pressure)
+        study_fraction = max(cfg.min_study_fraction, 1.0 - test_fraction)
+
+        n_due = int(cfg.batch_size * test_fraction)
+        n_study = int(cfg.batch_size * study_fraction)
+
+        study_items = self._next_study_items(n_study)
+        for item in study_items:
+            self.model.study_update(item)
+            self.budget.add_study(item)
+            self.state[item.item_id].last_study_step = step
+
+        due_batch = due[:n_due] if n_due > 0 else []
+
+        for item in due_batch:
+            loss = self.model.compute_loss(item)
+            self.budget.add_test_inference(item)
+            correct = self._loss_to_correct(loss)
+            self._update_item_state(item, step, correct, loss)
+            self.model.study_update(item)
+            self.budget.add_study(item)
+
+        self.metrics.step_allocations.append(
+            StepAllocation(step=step, study_count=n_study + len(due_batch), test_count=0, reinforce_count=0)
+        )
+
+        if step % 50 == 0:
+            mastered = sum(1 for st in self.state.values() if st.is_mastered)
+            logger.info(
+                f"step {step}/{cfg.total_steps} | studied={n_study}+{len(due_batch)}due "
+                f"due={len(due)} mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
+            )
+
+    def train(self) -> TrainingMetrics:
+        cfg = self.config
+
+        if self.mode in ("retrieval_practice", "scheduled_restudy"):
+            step_fn = self._step_retrieval_practice if self.mode == "retrieval_practice" else self._step_scheduled_restudy
+        else:
+            step_fn = self._step_test_only_or_reinforce
+
+        for step in range(1, cfg.total_steps + 1):
+            due = self._due_items(step)
+            step_fn(step, due)
 
             if step % cfg.eval_every_steps == 0:
                 self._snapshot(step)

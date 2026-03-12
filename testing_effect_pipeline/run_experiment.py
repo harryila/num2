@@ -120,7 +120,7 @@ def run(args: argparse.Namespace) -> dict:
             else:
                 model = MockMemoryModel(seed=seed, noise_std=args.mock_noise_std)
 
-            if method in {"test_only", "test_reinforce"}:
+            if method in {"test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy"}:
                 cfg = TrainConfig(
                     total_steps=args.steps,
                     batch_size=args.batch_size,
@@ -179,7 +179,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--methods",
         nargs="+",
-        default=["test_only", "test_reinforce", "standard_ft", "random_replay", "curriculum", "loss_replay"],
+        default=["test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy", "standard_ft", "random_replay", "curriculum", "loss_replay"],
     )
     p.add_argument("--output", type=str, default="artifacts/experiment_metrics.json")
 
