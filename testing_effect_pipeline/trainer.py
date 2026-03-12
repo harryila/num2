@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import logging
 import random
 
 from .budget import TokenBudgetTracker
 from .model import ModelAdapter
 from .scheduler import Scheduler
 from .types import BudgetSnapshot, ItemState, QAItem, RetentionSnapshot, StepAllocation, TrainingMetrics
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -110,7 +113,6 @@ class TestingEffectTrainer:
 
             n_test = int(cfg.batch_size * test_fraction)
             n_study = int(cfg.batch_size * study_fraction)
-            n_reinforce = max(0, cfg.batch_size - n_test - n_study)
 
             study_items = self._next_study_items(n_study)
             for item in study_items:
@@ -156,8 +158,9 @@ class TestingEffectTrainer:
                             st.mastered_at_step = step
 
             reinforced = 0
-            if self.mode == "test_reinforce" and n_reinforce > 0 and failures:
-                for item in failures[:n_reinforce]:
+            if self.mode == "test_reinforce" and failures:
+                max_reinforce = max(1, n_study // 4)
+                for item in failures[:max_reinforce]:
                     self.model.reinforce_update(item)
                     self.budget.add_reinforce(item)
                     reinforced += 1
@@ -165,6 +168,15 @@ class TestingEffectTrainer:
             self.metrics.step_allocations.append(
                 StepAllocation(step=step, study_count=n_study, test_count=len(test_items), reinforce_count=reinforced)
             )
+
+            # Log progress every 50 steps
+            if step % 50 == 0:
+                mastered = sum(1 for st in self.state.values() if st.is_mastered)
+                correct_count = sum(int(c) for c, _ in test_results) if test_items else 0
+                logger.info(
+                    f"step {step}/{cfg.total_steps} | studied={n_study} tested={len(test_items)} correct={correct_count} "
+                    f"reinforced={reinforced} due={len(due)} mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
+                )
 
             if step % cfg.eval_every_steps == 0:
                 self._snapshot(step)

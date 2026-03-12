@@ -1,0 +1,8 @@
+{
+  "source": "google-research-datasets/nq_open",
+  "train_full_size": 87925,
+  "train_subsample_size": 1000,
+  "test_size": 3610,
+  "subsample_seed": 42,
+  "target_format": "pipe-separated alternatives (|||)"
+}

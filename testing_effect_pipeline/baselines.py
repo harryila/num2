@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import logging
 import random
 
 from .budget import TokenBudgetTracker
 from .model import ModelAdapter
 from .types import BudgetSnapshot, ItemState, QAItem, RetentionSnapshot, StepAllocation, TrainingMetrics
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -142,6 +145,14 @@ class BaselineTrainer:
             self.metrics.step_allocations.append(
                 StepAllocation(step=step, study_count=len(study_batch), test_count=test_count, reinforce_count=reinforce_count)
             )
+
+            # Log progress every 50 steps
+            if step % 50 == 0:
+                mastered = sum(1 for st in self.state.values() if st.is_mastered)
+                logger.info(
+                    f"step {step}/{self.cfg.total_steps} | studied={len(study_batch)} tested={test_count} reinforced={reinforce_count} "
+                    f"mastered={mastered} | train_tokens={self.budget.training_tokens_used}"
+                )
 
             if step % self.cfg.eval_every_steps == 0:
                 self._snapshot(step)
