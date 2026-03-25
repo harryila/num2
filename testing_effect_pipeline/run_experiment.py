@@ -8,7 +8,7 @@ from pathlib import Path
 from .baselines import BaselineConfig, BaselineTrainer
 from .dataset import build_sample_dataset, load_closed_book_jsonl
 from .model import MockMemoryModel
-from .scheduler import FSRSScheduler, LeitnerScheduler
+from .scheduler import FSRSScheduler, LeitnerScheduler, RandomMatchedScheduler, RandomWideScheduler
 from .trainer import TestingEffectTrainer, TrainConfig
 from .types import QAItem
 
@@ -127,7 +127,14 @@ def run(args: argparse.Namespace) -> dict:
                     eval_every_steps=args.eval_every,
                     max_training_tokens=args.max_training_tokens,
                 )
-                scheduler = LeitnerScheduler() if args.scheduler == "leitner" else FSRSScheduler()
+                if args.scheduler == "leitner":
+                    scheduler = LeitnerScheduler()
+                elif args.scheduler == "random_matched":
+                    scheduler = RandomMatchedScheduler(seed=seed)
+                elif args.scheduler == "random_wide":
+                    scheduler = RandomWideScheduler(seed=seed)
+                else:
+                    scheduler = FSRSScheduler()
                 trainer = TestingEffectTrainer(
                     items=items_seed,
                     model=model,
@@ -168,7 +175,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--batch-size", type=int, default=16)
     p.add_argument("--eval-every", type=int, default=500)
     p.add_argument("--seeds", type=int, default=3)
-    p.add_argument("--scheduler", choices=["leitner", "fsrs"], default="leitner")
+    p.add_argument("--scheduler", choices=["leitner", "fsrs", "random_matched", "random_wide"], default="leitner")
     p.add_argument("--max-training-tokens", type=int, default=None)
     p.add_argument(
         "--require-budget",
