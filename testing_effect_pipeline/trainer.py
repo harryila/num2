@@ -25,6 +25,7 @@ class TrainConfig:
     min_study_fraction: float = 0.3
     max_test_fraction: float = 0.5
     max_training_tokens: int | None = None
+    loss_threshold: float | None = None
 
 
 class TestingEffectTrainer:
@@ -270,7 +271,10 @@ class TestingEffectTrainer:
         for item in due_batch:
             loss = self.model.compute_loss(item)
             self.budget.add_test_inference(item)
-            correct = self._loss_to_correct(loss)
+            if self.config.loss_threshold is not None:
+                correct = loss < self.config.loss_threshold
+            else:
+                correct = self._loss_to_correct(loss)
             self._update_item_state(item, step, correct, loss)
             self.model.study_update(item)
             self.budget.add_study(item)

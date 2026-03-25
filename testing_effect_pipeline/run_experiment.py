@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import statistics
 from pathlib import Path
 
 from .baselines import BaselineConfig, BaselineTrainer
@@ -120,12 +121,24 @@ def run(args: argparse.Namespace) -> dict:
             else:
                 model = MockMemoryModel(seed=seed, noise_std=args.mock_noise_std)
 
-            if method in {"test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy"}:
+            trainer_mode = method
+            loss_threshold = None
+
+            if method.startswith("restudy_fixed_p"):
+                percentile = int(method.split("_p")[-1])
+                difficulties = [it.difficulty for it in items_seed if it.difficulty is not None]
+                quantile_cuts = statistics.quantiles(difficulties, n=100)
+                loss_threshold = quantile_cuts[percentile - 1]
+                trainer_mode = "scheduled_restudy"
+                logger.info("  restudy_fixed threshold: p%d = %.4f", percentile, loss_threshold)
+
+            if trainer_mode in {"test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy"}:
                 cfg = TrainConfig(
                     total_steps=args.steps,
                     batch_size=args.batch_size,
                     eval_every_steps=args.eval_every,
                     max_training_tokens=args.max_training_tokens,
+                    loss_threshold=loss_threshold,
                 )
                 if args.scheduler == "leitner":
                     scheduler = LeitnerScheduler()
@@ -140,7 +153,7 @@ def run(args: argparse.Namespace) -> dict:
                     model=model,
                     scheduler=scheduler,
                     config=cfg,
-                    mode=method,
+                    mode=trainer_mode,
                     seed=seed,
                 )
                 metrics = trainer.train()
@@ -186,7 +199,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--methods",
         nargs="+",
-        default=["test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy", "standard_ft", "random_replay", "curriculum", "loss_replay"],
+        default=["test_only", "test_reinforce", "retrieval_practice", "scheduled_restudy", "restudy_fixed_p10", "restudy_fixed_p25", "restudy_fixed_p50", "restudy_fixed_p75", "standard_ft", "random_replay", "curriculum", "loss_replay"],
     )
     p.add_argument("--output", type=str, default="artifacts/experiment_metrics.json")
 
