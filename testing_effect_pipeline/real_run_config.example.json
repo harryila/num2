@@ -10,6 +10,12 @@
     "methods": [
         "test_only",
         "test_reinforce",
+        "retrieval_practice",
+        "scheduled_restudy",
+        "restudy_fixed_p10",
+        "restudy_fixed_p25",
+        "restudy_fixed_p50",
+        "restudy_fixed_p75",
         "standard_ft",
         "random_replay",
         "curriculum",

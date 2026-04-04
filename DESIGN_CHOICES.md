@@ -103,3 +103,39 @@ This document records explicit and implicit design choices in the current implem
 58. No built-in plotting utility yet; JSON artifacts intended for downstream analysis.
 59. No CI unit tests yet; smoke checks currently validate runnability.
 60. Single-item loss computation in `test_batch` is sequential; could be batched with padding for further speedup if loss computation becomes a bottleneck (unlikely — generation dominates).
+
+## 15) Signal quality: generation-based vs loss-based correctness
+
+61. `scheduled_restudy` and `retrieval_practice` form a matched pair — same scheduler, same items, same gradient steps, same budget. The only difference is the correctness signal feeding the scheduler. `retrieval_practice` uses generation-based exact-match (greedy decode, then NQ-normalized string comparison). `scheduled_restudy` uses `_loss_to_correct`, which compares each item's loss to the running median of the last 200 losses.
+62. The adaptive median converges to ~50% "correct" regardless of model competence, because the median splits any distribution in half by definition. As losses drop during training, the median tracks them down, so the pass rate stays ~50%. Items constantly oscillate between mastered and unmastered — 626 remastery events vs `retrieval_practice`'s 175.
+63. This is not a bug in the implementation. It is evidence that this loss-to-correctness conversion produces poor scheduling decisions compared to generation-based exact-match. Consistent with KR-Test (2026), which from a different angle showed that loss/perplexity is insufficient for detecting whether a model has actually internalized factual knowledge.
+64. The original framing was "does the model generating an answer before the gradient step change the quality of learning?" The more precise framing that emerged from the data: using generation-based exact-match as a scheduling signal produces better scheduling decisions than using loss-based signals, and those better decisions are what drive the learning improvement.
+
+## 16) Why both methods can't just generate
+
+65. If `scheduled_restudy` also generated answers, the only remaining difference would be temporal ordering of generation vs gradient step. But generation runs under `torch.no_grad()` — weights are identical before the backward pass regardless of whether generation preceded it. Same weights → same forward pass → same loss → same gradient → same update. No mechanism for ordering to matter in standard transformers. Both methods would be functionally identical.
+66. This is why the comparison is generation-based signal vs loss-based signal, not "retrieval before gradient step vs no retrieval." The active ingredient is what information the scheduler receives about item-level competence, not whether generation happened.
+
+## 17) Fixed-threshold sweep (restudy_fixed) as a follow-up ablation
+
+67. The adaptive median is one (bad) way to convert loss into a correctness signal. The fixed-threshold sweep asks: can loss-based scoring work if calibrated better? Thresholds are computed from the model's pre-training loss distribution percentiles (p10=0.81, p25=1.36, p50=2.32, p75=3.75 on real Qwen2.5-1.5B-Instruct). The threshold doesn't move during training, so as items improve, more clear the bar and stay cleared.
+68. However, mastery counts from `restudy_fixed` (994–1000) cannot be compared to `retrieval_practice` (979) because loss-based correctness is strictly easier than exact-match — a model can have low loss on correct tokens while its top prediction is a different string. Loss says "correct," exact-match says "wrong." The higher mastery counts reflect a lenient criterion, not a better signal.
+69. A uniform end-of-training evaluation — exact-match generation on all items for every method — is needed to make this comparison valid. The retention probes (`_retention_at_horizon`) already use uniform exact-match via `model.test_batch()`, but at 2,000 steps they produce no data because the minimum retention horizon is 5,000 steps. Either add an explicit end-of-training eval or run at 25k+ steps to get retention probe data.
+
+## 18) Random scheduler ablations
+
+70. Two random schedulers test whether adaptive scheduling matters or whether just doing extra gradient steps on revisited items is sufficient. `RandomMatchedScheduler`: uniform intervals 50–500, matches FSRS's typical review frequency, ignores correctness entirely. `RandomWideScheduler`: log-uniform intervals 50–20,000, biased toward shorter intervals but items rarely come due. Both take the trainer seed for independent runs across seeds.
+71. Result: FSRS beats `random_matched` by ~31 items (979 vs 948), but `random_matched` still achieves 948/1000. The protocol (generate → score → restudy) matters more than the scheduling algorithm. `random_wide` (246 mastered) confirms that review frequency matters — items need to actually come due for the protocol to work.
+72. The low remastery for `random_matched` (33 vs FSRS's 175) likely reflects items not coming due often enough to detect forgetting (7,646 tests vs 12,529), not better retention. Fewer probes means fewer opportunities to observe and record a forgetting event.
+
+## 19) Budget fairness across methods
+
+73. Methods naturally consume different training token budgets at the same step count. `test_only` ~187k (no gradient on due items), `test_reinforce` ~235k (gradient only on failures), `retrieval_practice`/`standard_ft`/`curriculum` ~364k, replay methods ~409k (study + replay). The `--require-budget` flag enforces that `--max-training-tokens` is set.
+74. Replay methods (`random_replay`, `loss_replay`) stopped early when they exceeded the 500k token budget cap at ~1,833 steps while other methods ran the full 2,000. Cross-method mastery comparisons are only valid between methods at matched training token budgets, or with per-token normalization.
+75. `test_only` and `test_reinforce` comparisons to `retrieval_practice` are budget-confounded in the opposite direction — they use substantially less budget. `test_only` is the most token-efficient method (889 items at half the budget, 214 tokens per mastery), but whether it would plateau or continue climbing at matched budgets requires the 25k run.
+
+## 20) End-of-training evaluation gap
+
+76. The current pipeline measures mastery using each method's own correctness criterion during training. This makes mastery counts non-comparable across methods with different criteria (exact-match for `retrieval_practice`/`test_only`/`test_reinforce`, loss threshold for `restudy_fixed`, adaptive median for `scheduled_restudy`).
+77. A uniform end-of-training eval pass — exact-match generation on all items for every method — is needed. The retention probes (`_retention_at_horizon`) already use uniform exact-match via `model.test_batch()`, but produce no data at 2,000 steps because the minimum retention horizon is 5,000 steps. Either add an explicit end-of-training eval or run at 25k+ steps to get retention probe data.
+78. This is the most important next step for the pipeline. Without it, the `restudy_fixed` results (994–1000 mastered) cannot be meaningfully compared to `retrieval_practice` (979 mastered), and the headline claim depends on comparisons between methods that do share the same criterion (`retrieval_practice` vs `standard_ft`, `retrieval_practice` vs `scheduled_restudy`).
