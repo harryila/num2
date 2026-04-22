@@ -7,6 +7,7 @@ import random
 from .budget import TokenBudgetTracker
 from .model import ModelAdapter
 from .types import BudgetSnapshot, ItemState, QAItem, RetentionSnapshot, StepAllocation, TrainingMetrics
+from .uniform_eval import run_uniform_eval
 
 logger = logging.getLogger(__name__)
 
@@ -19,6 +20,7 @@ class BaselineConfig:
     eval_every_steps: int = 1_000
     mastery_k: int = 2
     max_training_tokens: int | None = None
+    uniform_eval_items: list[QAItem] | None = None
 
 
 class BaselineTrainer:
@@ -156,6 +158,10 @@ class BaselineTrainer:
 
             if step % self.cfg.eval_every_steps == 0:
                 self._snapshot(step)
+                if self.cfg.uniform_eval_items is not None:
+                    ue = run_uniform_eval(self.model, self.cfg.uniform_eval_items, step=step, include_per_item=False)
+                    self.metrics.uniform_eval_results.append(ue)
+                    logger.info("  periodic uniform eval: %d/%d (%.1f%%)", ue.correct_count, ue.total, ue.accuracy * 100)
 
             if self.budget.over_budget():
                 self.metrics.stopped_early_budget = True

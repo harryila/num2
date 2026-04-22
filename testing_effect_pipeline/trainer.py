@@ -10,6 +10,7 @@ from .budget import TokenBudgetTracker
 from .model import ModelAdapter
 from .scheduler import Scheduler
 from .types import BudgetSnapshot, ItemState, QAItem, RetentionSnapshot, StepAllocation, TrainingMetrics
+from .uniform_eval import run_uniform_eval
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +27,7 @@ class TrainConfig:
     max_test_fraction: float = 0.5
     max_training_tokens: int | None = None
     loss_threshold: float | None = None
+    uniform_eval_items: list[QAItem] | None = None
 
 
 class TestingEffectTrainer:
@@ -304,6 +306,10 @@ class TestingEffectTrainer:
 
             if step % cfg.eval_every_steps == 0:
                 self._snapshot(step)
+                if cfg.uniform_eval_items is not None:
+                    ue = run_uniform_eval(self.model, cfg.uniform_eval_items, step=step, include_per_item=False)
+                    self.metrics.uniform_eval_results.append(ue)
+                    logger.info("  periodic uniform eval: %d/%d (%.1f%%)", ue.correct_count, ue.total, ue.accuracy * 100)
 
             if self.budget.over_budget():
                 self.metrics.stopped_early_budget = True
