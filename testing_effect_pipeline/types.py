@@ -60,6 +60,18 @@ class BudgetSnapshot:
 
 
 @dataclass
+class UniformEvalResult:
+    """Result of running exact-match generation on all items after training."""
+
+    step: int
+    correct_count: int
+    total: int
+    accuracy: float
+    mean_loss: float
+    per_item: list[tuple[str, bool, float]] = field(default_factory=list)
+
+
+@dataclass
 class TrainingMetrics:
     forgetting_snapshots: list[RetentionSnapshot] = field(default_factory=list)
     cumulative_mastered: list[tuple[int, int]] = field(default_factory=list)
@@ -69,3 +81,4 @@ class TrainingMetrics:
     remastery_events: list[tuple[int, str]] = field(default_factory=list)
     total_remastery_events: int = 0
     stopped_early_budget: bool = False
+    uniform_eval_results: list[UniformEvalResult] = field(default_factory=list)

@@ -11,7 +11,7 @@ from .dataset import build_sample_dataset, load_closed_book_jsonl
 from .model import MockMemoryModel
 from .scheduler import FSRSScheduler, LeitnerScheduler, RandomMatchedScheduler, RandomWideScheduler
 from .trainer import TestingEffectTrainer, TrainConfig
-from .types import QAItem
+from .types import QAItem, UniformEvalResult
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +26,35 @@ def _metrics_to_dict(metrics):
         "remastery_events": metrics.remastery_events,
         "total_remastery_events": metrics.total_remastery_events,
         "stopped_early_budget": metrics.stopped_early_budget,
+        "uniform_eval_results": [
+            {
+                "step": r.step,
+                "correct_count": r.correct_count,
+                "total": r.total,
+                "accuracy": r.accuracy,
+                "mean_loss": r.mean_loss,
+                "per_item": r.per_item,
+            }
+            for r in metrics.uniform_eval_results
+        ],
     }
+
+
+def _run_uniform_eval(model, items: list[QAItem], step: int = -1) -> UniformEvalResult:
+    """Run exact-match generation on all items. Used after training for cross-method comparison."""
+    results = model.test_batch(items)
+    per_item = [(item.item_id, correct, loss) for item, (correct, loss) in zip(items, results)]
+    correct_count = sum(1 for _, c, _ in per_item if c)
+    total = len(items)
+    mean_loss = sum(loss for _, _, loss in per_item) / max(1, total)
+    return UniformEvalResult(
+        step=step,
+        correct_count=correct_count,
+        total=total,
+        accuracy=correct_count / max(1, total),
+        mean_loss=mean_loss,
+        per_item=per_item,
+    )
 
 
 # ------------------------------------------------------------------
@@ -166,6 +194,14 @@ def run(args: argparse.Namespace) -> dict:
                 )
                 trainer = BaselineTrainer(items=items_seed, model=model, cfg=bcfg, policy=method, seed=seed)
                 metrics = trainer.train()
+
+            eval_result = _run_uniform_eval(model, items_seed)
+            metrics.uniform_eval_results.append(eval_result)
+            logger.info(
+                "  uniform eval: %d / %d correct (%.1f%%), mean_loss=%.4f",
+                eval_result.correct_count, eval_result.total,
+                eval_result.accuracy * 100, eval_result.mean_loss,
+            )
 
             out[seed_key][method] = _metrics_to_dict(metrics)
 
