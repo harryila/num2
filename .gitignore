@@ -12,3 +12,9 @@ cursor_closed_book_qa_experiment_setup.md
 cursor_pipeline_folder_assessment_and_r.md
 testing_effect_pipeline/testing_effect_pipeline_plan.md
 artifacts_t3Uniform
+artifacts_t4UniformSteps
+data/nq_open_50k_random.jsonl
+data/nq_open_smoke.jsonl
+data/nq_open_hard_10k.jsonl
+data/nq_open_known.jsonl
+data/nq_open_filter_state.json

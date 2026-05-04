@@ -26,6 +26,12 @@ def main() -> None:
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--hf-token", type=str, default=None)
+    parser.add_argument(
+        "--output-name",
+        type=str,
+        default="nq_open_train.jsonl",
+        help="Output filename for the train subsample (default: nq_open_train.jsonl)",
+    )
     args = parser.parse_args()
 
     from datasets import load_dataset
@@ -45,7 +51,7 @@ def main() -> None:
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    train_path = output_dir / "nq_open_train.jsonl"
+    train_path = output_dir / args.output_name
     with train_path.open("w", encoding="utf-8") as f:
         for idx in train_indices:
             row = train_ds[idx]
@@ -80,6 +86,7 @@ def main() -> None:
         "test_size": len(test_ds),
         "subsample_seed": args.seed,
         "target_format": "pipe-separated alternatives (|||)",
+        "train_output_file": args.output_name,
     }
     stats_path = output_dir / "nq_open_stats.json"
     stats_path.write_text(json.dumps(stats, indent=2))
