@@ -1,0 +1,39 @@
+2026-05-05 11:08:48,753 INFO testing_effect_pipeline.real_model: Loading tokenizer: Qwen/Qwen2.5-0.5B-Instruct
+2026-05-05 11:08:49,593 INFO testing_effect_pipeline.real_model: Loading model: Qwen/Qwen2.5-0.5B-Instruct  dtype=bfloat16  device=cuda
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-05 11:08:50,421 INFO testing_effect_pipeline.real_model: LoRA applied: 540,672 trainable / 494,573,440 total params (0.11%)
+2026-05-05 11:08:50,423 INFO __main__: Calibrating item difficulty from real model (10000 items)...
+2026-05-05 11:09:05,324 INFO __main__:   calibrated 500 / 10000
+2026-05-05 11:09:19,603 INFO __main__:   calibrated 1000 / 10000
+2026-05-05 11:09:33,857 INFO __main__:   calibrated 1500 / 10000
+2026-05-05 11:09:47,936 INFO __main__:   calibrated 2000 / 10000
+2026-05-05 11:10:02,364 INFO __main__:   calibrated 2500 / 10000
+2026-05-05 11:10:16,198 INFO __main__:   calibrated 3000 / 10000
+2026-05-05 11:10:30,451 INFO __main__:   calibrated 3500 / 10000
+2026-05-05 11:10:44,259 INFO __main__:   calibrated 4000 / 10000
+2026-05-05 11:10:58,400 INFO __main__:   calibrated 4500 / 10000
+2026-05-05 11:11:12,835 INFO __main__:   calibrated 5000 / 10000
+2026-05-05 11:11:27,274 INFO __main__:   calibrated 5500 / 10000
+2026-05-05 11:11:41,595 INFO __main__:   calibrated 6000 / 10000
+2026-05-05 11:11:55,918 INFO __main__:   calibrated 6500 / 10000
+2026-05-05 11:12:10,274 INFO __main__:   calibrated 7000 / 10000
+2026-05-05 11:12:24,759 INFO __main__:   calibrated 7500 / 10000
+2026-05-05 11:12:39,093 INFO __main__:   calibrated 8000 / 10000
+2026-05-05 11:12:53,043 INFO __main__:   calibrated 8500 / 10000
+2026-05-05 11:13:06,986 INFO __main__:   calibrated 9000 / 10000
+2026-05-05 11:13:20,879 INFO __main__:   calibrated 9500 / 10000
+2026-05-05 11:13:34,828 INFO __main__:   calibrated 10000 / 10000
+2026-05-05 11:13:34,829 INFO __main__: === seed=1  method=standard_ft ===
+2026-05-05 11:13:34,833 INFO testing_effect_pipeline.real_model: LoRA adapter reset for new run
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-05-05 11:15:48,320 INFO testing_effect_pipeline.baselines: step 50/4000 | studied=16 tested=8 reinforced=0 mastered=0 | train_tokens=9098
+2026-05-05 11:18:01,760 INFO testing_effect_pipeline.baselines: step 100/4000 | studied=16 tested=8 reinforced=0 mastered=0 | train_tokens=18310
+2026-05-05 11:20:15,984 INFO testing_effect_pipeline.baselines: step 150/4000 | studied=16 tested=8 reinforced=0 mastered=1 | train_tokens=27494
+2026-05-05 11:22:29,845 INFO testing_effect_pipeline.baselines: step 200/4000 | studied=16 tested=8 reinforced=0 mastered=3 | train_tokens=36670
+2026-05-05 11:24:39,590 INFO testing_effect_pipeline.baselines: step 250/4000 | studied=16 tested=8 reinforced=0 mastered=4 | train_tokens=45850
+2026-05-05 11:26:52,262 INFO testing_effect_pipeline.baselines: step 300/4000 | studied=16 tested=8 reinforced=0 mastered=4 | train_tokens=54891
+2026-05-05 11:29:02,389 INFO testing_effect_pipeline.baselines: step 350/4000 | studied=16 tested=8 reinforced=0 mastered=6 | train_tokens=64053
+2026-05-05 11:31:11,092 INFO testing_effect_pipeline.baselines: step 400/4000 | studied=16 tested=8 reinforced=0 mastered=8 | train_tokens=73217
+2026-05-05 11:33:20,013 INFO testing_effect_pipeline.baselines: step 450/4000 | studied=16 tested=8 reinforced=0 mastered=12 | train_tokens=82316
+2026-05-05 11:35:32,876 INFO testing_effect_pipeline.baselines: step 500/4000 | studied=16 tested=8 reinforced=0 mastered=13 | train_tokens=91436
+2026-05-05 11:43:36,690 INFO testing_effect_pipeline.baselines:   periodic uniform eval: 265/10000 (2.6%)
