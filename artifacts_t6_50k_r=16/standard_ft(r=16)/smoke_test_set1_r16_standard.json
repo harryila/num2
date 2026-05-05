@@ -1,0 +1,6282 @@
+{
+  "seed_0": {
+    "standard_ft": {
+      "forgetting_snapshots": [
+        {
+          "step": 100,
+          "total_mastered": 6,
+          "retained_after_5k": 0.0,
+          "retained_after_10k": 0.0,
+          "retained_after_20k": 0.0
+        },
+        {
+          "step": 200,
+          "total_mastered": 10,
+          "retained_after_5k": 0.0,
+          "retained_after_10k": 0.0,
+          "retained_after_20k": 0.0
+        }
+      ],
+      "cumulative_mastered": [
+        [
+          100,
+          6
+        ],
+        [
+          200,
+          10
+        ]
+      ],
+      "mastery_throughput": [],
+      "step_allocations": [
+        {
+          "step": 1,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 2,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 3,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 4,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 5,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 6,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 7,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 8,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 9,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 10,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 11,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 12,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 13,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 14,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 15,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 16,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 17,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 18,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 19,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 20,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 21,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 22,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 23,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 24,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 25,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 26,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 27,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 28,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 29,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 30,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 31,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 32,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 33,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 34,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 35,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 36,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 37,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 38,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 39,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 40,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 41,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 42,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 43,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 44,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 45,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 46,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 47,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 48,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 49,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 50,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 51,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 52,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 53,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 54,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 55,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 56,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 57,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 58,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 59,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 60,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 61,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 62,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 63,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 64,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 65,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 66,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 67,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 68,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 69,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 70,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 71,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 72,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 73,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 74,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 75,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 76,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 77,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 78,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 79,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 80,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 81,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 82,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 83,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 84,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 85,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 86,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 87,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 88,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 89,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 90,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 91,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 92,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 93,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 94,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 95,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 96,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 97,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 98,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 99,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 100,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 101,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 102,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 103,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 104,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 105,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 106,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 107,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 108,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 109,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 110,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 111,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 112,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 113,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 114,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 115,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 116,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 117,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 118,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 119,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 120,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 121,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 122,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 123,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 124,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 125,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 126,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 127,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 128,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 129,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 130,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 131,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 132,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 133,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 134,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 135,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 136,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 137,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 138,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 139,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 140,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 141,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 142,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 143,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 144,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 145,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 146,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 147,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 148,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 149,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 150,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 151,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 152,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 153,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 154,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 155,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 156,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 157,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 158,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 159,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 160,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 161,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 162,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 163,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 164,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 165,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 166,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 167,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 168,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 169,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 170,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 171,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 172,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 173,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 174,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 175,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 176,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 177,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 178,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 179,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 180,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 181,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 182,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 183,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 184,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 185,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 186,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 187,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 188,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 189,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 190,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 191,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 192,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 193,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 194,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 195,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 196,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 197,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 198,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 199,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        },
+        {
+          "step": 200,
+          "study_count": 16,
+          "test_count": 8,
+          "reinforce_count": 0
+        }
+      ],
+      "budget_snapshots": [
+        {
+          "step": 100,
+          "training_tokens_used": 18394,
+          "test_inference_tokens_used": 9179
+        },
+        {
+          "step": 200,
+          "training_tokens_used": 36761,
+          "test_inference_tokens_used": 18348
+        }
+      ],
+      "remastery_events": [
+        [
+          173,
+          "nq-train-1151"
+        ]
+      ],
+      "total_remastery_events": 1,
+      "stopped_early_budget": false,
+      "uniform_eval_results": [
+        {
+          "step": 100,
+          "correct_count": 62,
+          "total": 1000,
+          "accuracy": 0.062,
+          "mean_loss": 1.9164607565607876,
+          "per_item": []
+        },
+        {
+          "step": 200,
+          "correct_count": 36,
+          "total": 1000,
+          "accuracy": 0.036,
+          "mean_loss": 2.181216040931642,
+          "per_item": []
+        },
+        {
+          "step": -1,
+          "correct_count": 36,
+          "total": 1000,
+          "accuracy": 0.036,
+          "mean_loss": 2.181216040931642,
+          "per_item": [
+            [
+              "nq-train-0",
+              false,
+              4.71770715713501
+            ],
+            [
+              "nq-train-2",
+              false,
+              2.1343674659729004
+            ],
+            [
+              "nq-train-6",
+              false,
+              0.7192276120185852
+            ],
+            [
+              "nq-train-9",
+              false,
+              0.437566876411438
+            ],
+            [
+              "nq-train-10",
+              true,
+              1.0691289901733398
+            ],
+            [
+              "nq-train-13",
+              false,
+              4.399391174316406
+            ],
+            [
+              "nq-train-14",
+              true,
+              0.2647436261177063
+            ],
+            [
+              "nq-train-15",
+              false,
+              0.9663145542144775
+            ],
+            [
+              "nq-train-17",
+              false,
+              3.1651201248168945
+            ],
+            [
+              "nq-train-18",
+              false,
+              2.4180960655212402
+            ],
+            [
+              "nq-train-19",
+              false,
+              0.7018710374832153
+            ],
+            [
+              "nq-train-20",
+              false,
+              1.9418301582336426
+            ],
+            [
+              "nq-train-23",
+              false,
+              2.315316915512085
+            ],
+            [
+              "nq-train-26",
+              false,
+              1.8252087831497192
+            ],
+            [
+              "nq-train-28",
+              false,
+              0.9525586366653442
+            ],
+            [
+              "nq-train-29",
+              false,
+              3.5725326538085938
+            ],
+            [
+              "nq-train-31",
+              false,
+              1.423616647720337
+            ],
+            [
+              "nq-train-33",
+              false,
+              1.9788662195205688
+            ],
+            [
+              "nq-train-34",
+              false,
+              3.9343132972717285
+            ],
+            [
+              "nq-train-38",
+              false,
+              1.1926299333572388
+            ],
+            [
+              "nq-train-39",
+              false,
+              1.1064008474349976
+            ],
+            [
+              "nq-train-40",
+              true,
+              0.5268930792808533
+            ],
+            [
+              "nq-train-41",
+              false,
+              0.790462076663971
+            ],
+            [
+              "nq-train-42",
+              false,
+              0.8613229990005493
+            ],
+            [
+              "nq-train-45",
+              false,
+              3.2311716079711914
+            ],
+            [
+              "nq-train-47",
+              false,
+              0.6069641709327698
+            ],
+            [
+              "nq-train-48",
+              false,
+              1.0906295776367188
+            ],
+            [
+              "nq-train-49",
+              false,
+              3.8890326023101807
+            ],
+            [
+              "nq-train-51",
+              false,
+              3.2820627689361572
+            ],
+            [
+              "nq-train-54",
+              false,
+              2.593461751937866
+            ],
+            [
+              "nq-train-56",
+              false,
+              1.9060865640640259
+            ],
+            [
+              "nq-train-57",
+              false,
+              2.406446695327759
+            ],
+            [
+              "nq-train-58",
+              false,
+              2.433361053466797
+            ],
+            [
+              "nq-train-61",
+              true,
+              1.0783710479736328
+            ],
+            [
+              "nq-train-62",
+              false,
+              1.9129060506820679
+            ],
+            [
+              "nq-train-63",
+              false,
+              1.546730399131775
+            ],
+            [
+              "nq-train-65",
+              false,
+              2.9724879264831543
+            ],
+            [
+              "nq-train-66",
+              false,
+              2.4061732292175293
+            ],
+            [
+              "nq-train-67",
+              false,
+              3.223635673522949
+            ],
+            [
+              "nq-train-68",
+              false,
+              4.127981662750244
+            ],
+            [
+              "nq-train-72",
+              false,
+              1.3619105815887451
+            ],
+            [
+              "nq-train-76",
+              false,
+              0.823728621006012
+            ],
+            [
+              "nq-train-77",
+              false,
+              0.8795714974403381
+            ],
+            [
+              "nq-train-80",
+              false,
+              0.8115723133087158
+            ],
+            [
+              "nq-train-81",
+              false,
+              3.9500441551208496
+            ],
+            [
+              "nq-train-83",
+              false,
+              1.9045330286026
+            ],
+            [
+              "nq-train-86",
+              false,
+              4.595010280609131
+            ],
+            [
+              "nq-train-87",
+              false,
+              1.8370400667190552
+            ],
+            [
+              "nq-train-90",
+              false,
+              2.57210111618042
+            ],
+            [
+              "nq-train-91",
+              false,
+              0.7089203000068665
+            ],
+            [
+              "nq-train-92",
+              false,
+              2.3832497596740723
+            ],
+            [
+              "nq-train-93",
+              true,
+              0.3921118676662445
+            ],
+            [
+              "nq-train-99",
+              false,
+              2.18381404876709
+            ],
+            [
+              "nq-train-101",
+              false,
+              1.2135827541351318
+            ],
+            [
+              "nq-train-102",
+              false,
+              1.0739697217941284
+            ],
+            [
+              "nq-train-103",
+              false,
+              0.7126647233963013
+            ],
+            [
+              "nq-train-104",
+              false,
+              1.4512841701507568
+            ],
+            [
+              "nq-train-108",
+              false,
+              1.8085267543792725
+            ],
+            [
+              "nq-train-109",
+              false,
+              0.6764029860496521
+            ],
+            [
+              "nq-train-111",
+              false,
+              1.434888243675232
+            ],
+            [
+              "nq-train-112",
+              false,
+              3.1685187816619873
+            ],
+            [
+              "nq-train-114",
+              false,
+              2.8454253673553467
+            ],
+            [
+              "nq-train-115",
+              false,
+              1.6449240446090698
+            ],
+            [
+              "nq-train-117",
+              false,
+              1.105552077293396
+            ],
+            [
+              "nq-train-118",
+              false,
+              1.1644786596298218
+            ],
+            [
+              "nq-train-119",
+              false,
+              3.349975824356079
+            ],
+            [
+              "nq-train-120",
+              false,
+              3.0056331157684326
+            ],
+            [
+              "nq-train-121",
+              false,
+              1.502598762512207
+            ],
+            [
+              "nq-train-122",
+              false,
+              0.7624474167823792
+            ],
+            [
+              "nq-train-124",
+              false,
+              0.6532514691352844
+            ],
+            [
+              "nq-train-126",
+              false,
+              2.4756546020507812
+            ],
+            [
+              "nq-train-127",
+              false,
+              2.598088264465332
+            ],
+            [
+              "nq-train-133",
+              false,
+              1.4834296703338623
+            ],
+            [
+              "nq-train-136",
+              false,
+              0.9310906529426575
+            ],
+            [
+              "nq-train-137",
+              false,
+              3.112584352493286
+            ],
+            [
+              "nq-train-138",
+              false,
+              2.478039264678955
+            ],
+            [
+              "nq-train-139",
+              false,
+              0.6690988540649414
+            ],
+            [
+              "nq-train-140",
+              false,
+              2.819032669067383
+            ],
+            [
+              "nq-train-141",
+              false,
+              1.3534902334213257
+            ],
+            [
+              "nq-train-146",
+              false,
+              2.1491763591766357
+            ],
+            [
+              "nq-train-147",
+              false,
+              2.5170845985412598
+            ],
+            [
+              "nq-train-148",
+              false,
+              1.8269165754318237
+            ],
+            [
+              "nq-train-149",
+              false,
+              0.9833897352218628
+            ],
+            [
+              "nq-train-152",
+              false,
+              0.6353916525840759
+            ],
+            [
+              "nq-train-153",
+              false,
+              1.083768367767334
+            ],
+            [
+              "nq-train-154",
+              false,
+              0.811154842376709
+            ],
+            [
+              "nq-train-155",
+              false,
+              2.4081366062164307
+            ],
+            [
+              "nq-train-164",
+              false,
+              1.4056310653686523
+            ],
+            [
+              "nq-train-166",
+              false,
+              0.905844509601593
+            ],
+            [
+              "nq-train-168",
+              false,
+              1.6975553035736084
+            ],
+            [
+              "nq-train-170",
+              false,
+              1.9814172983169556
+            ],
+            [
+              "nq-train-172",
+              true,
+              0.6950027942657471
+            ],
+            [
+              "nq-train-177",
+              false,
+              3.7590410709381104
+            ],
+            [
+              "nq-train-179",
+              false,
+              1.2875611782073975
+            ],
+            [
+              "nq-train-180",
+              false,
+              3.1827750205993652
+            ],
+            [
+              "nq-train-185",
+              false,
+              2.0783889293670654
+            ],
+            [
+              "nq-train-187",
+              false,
+              0.7708949446678162
+            ],
+            [
+              "nq-train-188",
+              false,
+              1.13469398021698
+            ],
+            [
+              "nq-train-189",
+              false,
+              1.7684656381607056
+            ],
+            [
+              "nq-train-193",
+              false,
+              3.0499298572540283
+            ],
+            [
+              "nq-train-194",
+              false,
+              1.052559494972229
+            ],
+            [
+              "nq-train-196",
+              false,
+              4.843698024749756
+            ],
+            [
+              "nq-train-198",
+              false,
+              1.5111199617385864
+            ],
+            [
+              "nq-train-199",
+              false,
+              1.5629127025604248
+            ],
+            [
+              "nq-train-200",
+              false,
+              4.0893659591674805
+            ],
+            [
+              "nq-train-201",
+              false,
+              5.029486656188965
+            ],
+            [
+              "nq-train-202",
+              false,
+              2.7452614307403564
+            ],
+            [
+              "nq-train-203",
+              false,
+              5.860538959503174
+            ],
+            [
+              "nq-train-204",
+              false,
+              2.444344997406006
+            ],
+            [
+              "nq-train-209",
+              false,
+              2.0417630672454834
+            ],
+            [
+              "nq-train-211",
+              false,
+              1.7669175863265991
+            ],
+            [
+              "nq-train-212",
+              false,
+              0.6739264726638794
+            ],
+            [
+              "nq-train-213",
+              false,
+              1.2007062435150146
+            ],
+            [
+              "nq-train-214",
+              false,
+              1.5541791915893555
+            ],
+            [
+              "nq-train-215",
+              false,
+              0.6097586750984192
+            ],
+            [
+              "nq-train-216",
+              false,
+              0.4836190640926361
+            ],
+            [
+              "nq-train-217",
+              false,
+              0.9952191710472107
+            ],
+            [
+              "nq-train-218",
+              false,
+              2.961860418319702
+            ],
+            [
+              "nq-train-219",
+              false,
+              1.2570719718933105
+            ],
+            [
+              "nq-train-222",
+              false,
+              2.3225648403167725
+            ],
+            [
+              "nq-train-223",
+              false,
+              3.2127327919006348
+            ],
+            [
+              "nq-train-227",
+              false,
+              1.1909171342849731
+            ],
+            [
+              "nq-train-228",
+              false,
+              1.7415571212768555
+            ],
+            [
+              "nq-train-229",
+              false,
+              3.8036580085754395
+            ],
+            [
+              "nq-train-230",
+              false,
+              2.3811538219451904
+            ],
+            [
+              "nq-train-231",
+              false,
+              1.839099645614624
+            ],
+            [
+              "nq-train-233",
+              false,
+              3.1565027236938477
+            ],
+            [
+              "nq-train-234",
+              false,
+              2.40698504447937
+            ],
+            [
+              "nq-train-238",
+              false,
+              4.6264238357543945
+            ],
+            [
+              "nq-train-239",
+              false,
+              3.1760172843933105
+            ],
+            [
+              "nq-train-240",
+              false,
+              1.2835047245025635
+            ],
+            [
+              "nq-train-241",
+              false,
+              0.574489176273346
+            ],
+            [
+              "nq-train-244",
+              false,
+              1.410530686378479
+            ],
+            [
+              "nq-train-246",
+              false,
+              2.251326322555542
+            ],
+            [
+              "nq-train-249",
+              false,
+              1.5291190147399902
+            ],
+            [
+              "nq-train-251",
+              false,
+              2.9387407302856445
+            ],
+            [
+              "nq-train-252",
+              false,
+              2.4903223514556885
+            ],
+            [
+              "nq-train-253",
+              false,
+              4.460424423217773
+            ],
+            [
+              "nq-train-258",
+              false,
+              2.5760157108306885
+            ],
+            [
+              "nq-train-259",
+              false,
+              4.837048053741455
+            ],
+            [
+              "nq-train-260",
+              false,
+              2.0522801876068115
+            ],
+            [
+              "nq-train-261",
+              false,
+              1.7389413118362427
+            ],
+            [
+              "nq-train-262",
+              false,
+              4.9172773361206055
+            ],
+            [
+              "nq-train-263",
+              false,
+              1.8250385522842407
+            ],
+            [
+              "nq-train-264",
+              false,
+              1.1892118453979492
+            ],
+            [
+              "nq-train-265",
+              false,
+              3.783498525619507
+            ],
+            [
+              "nq-train-269",
+              false,
+              1.3034005165100098
+            ],
+            [
+              "nq-train-270",
+              true,
+              0.35791081190109253
+            ],
+            [
+              "nq-train-271",
+              false,
+              1.2238976955413818
+            ],
+            [
+              "nq-train-272",
+              false,
+              2.573122501373291
+            ],
+            [
+              "nq-train-275",
+              false,
+              0.9957174062728882
+            ],
+            [
+              "nq-train-277",
+              false,
+              3.101871967315674
+            ],
+            [
+              "nq-train-278",
+              false,
+              0.7578755021095276
+            ],
+            [
+              "nq-train-283",
+              false,
+              0.5997006297111511
+            ],
+            [
+              "nq-train-288",
+              false,
+              0.9461444020271301
+            ],
+            [
+              "nq-train-290",
+              false,
+              2.3773818016052246
+            ],
+            [
+              "nq-train-291",
+              false,
+              1.0674505233764648
+            ],
+            [
+              "nq-train-293",
+              false,
+              2.423685073852539
+            ],
+            [
+              "nq-train-297",
+              false,
+              2.5553150177001953
+            ],
+            [
+              "nq-train-298",
+              false,
+              3.384064197540283
+            ],
+            [
+              "nq-train-300",
+              false,
+              1.0473206043243408
+            ],
+            [
+              "nq-train-301",
+              false,
+              1.6101912260055542
+            ],
+            [
+              "nq-train-302",
+              false,
+              3.172790765762329
+            ],
+            [
+              "nq-train-304",
+              false,
+              3.024470329284668
+            ],
+            [
+              "nq-train-305",
+              false,
+              0.8022247552871704
+            ],
+            [
+              "nq-train-306",
+              false,
+              2.6934635639190674
+            ],
+            [
+              "nq-train-307",
+              false,
+              4.273037910461426
+            ],
+            [
+              "nq-train-308",
+              false,
+              2.5702457427978516
+            ],
+            [
+              "nq-train-309",
+              false,
+              5.6524577140808105
+            ],
+            [
+              "nq-train-310",
+              false,
+              1.3381963968276978
+            ],
+            [
+              "nq-train-311",
+              false,
+              0.6604521870613098
+            ],
+            [
+              "nq-train-314",
+              false,
+              3.3611347675323486
+            ],
+            [
+              "nq-train-317",
+              false,
+              3.9620487689971924
+            ],
+            [
+              "nq-train-319",
+              false,
+              2.1482601165771484
+            ],
+            [
+              "nq-train-322",
+              false,
+              2.44777774810791
+            ],
+            [
+              "nq-train-325",
+              false,
+              2.6054420471191406
+            ],
+            [
+              "nq-train-327",
+              false,
+              1.6642494201660156
+            ],
+            [
+              "nq-train-329",
+              false,
+              2.846470594406128
+            ],
+            [
+              "nq-train-330",
+              false,
+              0.4792671203613281
+            ],
+            [
+              "nq-train-331",
+              false,
+              1.9270501136779785
+            ],
+            [
+              "nq-train-332",
+              false,
+              1.257978081703186
+            ],
+            [
+              "nq-train-334",
+              false,
+              2.324253559112549
+            ],
+            [
+              "nq-train-335",
+              false,
+              0.8193593621253967
+            ],
+            [
+              "nq-train-338",
+              false,
+              2.0728564262390137
+            ],
+            [
+              "nq-train-339",
+              false,
+              4.356196880340576
+            ],
+            [
+              "nq-train-340",
+              false,
+              2.163616895675659
+            ],
+            [
+              "nq-train-341",
+              false,
+              2.748133420944214
+            ],
+            [
+              "nq-train-342",
+              false,
+              0.7151380181312561
+            ],
+            [
+              "nq-train-343",
+              false,
+              1.5147005319595337
+            ],
+            [
+              "nq-train-344",
+              false,
+              0.8076527118682861
+            ],
+            [
+              "nq-train-345",
+              false,
+              2.423767328262329
+            ],
+            [
+              "nq-train-346",
+              false,
+              1.9363174438476562
+            ],
+            [
+              "nq-train-347",
+              false,
+              1.771497130393982
+            ],
+            [
+              "nq-train-348",
+              false,
+              2.3048837184906006
+            ],
+            [
+              "nq-train-351",
+              false,
+              3.9739089012145996
+            ],
+            [
+              "nq-train-353",
+              false,
+              1.4224700927734375
+            ],
+            [
+              "nq-train-354",
+              false,
+              0.5703450441360474
+            ],
+            [
+              "nq-train-355",
+              true,
+              0.44659361243247986
+            ],
+            [
+              "nq-train-356",
+              false,
+              2.918151617050171
+            ],
+            [
+              "nq-train-357",
+              false,
+              2.7776870727539062
+            ],
+            [
+              "nq-train-359",
+              false,
+              1.3982053995132446
+            ],
+            [
+              "nq-train-360",
+              false,
+              1.0395218133926392
+            ],
+            [
+              "nq-train-361",
+              false,
+              2.2295069694519043
+            ],
+            [
+              "nq-train-362",
+              false,
+              1.496082067489624
+            ],
+            [
+              "nq-train-363",
+              false,
+              5.1242828369140625
+            ],
+            [
+              "nq-train-367",
+              false,
+              1.9047472476959229
+            ],
+            [
+              "nq-train-368",
+              false,
+              1.7111332416534424
+            ],
+            [
+              "nq-train-370",
+              false,
+              3.3924384117126465
+            ],
+            [
+              "nq-train-372",
+              false,
+              1.4469234943389893
+            ],
+            [
+              "nq-train-376",
+              false,
+              5.296553134918213
+            ],
+            [
+              "nq-train-377",
+              false,
+              2.231691837310791
+            ],
+            [
+              "nq-train-381",
+              false,
+              3.6498329639434814
+            ],
+            [
+              "nq-train-382",
+              false,
+              2.319077730178833
+            ],
+            [
+              "nq-train-383",
+              false,
+              1.9939155578613281
+            ],
+            [
+              "nq-train-386",
+              false,
+              1.2227520942687988
+            ],
+            [
+              "nq-train-387",
+              false,
+              3.807288408279419
+            ],
+            [
+              "nq-train-388",
+              false,
+              1.6372480392456055
+            ],
+            [
+              "nq-train-390",
+              false,
+              3.1565515995025635
+            ],
+            [
+              "nq-train-392",
+              false,
+              0.7578893899917603
+            ],
+            [
+              "nq-train-399",
+              false,
+              1.5387033224105835
+            ],
+            [
+              "nq-train-401",
+              false,
+              5.038368225097656
+            ],
+            [
+              "nq-train-405",
+              false,
+              0.7449540495872498
+            ],
+            [
+              "nq-train-406",
+              false,
+              2.2852706909179688
+            ],
+            [
+              "nq-train-408",
+              false,
+              4.07021427154541
+            ],
+            [
+              "nq-train-411",
+              false,
+              1.4799593687057495
+            ],
+            [
+              "nq-train-412",
+              false,
+              0.7823137640953064
+            ],
+            [
+              "nq-train-413",
+              false,
+              1.7246180772781372
+            ],
+            [
+              "nq-train-414",
+              false,
+              1.3575148582458496
+            ],
+            [
+              "nq-train-416",
+              false,
+              3.277761936187744
+            ],
+            [
+              "nq-train-417",
+              false,
+              2.903780460357666
+            ],
+            [
+              "nq-train-418",
+              false,
+              0.7138292193412781
+            ],
+            [
+              "nq-train-421",
+              false,
+              1.7256625890731812
+            ],
+            [
+              "nq-train-424",
+              false,
+              0.49722257256507874
+            ],
+            [
+              "nq-train-426",
+              false,
+              2.7719359397888184
+            ],
+            [
+              "nq-train-427",
+              false,
+              0.8965692520141602
+            ],
+            [
+              "nq-train-430",
+              false,
+              1.5917541980743408
+            ],
+            [
+              "nq-train-432",
+              false,
+              2.1326098442077637
+            ],
+            [
+              "nq-train-438",
+              false,
+              2.352640151977539
+            ],
+            [
+              "nq-train-442",
+              false,
+              3.3979761600494385
+            ],
+            [
+              "nq-train-443",
+              false,
+              2.6813015937805176
+            ],
+            [
+              "nq-train-444",
+              false,
+              2.188917875289917
+            ],
+            [
+              "nq-train-445",
+              false,
+              4.579217910766602
+            ],
+            [
+              "nq-train-447",
+              false,
+              4.336920738220215
+            ],
+            [
+              "nq-train-449",
+              false,
+              4.299309730529785
+            ],
+            [
+              "nq-train-450",
+              false,
+              1.0760319232940674
+            ],
+            [
+              "nq-train-451",
+              false,
+              2.328592538833618
+            ],
+            [
+              "nq-train-452",
+              false,
+              2.4270169734954834
+            ],
+            [
+              "nq-train-454",
+              false,
+              1.3360337018966675
+            ],
+            [
+              "nq-train-462",
+              false,
+              1.9832032918930054
+            ],
+            [
+              "nq-train-465",
+              false,
+              1.3879210948944092
+            ],
+            [
+              "nq-train-466",
+              false,
+              2.225602149963379
+            ],
+            [
+              "nq-train-467",
+              false,
+              1.042876124382019
+            ],
+            [
+              "nq-train-468",
+              false,
+              1.0868326425552368
+            ],
+            [
+              "nq-train-469",
+              false,
+              1.2022771835327148
+            ],
+            [
+              "nq-train-470",
+              false,
+              6.532379150390625
+            ],
+            [
+              "nq-train-472",
+              false,
+              2.2373085021972656
+            ],
+            [
+              "nq-train-473",
+              false,
+              1.4818931818008423
+            ],
+            [
+              "nq-train-475",
+              false,
+              2.287334442138672
+            ],
+            [
+              "nq-train-476",
+              false,
+              2.132279872894287
+            ],
+            [
+              "nq-train-477",
+              false,
+              3.666537046432495
+            ],
+            [
+              "nq-train-480",
+              false,
+              1.1856365203857422
+            ],
+            [
+              "nq-train-482",
+              false,
+              2.739297866821289
+            ],
+            [
+              "nq-train-483",
+              false,
+              1.9876831769943237
+            ],
+            [
+              "nq-train-488",
+              false,
+              1.1582456827163696
+            ],
+            [
+              "nq-train-489",
+              false,
+              1.0382980108261108
+            ],
+            [
+              "nq-train-490",
+              false,
+              6.773623466491699
+            ],
+            [
+              "nq-train-491",
+              false,
+              3.274548292160034
+            ],
+            [
+              "nq-train-492",
+              false,
+              0.6846010684967041
+            ],
+            [
+              "nq-train-493",
+              false,
+              0.6497433185577393
+            ],
+            [
+              "nq-train-494",
+              false,
+              3.9481632709503174
+            ],
+            [
+              "nq-train-495",
+              true,
+              0.5602026581764221
+            ],
+            [
+              "nq-train-496",
+              false,
+              1.6029701232910156
+            ],
+            [
+              "nq-train-498",
+              false,
+              2.3754444122314453
+            ],
+            [
+              "nq-train-499",
+              false,
+              3.933692216873169
+            ],
+            [
+              "nq-train-502",
+              false,
+              8.439635276794434
+            ],
+            [
+              "nq-train-506",
+              false,
+              6.394375801086426
+            ],
+            [
+              "nq-train-507",
+              true,
+              0.7536698579788208
+            ],
+            [
+              "nq-train-509",
+              false,
+              0.7703468799591064
+            ],
+            [
+              "nq-train-510",
+              false,
+              3.3964250087738037
+            ],
+            [
+              "nq-train-511",
+              false,
+              0.9213188290596008
+            ],
+            [
+              "nq-train-513",
+              false,
+              2.9113399982452393
+            ],
+            [
+              "nq-train-514",
+              false,
+              2.1879189014434814
+            ],
+            [
+              "nq-train-516",
+              false,
+              3.1468746662139893
+            ],
+            [
+              "nq-train-517",
+              false,
+              0.8055744171142578
+            ],
+            [
+              "nq-train-518",
+              false,
+              0.7504993677139282
+            ],
+            [
+              "nq-train-519",
+              false,
+              3.3172779083251953
+            ],
+            [
+              "nq-train-521",
+              false,
+              1.1916743516921997
+            ],
+            [
+              "nq-train-524",
+              false,
+              3.4202539920806885
+            ],
+            [
+              "nq-train-526",
+              false,
+              1.1514941453933716
+            ],
+            [
+              "nq-train-527",
+              false,
+              3.471308708190918
+            ],
+            [
+              "nq-train-530",
+              false,
+              2.0640251636505127
+            ],
+            [
+              "nq-train-532",
+              false,
+              1.5194236040115356
+            ],
+            [
+              "nq-train-533",
+              false,
+              3.5076277256011963
+            ],
+            [
+              "nq-train-534",
+              false,
+              1.339308261871338
+            ],
+            [
+              "nq-train-535",
+              false,
+              4.456261157989502
+            ],
+            [
+              "nq-train-537",
+              false,
+              1.0130785703659058
+            ],
+            [
+              "nq-train-539",
+              false,
+              0.8896665573120117
+            ],
+            [
+              "nq-train-542",
+              false,
+              3.083669424057007
+            ],
+            [
+              "nq-train-543",
+              false,
+              3.6661083698272705
+            ],
+            [
+              "nq-train-545",
+              false,
+              0.9095336198806763
+            ],
+            [
+              "nq-train-549",
+              false,
+              3.354039192199707
+            ],
+            [
+              "nq-train-550",
+              false,
+              0.8831725120544434
+            ],
+            [
+              "nq-train-552",
+              false,
+              4.006026744842529
+            ],
+            [
+              "nq-train-553",
+              false,
+              6.3539276123046875
+            ],
+            [
+              "nq-train-554",
+              false,
+              1.4466129541397095
+            ],
+            [
+              "nq-train-555",
+              false,
+              1.2094985246658325
+            ],
+            [
+              "nq-train-556",
+              false,
+              1.7839046716690063
+            ],
+            [
+              "nq-train-558",
+              false,
+              1.7031729221343994
+            ],
+            [
+              "nq-train-559",
+              false,
+              5.36797571182251
+            ],
+            [
+              "nq-train-563",
+              false,
+              3.577617645263672
+            ],
+            [
+              "nq-train-566",
+              false,
+              1.2389194965362549
+            ],
+            [
+              "nq-train-569",
+              false,
+              2.7224037647247314
+            ],
+            [
+              "nq-train-570",
+              false,
+              4.080070972442627
+            ],
+            [
+              "nq-train-572",
+              false,
+              0.7305651307106018
+            ],
+            [
+              "nq-train-573",
+              false,
+              3.1722209453582764
+            ],
+            [
+              "nq-train-574",
+              false,
+              0.6656225919723511
+            ],
+            [
+              "nq-train-575",
+              false,
+              2.614225387573242
+            ],
+            [
+              "nq-train-576",
+              false,
+              1.048973560333252
+            ],
+            [
+              "nq-train-577",
+              false,
+              4.630636692047119
+            ],
+            [
+              "nq-train-580",
+              false,
+              1.5585514307022095
+            ],
+            [
+              "nq-train-581",
+              false,
+              2.5837697982788086
+            ],
+            [
+              "nq-train-582",
+              false,
+              2.8080995082855225
+            ],
+            [
+              "nq-train-585",
+              false,
+              3.3022401332855225
+            ],
+            [
+              "nq-train-587",
+              false,
+              0.8546066880226135
+            ],
+            [
+              "nq-train-588",
+              false,
+              1.6637176275253296
+            ],
+            [
+              "nq-train-589",
+              false,
+              2.1780378818511963
+            ],
+            [
+              "nq-train-590",
+              false,
+              0.638207733631134
+            ],
+            [
+              "nq-train-591",
+              false,
+              1.8935658931732178
+            ],
+            [
+              "nq-train-593",
+              false,
+              1.1213922500610352
+            ],
+            [
+              "nq-train-594",
+              false,
+              4.0097150802612305
+            ],
+            [
+              "nq-train-596",
+              false,
+              1.621186375617981
+            ],
+            [
+              "nq-train-598",
+              false,
+              2.940031051635742
+            ],
+            [
+              "nq-train-600",
+              false,
+              0.7075113654136658
+            ],
+            [
+              "nq-train-601",
+              false,
+              3.1514909267425537
+            ],
+            [
+              "nq-train-602",
+              false,
+              3.1298365592956543
+            ],
+            [
+              "nq-train-604",
+              false,
+              2.8694424629211426
+            ],
+            [
+              "nq-train-605",
+              false,
+              2.60233473777771
+            ],
+            [
+              "nq-train-607",
+              false,
+              2.1055400371551514
+            ],
+            [
+              "nq-train-608",
+              false,
+              2.0767786502838135
+            ],
+            [
+              "nq-train-612",
+              false,
+              2.288670539855957
+            ],
+            [
+              "nq-train-613",
+              false,
+              2.459868907928467
+            ],
+            [
+              "nq-train-618",
+              false,
+              5.070958137512207
+            ],
+            [
+              "nq-train-619",
+              false,
+              2.474299430847168
+            ],
+            [
+              "nq-train-620",
+              false,
+              2.9904730319976807
+            ],
+            [
+              "nq-train-622",
+              false,
+              2.557008743286133
+            ],
+            [
+              "nq-train-623",
+              false,
+              2.880059242248535
+            ],
+            [
+              "nq-train-624",
+              false,
+              2.1406636238098145
+            ],
+            [
+              "nq-train-625",
+              false,
+              4.049076080322266
+            ],
+            [
+              "nq-train-626",
+              false,
+              0.9273480772972107
+            ],
+            [
+              "nq-train-627",
+              false,
+              0.7478891611099243
+            ],
+            [
+              "nq-train-628",
+              false,
+              2.4811747074127197
+            ],
+            [
+              "nq-train-629",
+              false,
+              1.9537533521652222
+            ],
+            [
+              "nq-train-630",
+              false,
+              4.723903179168701
+            ],
+            [
+              "nq-train-631",
+              false,
+              0.5297305583953857
+            ],
+            [
+              "nq-train-634",
+              false,
+              4.80159854888916
+            ],
+            [
+              "nq-train-635",
+              false,
+              2.090589761734009
+            ],
+            [
+              "nq-train-638",
+              true,
+              0.31845617294311523
+            ],
+            [
+              "nq-train-639",
+              false,
+              2.8032586574554443
+            ],
+            [
+              "nq-train-640",
+              false,
+              2.83561110496521
+            ],
+            [
+              "nq-train-641",
+              false,
+              1.7049559354782104
+            ],
+            [
+              "nq-train-644",
+              false,
+              0.7536733150482178
+            ],
+            [
+              "nq-train-646",
+              false,
+              3.213834762573242
+            ],
+            [
+              "nq-train-652",
+              true,
+              0.710810661315918
+            ],
+            [
+              "nq-train-653",
+              false,
+              2.6527538299560547
+            ],
+            [
+              "nq-train-654",
+              false,
+              1.1450954675674438
+            ],
+            [
+              "nq-train-655",
+              false,
+              1.6802635192871094
+            ],
+            [
+              "nq-train-656",
+              false,
+              2.843290328979492
+            ],
+            [
+              "nq-train-658",
+              false,
+              1.2709829807281494
+            ],
+            [
+              "nq-train-660",
+              false,
+              3.200634717941284
+            ],
+            [
+              "nq-train-661",
+              false,
+              4.315374374389648
+            ],
+            [
+              "nq-train-663",
+              false,
+              1.1310499906539917
+            ],
+            [
+              "nq-train-664",
+              false,
+              2.573958158493042
+            ],
+            [
+              "nq-train-666",
+              false,
+              1.232543706893921
+            ],
+            [
+              "nq-train-668",
+              false,
+              1.4655426740646362
+            ],
+            [
+              "nq-train-671",
+              false,
+              0.8777177333831787
+            ],
+            [
+              "nq-train-673",
+              false,
+              0.8211119174957275
+            ],
+            [
+              "nq-train-677",
+              false,
+              3.539165496826172
+            ],
+            [
+              "nq-train-681",
+              false,
+              1.1369346380233765
+            ],
+            [
+              "nq-train-684",
+              false,
+              2.5539968013763428
+            ],
+            [
+              "nq-train-689",
+              false,
+              1.2354226112365723
+            ],
+            [
+              "nq-train-690",
+              false,
+              0.6493180394172668
+            ],
+            [
+              "nq-train-691",
+              false,
+              3.7560267448425293
+            ],
+            [
+              "nq-train-695",
+              false,
+              0.4833824932575226
+            ],
+            [
+              "nq-train-696",
+              false,
+              4.513797760009766
+            ],
+            [
+              "nq-train-698",
+              false,
+              5.070383071899414
+            ],
+            [
+              "nq-train-699",
+              false,
+              3.131169319152832
+            ],
+            [
+              "nq-train-700",
+              false,
+              3.6910316944122314
+            ],
+            [
+              "nq-train-701",
+              false,
+              3.3607094287872314
+            ],
+            [
+              "nq-train-704",
+              false,
+              0.7828223705291748
+            ],
+            [
+              "nq-train-707",
+              false,
+              2.288600444793701
+            ],
+            [
+              "nq-train-708",
+              false,
+              0.9260117411613464
+            ],
+            [
+              "nq-train-709",
+              false,
+              1.5675151348114014
+            ],
+            [
+              "nq-train-710",
+              false,
+              0.7320358753204346
+            ],
+            [
+              "nq-train-711",
+              false,
+              3.1870648860931396
+            ],
+            [
+              "nq-train-712",
+              false,
+              2.4172537326812744
+            ],
+            [
+              "nq-train-713",
+              false,
+              3.01406192779541
+            ],
+            [
+              "nq-train-714",
+              false,
+              0.8203739523887634
+            ],
+            [
+              "nq-train-715",
+              false,
+              0.7175228595733643
+            ],
+            [
+              "nq-train-718",
+              false,
+              0.9008244276046753
+            ],
+            [
+              "nq-train-719",
+              false,
+              1.006873607635498
+            ],
+            [
+              "nq-train-720",
+              false,
+              0.7158713936805725
+            ],
+            [
+              "nq-train-722",
+              false,
+              3.198376417160034
+            ],
+            [
+              "nq-train-723",
+              false,
+              0.6366239190101624
+            ],
+            [
+              "nq-train-724",
+              false,
+              2.478853940963745
+            ],
+            [
+              "nq-train-725",
+              false,
+              2.1120965480804443
+            ],
+            [
+              "nq-train-727",
+              false,
+              2.309966564178467
+            ],
+            [
+              "nq-train-729",
+              true,
+              0.8145433068275452
+            ],
+            [
+              "nq-train-731",
+              false,
+              0.9468083381652832
+            ],
+            [
+              "nq-train-732",
+              false,
+              2.763648271560669
+            ],
+            [
+              "nq-train-737",
+              false,
+              0.7099304795265198
+            ],
+            [
+              "nq-train-738",
+              false,
+              1.450260877609253
+            ],
+            [
+              "nq-train-740",
+              true,
+              0.4813939034938812
+            ],
+            [
+              "nq-train-742",
+              false,
+              3.5796587467193604
+            ],
+            [
+              "nq-train-745",
+              false,
+              0.7854998707771301
+            ],
+            [
+              "nq-train-749",
+              false,
+              3.7145116329193115
+            ],
+            [
+              "nq-train-751",
+              false,
+              1.761032223701477
+            ],
+            [
+              "nq-train-752",
+              true,
+              0.35828498005867004
+            ],
+            [
+              "nq-train-754",
+              false,
+              2.0081138610839844
+            ],
+            [
+              "nq-train-756",
+              false,
+              2.7494914531707764
+            ],
+            [
+              "nq-train-757",
+              false,
+              3.0436363220214844
+            ],
+            [
+              "nq-train-758",
+              false,
+              2.5415101051330566
+            ],
+            [
+              "nq-train-759",
+              false,
+              3.0493950843811035
+            ],
+            [
+              "nq-train-762",
+              false,
+              1.0074050426483154
+            ],
+            [
+              "nq-train-763",
+              false,
+              1.8108993768692017
+            ],
+            [
+              "nq-train-764",
+              false,
+              1.6887906789779663
+            ],
+            [
+              "nq-train-765",
+              false,
+              3.6014091968536377
+            ],
+            [
+              "nq-train-767",
+              false,
+              1.3168156147003174
+            ],
+            [
+              "nq-train-768",
+              false,
+              2.7629470825195312
+            ],
+            [
+              "nq-train-769",
+              false,
+              1.3078866004943848
+            ],
+            [
+              "nq-train-771",
+              false,
+              2.649505138397217
+            ],
+            [
+              "nq-train-774",
+              false,
+              2.213188886642456
+            ],
+            [
+              "nq-train-775",
+              false,
+              4.3909149169921875
+            ],
+            [
+              "nq-train-777",
+              false,
+              4.195924282073975
+            ],
+            [
+              "nq-train-778",
+              false,
+              3.783947467803955
+            ],
+            [
+              "nq-train-779",
+              false,
+              4.4535813331604
+            ],
+            [
+              "nq-train-781",
+              false,
+              5.007561206817627
+            ],
+            [
+              "nq-train-783",
+              false,
+              0.8669936060905457
+            ],
+            [
+              "nq-train-785",
+              false,
+              0.9232627749443054
+            ],
+            [
+              "nq-train-786",
+              false,
+              1.8407002687454224
+            ],
+            [
+              "nq-train-789",
+              true,
+              1.0294103622436523
+            ],
+            [
+              "nq-train-790",
+              false,
+              0.5480477213859558
+            ],
+            [
+              "nq-train-793",
+              false,
+              3.6785616874694824
+            ],
+            [
+              "nq-train-795",
+              false,
+              2.7860944271087646
+            ],
+            [
+              "nq-train-796",
+              false,
+              4.174636363983154
+            ],
+            [
+              "nq-train-797",
+              false,
+              3.1144700050354004
+            ],
+            [
+              "nq-train-798",
+              false,
+              0.7890523076057434
+            ],
+            [
+              "nq-train-799",
+              false,
+              1.8890533447265625
+            ],
+            [
+              "nq-train-804",
+              false,
+              4.051539897918701
+            ],
+            [
+              "nq-train-805",
+              false,
+              1.3555155992507935
+            ],
+            [
+              "nq-train-806",
+              false,
+              0.9265656471252441
+            ],
+            [
+              "nq-train-807",
+              false,
+              0.6933613419532776
+            ],
+            [
+              "nq-train-808",
+              false,
+              1.4302369356155396
+            ],
+            [
+              "nq-train-810",
+              false,
+              3.5438387393951416
+            ],
+            [
+              "nq-train-811",
+              false,
+              0.8869797587394714
+            ],
+            [
+              "nq-train-812",
+              false,
+              2.364163637161255
+            ],
+            [
+              "nq-train-813",
+              false,
+              1.5062938928604126
+            ],
+            [
+              "nq-train-816",
+              false,
+              0.6566362977027893
+            ],
+            [
+              "nq-train-817",
+              false,
+              1.9150081872940063
+            ],
+            [
+              "nq-train-819",
+              false,
+              3.372255325317383
+            ],
+            [
+              "nq-train-821",
+              false,
+              3.163789749145508
+            ],
+            [
+              "nq-train-823",
+              false,
+              1.1797833442687988
+            ],
+            [
+              "nq-train-828",
+              false,
+              5.159628391265869
+            ],
+            [
+              "nq-train-829",
+              false,
+              3.8882105350494385
+            ],
+            [
+              "nq-train-830",
+              false,
+              5.1537065505981445
+            ],
+            [
+              "nq-train-831",
+              false,
+              1.054805040359497
+            ],
+            [
+              "nq-train-837",
+              false,
+              2.687859058380127
+            ],
+            [
+              "nq-train-839",
+              false,
+              4.579637050628662
+            ],
+            [
+              "nq-train-840",
+              false,
+              5.189602375030518
+            ],
+            [
+              "nq-train-844",
+              false,
+              1.9205394983291626
+            ],
+            [
+              "nq-train-846",
+              false,
+              2.1178293228149414
+            ],
+            [
+              "nq-train-847",
+              false,
+              1.9111720323562622
+            ],
+            [
+              "nq-train-848",
+              false,
+              0.8349396586418152
+            ],
+            [
+              "nq-train-850",
+              false,
+              1.3504226207733154
+            ],
+            [
+              "nq-train-852",
+              false,
+              0.5494783520698547
+            ],
+            [
+              "nq-train-855",
+              false,
+              0.5594942569732666
+            ],
+            [
+              "nq-train-856",
+              false,
+              3.607985258102417
+            ],
+            [
+              "nq-train-857",
+              true,
+              0.43014073371887207
+            ],
+            [
+              "nq-train-858",
+              false,
+              0.8265568614006042
+            ],
+            [
+              "nq-train-859",
+              false,
+              2.85965895652771
+            ],
+            [
+              "nq-train-862",
+              false,
+              2.6806437969207764
+            ],
+            [
+              "nq-train-871",
+              false,
+              0.9135791063308716
+            ],
+            [
+              "nq-train-872",
+              false,
+              0.9107630848884583
+            ],
+            [
+              "nq-train-874",
+              false,
+              0.5779711008071899
+            ],
+            [
+              "nq-train-875",
+              false,
+              0.820647120475769
+            ],
+            [
+              "nq-train-876",
+              false,
+              1.1492780447006226
+            ],
+            [
+              "nq-train-878",
+              false,
+              1.0256433486938477
+            ],
+            [
+              "nq-train-879",
+              false,
+              1.6681565046310425
+            ],
+            [
+              "nq-train-880",
+              false,
+              2.360236406326294
+            ],
+            [
+              "nq-train-882",
+              false,
+              1.2280653715133667
+            ],
+            [
+              "nq-train-884",
+              false,
+              4.842551231384277
+            ],
+            [
+              "nq-train-885",
+              false,
+              2.740480899810791
+            ],
+            [
+              "nq-train-886",
+              false,
+              0.948296070098877
+            ],
+            [
+              "nq-train-889",
+              false,
+              1.0345886945724487
+            ],
+            [
+              "nq-train-890",
+              false,
+              1.0799916982650757
+            ],
+            [
+              "nq-train-892",
+              false,
+              1.2215020656585693
+            ],
+            [
+              "nq-train-896",
+              false,
+              2.122291326522827
+            ],
+            [
+              "nq-train-897",
+              false,
+              3.005462884902954
+            ],
+            [
+              "nq-train-898",
+              false,
+              3.646632194519043
+            ],
+            [
+              "nq-train-899",
+              false,
+              0.8653512001037598
+            ],
+            [
+              "nq-train-901",
+              false,
+              1.1281287670135498
+            ],
+            [
+              "nq-train-904",
+              false,
+              1.4187263250350952
+            ],
+            [
+              "nq-train-906",
+              false,
+              2.667203187942505
+            ],
+            [
+              "nq-train-907",
+              false,
+              3.4354214668273926
+            ],
+            [
+              "nq-train-908",
+              false,
+              1.2809257507324219
+            ],
+            [
+              "nq-train-909",
+              false,
+              3.234682083129883
+            ],
+            [
+              "nq-train-910",
+              false,
+              2.924764394760132
+            ],
+            [
+              "nq-train-912",
+              false,
+              4.7712016105651855
+            ],
+            [
+              "nq-train-913",
+              false,
+              0.7730200290679932
+            ],
+            [
+              "nq-train-914",
+              false,
+              3.101207733154297
+            ],
+            [
+              "nq-train-916",
+              false,
+              3.2351579666137695
+            ],
+            [
+              "nq-train-917",
+              true,
+              2.088315725326538
+            ],
+            [
+              "nq-train-918",
+              false,
+              4.074568748474121
+            ],
+            [
+              "nq-train-919",
+              false,
+              2.2850470542907715
+            ],
+            [
+              "nq-train-920",
+              false,
+              1.6660258769989014
+            ],
+            [
+              "nq-train-921",
+              false,
+              1.622145175933838
+            ],
+            [
+              "nq-train-922",
+              false,
+              0.8607353568077087
+            ],
+            [
+              "nq-train-924",
+              false,
+              2.0905697345733643
+            ],
+            [
+              "nq-train-926",
+              false,
+              1.6090885400772095
+            ],
+            [
+              "nq-train-927",
+              false,
+              3.4631507396698
+            ],
+            [
+              "nq-train-929",
+              false,
+              2.214932918548584
+            ],
+            [
+              "nq-train-930",
+              false,
+              1.8653419017791748
+            ],
+            [
+              "nq-train-933",
+              false,
+              0.8776323199272156
+            ],
+            [
+              "nq-train-934",
+              false,
+              0.7058458924293518
+            ],
+            [
+              "nq-train-936",
+              false,
+              4.033261775970459
+            ],
+            [
+              "nq-train-938",
+              false,
+              0.8285289406776428
+            ],
+            [
+              "nq-train-939",
+              false,
+              2.0219998359680176
+            ],
+            [
+              "nq-train-940",
+              false,
+              0.8424871563911438
+            ],
+            [
+              "nq-train-941",
+              true,
+              0.26433220505714417
+            ],
+            [
+              "nq-train-943",
+              false,
+              1.7606467008590698
+            ],
+            [
+              "nq-train-945",
+              false,
+              3.563236951828003
+            ],
+            [
+              "nq-train-948",
+              false,
+              2.6009716987609863
+            ],
+            [
+              "nq-train-949",
+              false,
+              3.7593092918395996
+            ],
+            [
+              "nq-train-950",
+              false,
+              0.9700087308883667
+            ],
+            [
+              "nq-train-952",
+              false,
+              5.569486141204834
+            ],
+            [
+              "nq-train-954",
+              false,
+              2.6872308254241943
+            ],
+            [
+              "nq-train-956",
+              false,
+              0.7618353366851807
+            ],
+            [
+              "nq-train-957",
+              false,
+              0.7096567749977112
+            ],
+            [
+              "nq-train-958",
+              false,
+              0.7636537551879883
+            ],
+            [
+              "nq-train-961",
+              false,
+              1.3176305294036865
+            ],
+            [
+              "nq-train-962",
+              false,
+              1.8201789855957031
+            ],
+            [
+              "nq-train-964",
+              false,
+              2.3009204864501953
+            ],
+            [
+              "nq-train-966",
+              false,
+              0.8559005260467529
+            ],
+            [
+              "nq-train-967",
+              false,
+              3.5864059925079346
+            ],
+            [
+              "nq-train-969",
+              false,
+              4.997730255126953
+            ],
+            [
+              "nq-train-972",
+              false,
+              2.104328155517578
+            ],
+            [
+              "nq-train-976",
+              false,
+              4.322361469268799
+            ],
+            [
+              "nq-train-977",
+              false,
+              4.117915153503418
+            ],
+            [
+              "nq-train-980",
+              false,
+              0.6972813010215759
+            ],
+            [
+              "nq-train-981",
+              false,
+              5.873314380645752
+            ],
+            [
+              "nq-train-982",
+              false,
+              1.116761565208435
+            ],
+            [
+              "nq-train-983",
+              false,
+              2.840698480606079
+            ],
+            [
+              "nq-train-984",
+              false,
+              2.633843421936035
+            ],
+            [
+              "nq-train-986",
+              false,
+              2.695589780807495
+            ],
+            [
+              "nq-train-987",
+              false,
+              0.8155046105384827
+            ],
+            [
+              "nq-train-988",
+              false,
+              2.7535035610198975
+            ],
+            [
+              "nq-train-989",
+              false,
+              1.5102829933166504
+            ],
+            [
+              "nq-train-990",
+              false,
+              2.783717155456543
+            ],
+            [
+              "nq-train-991",
+              false,
+              2.7000491619110107
+            ],
+            [
+              "nq-train-992",
+              false,
+              2.558586359024048
+            ],
+            [
+              "nq-train-994",
+              false,
+              3.7185745239257812
+            ],
+            [
+              "nq-train-995",
+              false,
+              1.1519659757614136
+            ],
+            [
+              "nq-train-997",
+              false,
+              0.8496425151824951
+            ],
+            [
+              "nq-train-998",
+              false,
+              1.1415534019470215
+            ],
+            [
+              "nq-train-1000",
+              false,
+              2.8420140743255615
+            ],
+            [
+              "nq-train-1001",
+              false,
+              3.961277723312378
+            ],
+            [
+              "nq-train-1002",
+              false,
+              6.1147990226745605
+            ],
+            [
+              "nq-train-1003",
+              false,
+              0.8300540447235107
+            ],
+            [
+              "nq-train-1004",
+              false,
+              3.4563660621643066
+            ],
+            [
+              "nq-train-1005",
+              false,
+              3.0687077045440674
+            ],
+            [
+              "nq-train-1008",
+              false,
+              1.9381153583526611
+            ],
+            [
+              "nq-train-1009",
+              false,
+              1.7397401332855225
+            ],
+            [
+              "nq-train-1011",
+              false,
+              1.000226378440857
+            ],
+            [
+              "nq-train-1012",
+              false,
+              0.9333584904670715
+            ],
+            [
+              "nq-train-1014",
+              false,
+              1.4744455814361572
+            ],
+            [
+              "nq-train-1015",
+              false,
+              1.4063794612884521
+            ],
+            [
+              "nq-train-1016",
+              false,
+              4.873249053955078
+            ],
+            [
+              "nq-train-1017",
+              false,
+              3.064950704574585
+            ],
+            [
+              "nq-train-1018",
+              false,
+              3.3397185802459717
+            ],
+            [
+              "nq-train-1021",
+              false,
+              2.2363874912261963
+            ],
+            [
+              "nq-train-1022",
+              false,
+              1.948961615562439
+            ],
+            [
+              "nq-train-1023",
+              false,
+              2.9704792499542236
+            ],
+            [
+              "nq-train-1024",
+              false,
+              4.192424774169922
+            ],
+            [
+              "nq-train-1026",
+              false,
+              3.5030517578125
+            ],
+            [
+              "nq-train-1028",
+              false,
+              0.9883885979652405
+            ],
+            [
+              "nq-train-1029",
+              false,
+              2.1919569969177246
+            ],
+            [
+              "nq-train-1030",
+              false,
+              0.729637622833252
+            ],
+            [
+              "nq-train-1034",
+              false,
+              1.0752761363983154
+            ],
+            [
+              "nq-train-1039",
+              false,
+              4.0799407958984375
+            ],
+            [
+              "nq-train-1040",
+              false,
+              2.086836576461792
+            ],
+            [
+              "nq-train-1043",
+              false,
+              0.8629210591316223
+            ],
+            [
+              "nq-train-1046",
+              false,
+              0.9215371012687683
+            ],
+            [
+              "nq-train-1047",
+              false,
+              1.031974196434021
+            ],
+            [
+              "nq-train-1049",
+              true,
+              0.4836493134498596
+            ],
+            [
+              "nq-train-1051",
+              false,
+              2.219805955886841
+            ],
+            [
+              "nq-train-1054",
+              false,
+              0.6630803346633911
+            ],
+            [
+              "nq-train-1057",
+              false,
+              1.2661117315292358
+            ],
+            [
+              "nq-train-1060",
+              false,
+              0.7163915038108826
+            ],
+            [
+              "nq-train-1062",
+              false,
+              0.835626482963562
+            ],
+            [
+              "nq-train-1068",
+              false,
+              0.718589723110199
+            ],
+            [
+              "nq-train-1069",
+              false,
+              1.4608659744262695
+            ],
+            [
+              "nq-train-1070",
+              false,
+              1.3037351369857788
+            ],
+            [
+              "nq-train-1072",
+              false,
+              1.1680554151535034
+            ],
+            [
+              "nq-train-1073",
+              false,
+              2.684688091278076
+            ],
+            [
+              "nq-train-1076",
+              false,
+              3.0161895751953125
+            ],
+            [
+              "nq-train-1078",
+              false,
+              3.98175311088562
+            ],
+            [
+              "nq-train-1079",
+              false,
+              1.410591959953308
+            ],
+            [
+              "nq-train-1080",
+              false,
+              1.3178110122680664
+            ],
+            [
+              "nq-train-1081",
+              false,
+              1.8073123693466187
+            ],
+            [
+              "nq-train-1082",
+              false,
+              2.3774359226226807
+            ],
+            [
+              "nq-train-1083",
+              false,
+              2.3245060443878174
+            ],
+            [
+              "nq-train-1085",
+              false,
+              0.7832316756248474
+            ],
+            [
+              "nq-train-1086",
+              false,
+              4.895330905914307
+            ],
+            [
+              "nq-train-1087",
+              false,
+              3.664738893508911
+            ],
+            [
+              "nq-train-1088",
+              false,
+              1.6210248470306396
+            ],
+            [
+              "nq-train-1089",
+              false,
+              2.3606250286102295
+            ],
+            [
+              "nq-train-1094",
+              false,
+              1.953909993171692
+            ],
+            [
+              "nq-train-1095",
+              false,
+              1.2140384912490845
+            ],
+            [
+              "nq-train-1096",
+              false,
+              1.010109782218933
+            ],
+            [
+              "nq-train-1100",
+              false,
+              2.9546279907226562
+            ],
+            [
+              "nq-train-1101",
+              false,
+              3.5326082706451416
+            ],
+            [
+              "nq-train-1102",
+              false,
+              3.697967052459717
+            ],
+            [
+              "nq-train-1106",
+              false,
+              0.8510598540306091
+            ],
+            [
+              "nq-train-1114",
+              false,
+              3.2371063232421875
+            ],
+            [
+              "nq-train-1115",
+              false,
+              2.117321252822876
+            ],
+            [
+              "nq-train-1116",
+              false,
+              3.9378790855407715
+            ],
+            [
+              "nq-train-1117",
+              false,
+              1.9421501159667969
+            ],
+            [
+              "nq-train-1120",
+              false,
+              0.7906491756439209
+            ],
+            [
+              "nq-train-1121",
+              false,
+              1.1535388231277466
+            ],
+            [
+              "nq-train-1122",
+              false,
+              2.2707221508026123
+            ],
+            [
+              "nq-train-1123",
+              true,
+              0.2768526077270508
+            ],
+            [
+              "nq-train-1124",
+              false,
+              2.209808349609375
+            ],
+            [
+              "nq-train-1125",
+              false,
+              0.7003905773162842
+            ],
+            [
+              "nq-train-1127",
+              false,
+              2.6977133750915527
+            ],
+            [
+              "nq-train-1128",
+              false,
+              0.6357603669166565
+            ],
+            [
+              "nq-train-1129",
+              false,
+              0.863315224647522
+            ],
+            [
+              "nq-train-1130",
+              false,
+              0.7838804721832275
+            ],
+            [
+              "nq-train-1132",
+              false,
+              0.5966771245002747
+            ],
+            [
+              "nq-train-1133",
+              false,
+              3.155604362487793
+            ],
+            [
+              "nq-train-1134",
+              false,
+              0.9618808627128601
+            ],
+            [
+              "nq-train-1135",
+              true,
+              0.9676358699798584
+            ],
+            [
+              "nq-train-1137",
+              false,
+              1.9721747636795044
+            ],
+            [
+              "nq-train-1139",
+              false,
+              3.90803861618042
+            ],
+            [
+              "nq-train-1141",
+              false,
+              4.490330696105957
+            ],
+            [
+              "nq-train-1142",
+              false,
+              4.0391845703125
+            ],
+            [
+              "nq-train-1147",
+              false,
+              0.7813858985900879
+            ],
+            [
+              "nq-train-1148",
+              false,
+              2.6770148277282715
+            ],
+            [
+              "nq-train-1149",
+              false,
+              3.3008291721343994
+            ],
+            [
+              "nq-train-1151",
+              false,
+              2.978217840194702
+            ],
+            [
+              "nq-train-1152",
+              false,
+              3.6911537647247314
+            ],
+            [
+              "nq-train-1154",
+              true,
+              0.3434293568134308
+            ],
+            [
+              "nq-train-1155",
+              false,
+              3.0459067821502686
+            ],
+            [
+              "nq-train-1157",
+              false,
+              1.5900288820266724
+            ],
+            [
+              "nq-train-1158",
+              false,
+              3.6577179431915283
+            ],
+            [
+              "nq-train-1159",
+              false,
+              1.2874102592468262
+            ],
+            [
+              "nq-train-1164",
+              false,
+              2.1545279026031494
+            ],
+            [
+              "nq-train-1165",
+              true,
+              0.5306029915809631
+            ],
+            [
+              "nq-train-1167",
+              false,
+              2.9192495346069336
+            ],
+            [
+              "nq-train-1168",
+              false,
+              0.9617871642112732
+            ],
+            [
+              "nq-train-1169",
+              false,
+              0.6432368159294128
+            ],
+            [
+              "nq-train-1171",
+              false,
+              2.331716537475586
+            ],
+            [
+              "nq-train-1172",
+              false,
+              0.8027656078338623
+            ],
+            [
+              "nq-train-1174",
+              false,
+              1.5476930141448975
+            ],
+            [
+              "nq-train-1175",
+              false,
+              0.877915620803833
+            ],
+            [
+              "nq-train-1176",
+              false,
+              0.8658480048179626
+            ],
+            [
+              "nq-train-1177",
+              false,
+              3.54280161857605
+            ],
+            [
+              "nq-train-1179",
+              false,
+              1.3829032182693481
+            ],
+            [
+              "nq-train-1181",
+              false,
+              2.931126117706299
+            ],
+            [
+              "nq-train-1182",
+              false,
+              1.707151174545288
+            ],
+            [
+              "nq-train-1184",
+              false,
+              3.6776816844940186
+            ],
+            [
+              "nq-train-1186",
+              false,
+              3.016988515853882
+            ],
+            [
+              "nq-train-1187",
+              false,
+              0.6596753001213074
+            ],
+            [
+              "nq-train-1188",
+              false,
+              0.7871145009994507
+            ],
+            [
+              "nq-train-1189",
+              false,
+              2.8444466590881348
+            ],
+            [
+              "nq-train-1192",
+              false,
+              2.3042843341827393
+            ],
+            [
+              "nq-train-1193",
+              false,
+              5.532525539398193
+            ],
+            [
+              "nq-train-1194",
+              false,
+              0.837655246257782
+            ],
+            [
+              "nq-train-1196",
+              false,
+              0.843894362449646
+            ],
+            [
+              "nq-train-1199",
+              false,
+              1.007256031036377
+            ],
+            [
+              "nq-train-1201",
+              false,
+              0.8622186779975891
+            ],
+            [
+              "nq-train-1202",
+              false,
+              0.9789925217628479
+            ],
+            [
+              "nq-train-1203",
+              false,
+              1.8816533088684082
+            ],
+            [
+              "nq-train-1205",
+              false,
+              2.381974220275879
+            ],
+            [
+              "nq-train-1206",
+              false,
+              0.6585188508033752
+            ],
+            [
+              "nq-train-1208",
+              false,
+              1.4472475051879883
+            ],
+            [
+              "nq-train-1211",
+              false,
+              0.8588718771934509
+            ],
+            [
+              "nq-train-1218",
+              false,
+              0.8746749758720398
+            ],
+            [
+              "nq-train-1223",
+              false,
+              4.9618425369262695
+            ],
+            [
+              "nq-train-1225",
+              false,
+              1.384932041168213
+            ],
+            [
+              "nq-train-1226",
+              false,
+              2.4297826290130615
+            ],
+            [
+              "nq-train-1230",
+              false,
+              0.5824074745178223
+            ],
+            [
+              "nq-train-1232",
+              false,
+              0.8443522453308105
+            ],
+            [
+              "nq-train-1233",
+              true,
+              0.6737301349639893
+            ],
+            [
+              "nq-train-1235",
+              false,
+              1.2004629373550415
+            ],
+            [
+              "nq-train-1237",
+              true,
+              0.20603372156620026
+            ],
+            [
+              "nq-train-1239",
+              false,
+              3.405129909515381
+            ],
+            [
+              "nq-train-1240",
+              false,
+              2.830700159072876
+            ],
+            [
+              "nq-train-1242",
+              false,
+              0.9304378628730774
+            ],
+            [
+              "nq-train-1243",
+              false,
+              2.236889123916626
+            ],
+            [
+              "nq-train-1245",
+              false,
+              3.2710204124450684
+            ],
+            [
+              "nq-train-1247",
+              false,
+              2.6956214904785156
+            ],
+            [
+              "nq-train-1248",
+              false,
+              2.0158603191375732
+            ],
+            [
+              "nq-train-1249",
+              false,
+              0.7505166530609131
+            ],
+            [
+              "nq-train-1250",
+              false,
+              4.429981708526611
+            ],
+            [
+              "nq-train-1252",
+              false,
+              1.9676332473754883
+            ],
+            [
+              "nq-train-1253",
+              false,
+              1.5017727613449097
+            ],
+            [
+              "nq-train-1254",
+              false,
+              2.8391590118408203
+            ],
+            [
+              "nq-train-1261",
+              false,
+              0.7186411023139954
+            ],
+            [
+              "nq-train-1265",
+              true,
+              0.7950504422187805
+            ],
+            [
+              "nq-train-1269",
+              false,
+              1.069237470626831
+            ],
+            [
+              "nq-train-1272",
+              false,
+              1.100089430809021
+            ],
+            [
+              "nq-train-1273",
+              false,
+              1.676005244255066
+            ],
+            [
+              "nq-train-1277",
+              false,
+              2.4330790042877197
+            ],
+            [
+              "nq-train-1278",
+              false,
+              4.799188137054443
+            ],
+            [
+              "nq-train-1279",
+              false,
+              0.8650234341621399
+            ],
+            [
+              "nq-train-1281",
+              false,
+              0.5078805088996887
+            ],
+            [
+              "nq-train-1282",
+              false,
+              1.2824146747589111
+            ],
+            [
+              "nq-train-1283",
+              false,
+              1.1309068202972412
+            ],
+            [
+              "nq-train-1284",
+              false,
+              0.8672068119049072
+            ],
+            [
+              "nq-train-1286",
+              false,
+              1.3375723361968994
+            ],
+            [
+              "nq-train-1288",
+              false,
+              0.8618910312652588
+            ],
+            [
+              "nq-train-1289",
+              true,
+              0.5038991570472717
+            ],
+            [
+              "nq-train-1293",
+              false,
+              1.343775749206543
+            ],
+            [
+              "nq-train-1297",
+              false,
+              2.8294055461883545
+            ],
+            [
+              "nq-train-1300",
+              false,
+              4.255919456481934
+            ],
+            [
+              "nq-train-1304",
+              false,
+              0.7620428204536438
+            ],
+            [
+              "nq-train-1306",
+              false,
+              2.6707382202148438
+            ],
+            [
+              "nq-train-1308",
+              false,
+              4.21462869644165
+            ],
+            [
+              "nq-train-1309",
+              false,
+              1.3349220752716064
+            ],
+            [
+              "nq-train-1311",
+              false,
+              0.7437784075737
+            ],
+            [
+              "nq-train-1312",
+              false,
+              1.1187801361083984
+            ],
+            [
+              "nq-train-1313",
+              false,
+              1.220091462135315
+            ],
+            [
+              "nq-train-1314",
+              false,
+              4.507172584533691
+            ],
+            [
+              "nq-train-1315",
+              false,
+              3.413898468017578
+            ],
+            [
+              "nq-train-1316",
+              false,
+              2.710678815841675
+            ],
+            [
+              "nq-train-1318",
+              false,
+              3.7727954387664795
+            ],
+            [
+              "nq-train-1319",
+              false,
+              3.48907732963562
+            ],
+            [
+              "nq-train-1320",
+              false,
+              1.615665078163147
+            ],
+            [
+              "nq-train-1321",
+              false,
+              3.528531789779663
+            ],
+            [
+              "nq-train-1323",
+              true,
+              0.11199501901865005
+            ],
+            [
+              "nq-train-1324",
+              false,
+              3.7679812908172607
+            ],
+            [
+              "nq-train-1325",
+              false,
+              1.110937476158142
+            ],
+            [
+              "nq-train-1326",
+              false,
+              2.2119333744049072
+            ],
+            [
+              "nq-train-1328",
+              false,
+              2.4864542484283447
+            ],
+            [
+              "nq-train-1332",
+              false,
+              3.127990484237671
+            ],
+            [
+              "nq-train-1333",
+              false,
+              2.036515474319458
+            ],
+            [
+              "nq-train-1334",
+              false,
+              1.2769761085510254
+            ],
+            [
+              "nq-train-1335",
+              false,
+              1.9764618873596191
+            ],
+            [
+              "nq-train-1336",
+              false,
+              2.9098401069641113
+            ],
+            [
+              "nq-train-1341",
+              false,
+              0.8454670310020447
+            ],
+            [
+              "nq-train-1342",
+              false,
+              2.916215181350708
+            ],
+            [
+              "nq-train-1344",
+              false,
+              3.6605184078216553
+            ],
+            [
+              "nq-train-1345",
+              false,
+              0.6374577283859253
+            ],
+            [
+              "nq-train-1347",
+              false,
+              0.6481232047080994
+            ],
+            [
+              "nq-train-1348",
+              false,
+              3.242180347442627
+            ],
+            [
+              "nq-train-1350",
+              false,
+              2.272402048110962
+            ],
+            [
+              "nq-train-1355",
+              false,
+              0.9777562618255615
+            ],
+            [
+              "nq-train-1356",
+              false,
+              1.634515643119812
+            ],
+            [
+              "nq-train-1357",
+              false,
+              0.8152504563331604
+            ],
+            [
+              "nq-train-1358",
+              false,
+              0.8824312686920166
+            ],
+            [
+              "nq-train-1359",
+              false,
+              0.9128111600875854
+            ],
+            [
+              "nq-train-1360",
+              false,
+              1.4857161045074463
+            ],
+            [
+              "nq-train-1361",
+              false,
+              2.3193352222442627
+            ],
+            [
+              "nq-train-1363",
+              false,
+              1.216422200202942
+            ],
+            [
+              "nq-train-1365",
+              false,
+              1.1681852340698242
+            ],
+            [
+              "nq-train-1369",
+              false,
+              4.344247341156006
+            ],
+            [
+              "nq-train-1370",
+              false,
+              4.605311393737793
+            ],
+            [
+              "nq-train-1371",
+              false,
+              2.170910120010376
+            ],
+            [
+              "nq-train-1372",
+              false,
+              3.928765058517456
+            ],
+            [
+              "nq-train-1373",
+              false,
+              4.051236152648926
+            ],
+            [
+              "nq-train-1374",
+              false,
+              0.6095952391624451
+            ],
+            [
+              "nq-train-1376",
+              false,
+              2.711972236633301
+            ],
+            [
+              "nq-train-1377",
+              false,
+              2.179103374481201
+            ],
+            [
+              "nq-train-1379",
+              false,
+              2.8007805347442627
+            ],
+            [
+              "nq-train-1380",
+              false,
+              1.2463324069976807
+            ],
+            [
+              "nq-train-1381",
+              false,
+              2.0962741374969482
+            ],
+            [
+              "nq-train-1384",
+              false,
+              2.6063692569732666
+            ],
+            [
+              "nq-train-1387",
+              false,
+              1.4635324478149414
+            ],
+            [
+              "nq-train-1391",
+              false,
+              1.27693772315979
+            ],
+            [
+              "nq-train-1395",
+              true,
+              0.4348100423812866
+            ],
+            [
+              "nq-train-1396",
+              false,
+              0.8436258435249329
+            ],
+            [
+              "nq-train-1400",
+              false,
+              3.0349223613739014
+            ],
+            [
+              "nq-train-1402",
+              false,
+              1.632163643836975
+            ],
+            [
+              "nq-train-1404",
+              false,
+              4.0862650871276855
+            ],
+            [
+              "nq-train-1405",
+              false,
+              3.2063071727752686
+            ],
+            [
+              "nq-train-1406",
+              false,
+              2.0586044788360596
+            ],
+            [
+              "nq-train-1408",
+              false,
+              1.8953731060028076
+            ],
+            [
+              "nq-train-1409",
+              false,
+              0.9747865200042725
+            ],
+            [
+              "nq-train-1410",
+              false,
+              1.091567039489746
+            ],
+            [
+              "nq-train-1412",
+              false,
+              1.3940482139587402
+            ],
+            [
+              "nq-train-1414",
+              false,
+              3.478161573410034
+            ],
+            [
+              "nq-train-1415",
+              false,
+              2.72819185256958
+            ],
+            [
+              "nq-train-1416",
+              false,
+              1.3792647123336792
+            ],
+            [
+              "nq-train-1417",
+              false,
+              6.414438247680664
+            ],
+            [
+              "nq-train-1419",
+              false,
+              4.708930015563965
+            ],
+            [
+              "nq-train-1423",
+              false,
+              1.1251963376998901
+            ],
+            [
+              "nq-train-1425",
+              false,
+              2.7963173389434814
+            ],
+            [
+              "nq-train-1426",
+              false,
+              0.4710584878921509
+            ],
+            [
+              "nq-train-1429",
+              false,
+              2.6326076984405518
+            ],
+            [
+              "nq-train-1432",
+              false,
+              3.7233097553253174
+            ],
+            [
+              "nq-train-1433",
+              false,
+              3.333045721054077
+            ],
+            [
+              "nq-train-1434",
+              false,
+              1.0775426626205444
+            ],
+            [
+              "nq-train-1436",
+              false,
+              3.596836566925049
+            ],
+            [
+              "nq-train-1437",
+              false,
+              2.0987906455993652
+            ],
+            [
+              "nq-train-1439",
+              false,
+              1.7890533208847046
+            ],
+            [
+              "nq-train-1440",
+              false,
+              1.7203928232192993
+            ],
+            [
+              "nq-train-1441",
+              false,
+              2.477006673812866
+            ],
+            [
+              "nq-train-1442",
+              false,
+              1.1392333507537842
+            ],
+            [
+              "nq-train-1443",
+              false,
+              2.5891757011413574
+            ],
+            [
+              "nq-train-1445",
+              false,
+              3.4761290550231934
+            ],
+            [
+              "nq-train-1446",
+              false,
+              4.080316543579102
+            ],
+            [
+              "nq-train-1450",
+              false,
+              2.255444288253784
+            ],
+            [
+              "nq-train-1451",
+              false,
+              3.8206565380096436
+            ],
+            [
+              "nq-train-1452",
+              false,
+              3.1329145431518555
+            ],
+            [
+              "nq-train-1453",
+              false,
+              4.485083103179932
+            ],
+            [
+              "nq-train-1454",
+              false,
+              1.8875948190689087
+            ],
+            [
+              "nq-train-1455",
+              false,
+              3.133258819580078
+            ],
+            [
+              "nq-train-1456",
+              false,
+              2.184941530227661
+            ],
+            [
+              "nq-train-1457",
+              false,
+              5.142289638519287
+            ],
+            [
+              "nq-train-1459",
+              false,
+              1.877962350845337
+            ],
+            [
+              "nq-train-1460",
+              false,
+              3.5008203983306885
+            ],
+            [
+              "nq-train-1462",
+              false,
+              1.5024772882461548
+            ],
+            [
+              "nq-train-1463",
+              false,
+              3.264892339706421
+            ],
+            [
+              "nq-train-1465",
+              false,
+              3.572444438934326
+            ],
+            [
+              "nq-train-1470",
+              false,
+              3.809858798980713
+            ],
+            [
+              "nq-train-1471",
+              false,
+              0.5801318287849426
+            ],
+            [
+              "nq-train-1472",
+              false,
+              0.7330257892608643
+            ],
+            [
+              "nq-train-1475",
+              false,
+              3.836015224456787
+            ],
+            [
+              "nq-train-1477",
+              true,
+              0.6475584506988525
+            ],
+            [
+              "nq-train-1481",
+              false,
+              1.4173887968063354
+            ],
+            [
+              "nq-train-1482",
+              false,
+              1.4595643281936646
+            ],
+            [
+              "nq-train-1484",
+              false,
+              1.0153604745864868
+            ],
+            [
+              "nq-train-1485",
+              false,
+              3.1403446197509766
+            ],
+            [
+              "nq-train-1486",
+              false,
+              2.02382755279541
+            ],
+            [
+              "nq-train-1489",
+              false,
+              4.208540439605713
+            ],
+            [
+              "nq-train-1490",
+              false,
+              1.740613341331482
+            ],
+            [
+              "nq-train-1491",
+              false,
+              3.4407362937927246
+            ],
+            [
+              "nq-train-1492",
+              false,
+              2.6516382694244385
+            ],
+            [
+              "nq-train-1494",
+              false,
+              0.8767433762550354
+            ],
+            [
+              "nq-train-1495",
+              false,
+              2.5580432415008545
+            ],
+            [
+              "nq-train-1496",
+              false,
+              2.948535680770874
+            ],
+            [
+              "nq-train-1499",
+              false,
+              0.7375929355621338
+            ],
+            [
+              "nq-train-1500",
+              false,
+              1.9279428720474243
+            ],
+            [
+              "nq-train-1502",
+              false,
+              1.8933138847351074
+            ],
+            [
+              "nq-train-1505",
+              false,
+              3.952838897705078
+            ],
+            [
+              "nq-train-1506",
+              false,
+              1.8903017044067383
+            ],
+            [
+              "nq-train-1507",
+              false,
+              0.8616887927055359
+            ],
+            [
+              "nq-train-1508",
+              false,
+              4.423703670501709
+            ],
+            [
+              "nq-train-1510",
+              false,
+              2.3003852367401123
+            ],
+            [
+              "nq-train-1513",
+              false,
+              2.1802608966827393
+            ],
+            [
+              "nq-train-1514",
+              false,
+              2.1914453506469727
+            ],
+            [
+              "nq-train-1519",
+              false,
+              2.7411160469055176
+            ],
+            [
+              "nq-train-1521",
+              false,
+              3.266279458999634
+            ],
+            [
+              "nq-train-1523",
+              false,
+              1.9548063278198242
+            ],
+            [
+              "nq-train-1524",
+              false,
+              2.9669225215911865
+            ],
+            [
+              "nq-train-1525",
+              false,
+              2.058350086212158
+            ],
+            [
+              "nq-train-1528",
+              false,
+              0.9032884836196899
+            ],
+            [
+              "nq-train-1529",
+              false,
+              3.159397602081299
+            ],
+            [
+              "nq-train-1530",
+              false,
+              1.2044264078140259
+            ],
+            [
+              "nq-train-1532",
+              false,
+              0.8161746859550476
+            ],
+            [
+              "nq-train-1534",
+              false,
+              2.28914475440979
+            ],
+            [
+              "nq-train-1536",
+              false,
+              0.8902088403701782
+            ],
+            [
+              "nq-train-1537",
+              false,
+              5.092621803283691
+            ],
+            [
+              "nq-train-1538",
+              false,
+              5.123375415802002
+            ],
+            [
+              "nq-train-1540",
+              false,
+              0.683993935585022
+            ],
+            [
+              "nq-train-1541",
+              false,
+              2.432609796524048
+            ],
+            [
+              "nq-train-1543",
+              false,
+              0.9297202229499817
+            ],
+            [
+              "nq-train-1544",
+              false,
+              2.495948553085327
+            ],
+            [
+              "nq-train-1546",
+              false,
+              3.6217472553253174
+            ],
+            [
+              "nq-train-1547",
+              false,
+              2.970999002456665
+            ],
+            [
+              "nq-train-1550",
+              false,
+              0.9158794283866882
+            ],
+            [
+              "nq-train-1551",
+              false,
+              0.6329033374786377
+            ],
+            [
+              "nq-train-1552",
+              true,
+              0.8437751531600952
+            ],
+            [
+              "nq-train-1557",
+              false,
+              4.5669846534729
+            ],
+            [
+              "nq-train-1559",
+              false,
+              3.4230895042419434
+            ],
+            [
+              "nq-train-1560",
+              false,
+              3.104152202606201
+            ],
+            [
+              "nq-train-1561",
+              false,
+              4.3332672119140625
+            ],
+            [
+              "nq-train-1562",
+              false,
+              2.7420902252197266
+            ],
+            [
+              "nq-train-1564",
+              false,
+              4.853975296020508
+            ],
+            [
+              "nq-train-1565",
+              false,
+              1.9873204231262207
+            ],
+            [
+              "nq-train-1566",
+              false,
+              1.8774175643920898
+            ],
+            [
+              "nq-train-1568",
+              false,
+              0.7700708508491516
+            ],
+            [
+              "nq-train-1569",
+              false,
+              2.378448724746704
+            ],
+            [
+              "nq-train-1573",
+              false,
+              3.2920358180999756
+            ],
+            [
+              "nq-train-1576",
+              false,
+              1.2148468494415283
+            ],
+            [
+              "nq-train-1579",
+              false,
+              1.3302613496780396
+            ],
+            [
+              "nq-train-1580",
+              false,
+              1.8524956703186035
+            ],
+            [
+              "nq-train-1582",
+              false,
+              1.9194358587265015
+            ],
+            [
+              "nq-train-1583",
+              false,
+              1.1856207847595215
+            ],
+            [
+              "nq-train-1584",
+              true,
+              0.35413727164268494
+            ],
+            [
+              "nq-train-1585",
+              false,
+              2.7433671951293945
+            ],
+            [
+              "nq-train-1586",
+              false,
+              4.941505432128906
+            ],
+            [
+              "nq-train-1588",
+              false,
+              1.7377667427062988
+            ],
+            [
+              "nq-train-1589",
+              false,
+              0.5883012413978577
+            ],
+            [
+              "nq-train-1590",
+              false,
+              1.6440995931625366
+            ],
+            [
+              "nq-train-1592",
+              false,
+              3.236387252807617
+            ],
+            [
+              "nq-train-1595",
+              false,
+              3.1197052001953125
+            ],
+            [
+              "nq-train-1596",
+              false,
+              3.030796527862549
+            ],
+            [
+              "nq-train-1598",
+              false,
+              0.7971807718276978
+            ],
+            [
+              "nq-train-1601",
+              false,
+              4.6985321044921875
+            ],
+            [
+              "nq-train-1603",
+              false,
+              4.9496049880981445
+            ],
+            [
+              "nq-train-1604",
+              false,
+              3.032963514328003
+            ],
+            [
+              "nq-train-1608",
+              false,
+              1.0395289659500122
+            ],
+            [
+              "nq-train-1609",
+              false,
+              0.8035825490951538
+            ],
+            [
+              "nq-train-1611",
+              false,
+              1.6119567155838013
+            ],
+            [
+              "nq-train-1612",
+              false,
+              3.790126323699951
+            ],
+            [
+              "nq-train-1613",
+              false,
+              4.140804290771484
+            ],
+            [
+              "nq-train-1616",
+              false,
+              3.0606911182403564
+            ],
+            [
+              "nq-train-1618",
+              false,
+              3.2204649448394775
+            ],
+            [
+              "nq-train-1619",
+              false,
+              3.5492966175079346
+            ],
+            [
+              "nq-train-1622",
+              false,
+              0.9689755439758301
+            ],
+            [
+              "nq-train-1623",
+              false,
+              2.5572307109832764
+            ],
+            [
+              "nq-train-1624",
+              false,
+              2.780606746673584
+            ],
+            [
+              "nq-train-1625",
+              false,
+              2.3565492630004883
+            ],
+            [
+              "nq-train-1626",
+              false,
+              3.004154920578003
+            ],
+            [
+              "nq-train-1629",
+              false,
+              1.1207152605056763
+            ],
+            [
+              "nq-train-1633",
+              false,
+              0.8567858338356018
+            ],
+            [
+              "nq-train-1636",
+              false,
+              1.084961175918579
+            ],
+            [
+              "nq-train-1637",
+              false,
+              3.768129825592041
+            ],
+            [
+              "nq-train-1638",
+              false,
+              1.5367761850357056
+            ],
+            [
+              "nq-train-1640",
+              false,
+              5.218393325805664
+            ],
+            [
+              "nq-train-1641",
+              false,
+              3.5190799236297607
+            ],
+            [
+              "nq-train-1642",
+              false,
+              0.6411396861076355
+            ],
+            [
+              "nq-train-1644",
+              true,
+              0.8941606283187866
+            ],
+            [
+              "nq-train-1645",
+              false,
+              1.9393858909606934
+            ],
+            [
+              "nq-train-1646",
+              false,
+              2.2944107055664062
+            ],
+            [
+              "nq-train-1649",
+              false,
+              3.5144269466400146
+            ],
+            [
+              "nq-train-1651",
+              false,
+              2.5654077529907227
+            ],
+            [
+              "nq-train-1652",
+              false,
+              1.1535775661468506
+            ],
+            [
+              "nq-train-1654",
+              false,
+              1.9678611755371094
+            ],
+            [
+              "nq-train-1657",
+              false,
+              1.6978657245635986
+            ],
+            [
+              "nq-train-1659",
+              false,
+              0.8111110925674438
+            ],
+            [
+              "nq-train-1662",
+              false,
+              3.6095733642578125
+            ],
+            [
+              "nq-train-1663",
+              false,
+              2.355756998062134
+            ],
+            [
+              "nq-train-1665",
+              false,
+              1.2605373859405518
+            ],
+            [
+              "nq-train-1666",
+              false,
+              0.6134235858917236
+            ],
+            [
+              "nq-train-1668",
+              false,
+              1.9764680862426758
+            ],
+            [
+              "nq-train-1670",
+              false,
+              0.6644889116287231
+            ],
+            [
+              "nq-train-1672",
+              false,
+              1.0794353485107422
+            ],
+            [
+              "nq-train-1674",
+              false,
+              1.7144701480865479
+            ],
+            [
+              "nq-train-1677",
+              false,
+              4.061469554901123
+            ],
+            [
+              "nq-train-1678",
+              false,
+              1.3282052278518677
+            ],
+            [
+              "nq-train-1679",
+              false,
+              1.8999465703964233
+            ],
+            [
+              "nq-train-1680",
+              false,
+              0.831395149230957
+            ],
+            [
+              "nq-train-1681",
+              true,
+              0.4543400704860687
+            ],
+            [
+              "nq-train-1683",
+              false,
+              0.8299010396003723
+            ],
+            [
+              "nq-train-1684",
+              false,
+              0.5745801329612732
+            ],
+            [
+              "nq-train-1685",
+              false,
+              0.8419910073280334
+            ],
+            [
+              "nq-train-1686",
+              false,
+              1.340991497039795
+            ],
+            [
+              "nq-train-1687",
+              false,
+              2.3369154930114746
+            ],
+            [
+              "nq-train-1688",
+              false,
+              1.0122812986373901
+            ],
+            [
+              "nq-train-1689",
+              false,
+              0.9258214831352234
+            ],
+            [
+              "nq-train-1691",
+              false,
+              0.7791251540184021
+            ],
+            [
+              "nq-train-1693",
+              false,
+              3.348466396331787
+            ],
+            [
+              "nq-train-1695",
+              false,
+              1.811061978340149
+            ],
+            [
+              "nq-train-1697",
+              false,
+              2.522240400314331
+            ],
+            [
+              "nq-train-1698",
+              false,
+              2.19834566116333
+            ],
+            [
+              "nq-train-1700",
+              false,
+              3.1256937980651855
+            ],
+            [
+              "nq-train-1701",
+              false,
+              2.3431003093719482
+            ],
+            [
+              "nq-train-1702",
+              false,
+              2.794971227645874
+            ],
+            [
+              "nq-train-1704",
+              false,
+              1.7352728843688965
+            ],
+            [
+              "nq-train-1705",
+              false,
+              1.213541865348816
+            ],
+            [
+              "nq-train-1706",
+              false,
+              0.9493764042854309
+            ],
+            [
+              "nq-train-1707",
+              false,
+              1.5866996049880981
+            ],
+            [
+              "nq-train-1708",
+              false,
+              2.2545948028564453
+            ],
+            [
+              "nq-train-1711",
+              false,
+              3.7606048583984375
+            ],
+            [
+              "nq-train-1713",
+              false,
+              2.9068825244903564
+            ],
+            [
+              "nq-train-1714",
+              true,
+              0.425792396068573
+            ],
+            [
+              "nq-train-1716",
+              false,
+              2.6820526123046875
+            ],
+            [
+              "nq-train-1717",
+              false,
+              3.4713056087493896
+            ],
+            [
+              "nq-train-1718",
+              false,
+              0.9477375745773315
+            ],
+            [
+              "nq-train-1721",
+              false,
+              2.0542635917663574
+            ],
+            [
+              "nq-train-1722",
+              false,
+              3.6208205223083496
+            ],
+            [
+              "nq-train-1723",
+              false,
+              1.9361099004745483
+            ],
+            [
+              "nq-train-1726",
+              false,
+              2.3225154876708984
+            ],
+            [
+              "nq-train-1727",
+              false,
+              0.996364414691925
+            ],
+            [
+              "nq-train-1728",
+              false,
+              1.0792433023452759
+            ],
+            [
+              "nq-train-1729",
+              false,
+              1.739851713180542
+            ],
+            [
+              "nq-train-1730",
+              false,
+              3.090106725692749
+            ],
+            [
+              "nq-train-1734",
+              false,
+              2.5150818824768066
+            ],
+            [
+              "nq-train-1735",
+              false,
+              2.838550567626953
+            ],
+            [
+              "nq-train-1738",
+              false,
+              6.596419811248779
+            ],
+            [
+              "nq-train-1741",
+              false,
+              0.705449640750885
+            ],
+            [
+              "nq-train-1744",
+              false,
+              2.70097279548645
+            ],
+            [
+              "nq-train-1745",
+              false,
+              2.470186710357666
+            ],
+            [
+              "nq-train-1747",
+              false,
+              2.427983522415161
+            ],
+            [
+              "nq-train-1748",
+              false,
+              3.7459235191345215
+            ],
+            [
+              "nq-train-1749",
+              false,
+              0.5606144070625305
+            ],
+            [
+              "nq-train-1750",
+              false,
+              2.727142810821533
+            ],
+            [
+              "nq-train-1751",
+              false,
+              1.8628549575805664
+            ],
+            [
+              "nq-train-1752",
+              false,
+              2.8271327018737793
+            ],
+            [
+              "nq-train-1754",
+              false,
+              0.6989080905914307
+            ],
+            [
+              "nq-train-1756",
+              false,
+              4.915208339691162
+            ],
+            [
+              "nq-train-1759",
+              false,
+              2.906576156616211
+            ],
+            [
+              "nq-train-1760",
+              false,
+              0.7605342268943787
+            ],
+            [
+              "nq-train-1761",
+              false,
+              1.955342173576355
+            ],
+            [
+              "nq-train-1764",
+              false,
+              4.452641010284424
+            ],
+            [
+              "nq-train-1765",
+              false,
+              1.996742844581604
+            ],
+            [
+              "nq-train-1766",
+              false,
+              1.0297131538391113
+            ],
+            [
+              "nq-train-1768",
+              false,
+              2.411628484725952
+            ],
+            [
+              "nq-train-1770",
+              false,
+              2.7284278869628906
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

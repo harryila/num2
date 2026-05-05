@@ -17,3 +17,4 @@ data/nq_open_smoke.jsonl
 data/nq_open_hard_10k.jsonl
 data/nq_open_known.jsonl
 data/nq_open_filter_state.json
+set1_curves.html

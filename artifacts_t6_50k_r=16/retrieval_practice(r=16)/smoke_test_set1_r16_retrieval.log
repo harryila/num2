@@ -1,0 +1,20 @@
+2026-05-04 03:00:10,763 INFO testing_effect_pipeline.real_model: Loading tokenizer: Qwen/Qwen2.5-0.5B-Instruct
+2026-05-04 03:00:13,602 INFO testing_effect_pipeline.real_model: Loading model: Qwen/Qwen2.5-0.5B-Instruct  dtype=bfloat16  device=cuda
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-04 03:00:14,040 WARNING transformers.configuration_utils: `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-04 03:00:21,398 INFO testing_effect_pipeline.real_model: LoRA applied: 1,081,344 trainable / 495,114,112 total params (0.22%)
+2026-05-04 03:00:21,400 INFO __main__: Calibrating item difficulty from real model (1000 items)...
+2026-05-04 03:00:38,389 INFO __main__:   calibrated 500 / 1000
+2026-05-04 03:00:54,860 INFO __main__:   calibrated 1000 / 1000
+2026-05-04 03:00:54,860 INFO __main__: === seed=0  method=retrieval_practice ===
+2026-05-04 03:00:54,868 INFO testing_effect_pipeline.real_model: LoRA adapter reset for new run
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-05-04 03:00:56,275 WARNING transformers.generation.configuration_utils: The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-05-04 03:02:43,007 INFO testing_effect_pipeline.trainer: step 50/200 | studied=8+8due tested=8 correct=0 due=608 mastered=0 | train_tokens=9237
+2026-05-04 03:04:29,823 INFO testing_effect_pipeline.trainer: step 100/200 | studied=8+8due tested=8 correct=0 due=608 mastered=8 | train_tokens=18393
+2026-05-04 03:05:24,179 INFO testing_effect_pipeline.trainer:   periodic uniform eval: 71/1000 (7.1%)
+2026-05-04 03:07:10,632 INFO testing_effect_pipeline.trainer: step 150/200 | studied=8+8due tested=8 correct=1 due=607 mastered=15 | train_tokens=27562
+2026-05-04 03:08:57,007 INFO testing_effect_pipeline.trainer: step 200/200 | studied=8+8due tested=8 correct=2 due=605 mastered=21 | train_tokens=36780
+2026-05-04 03:09:55,157 INFO testing_effect_pipeline.trainer:   periodic uniform eval: 149/1000 (14.9%)
+2026-05-04 03:10:52,274 INFO __main__:   uniform eval: 149 / 1000 correct (14.9%), mean_loss=1.5211
+Wrote metrics to artifacts/smoke_test_set1_r16_retrieval.json
