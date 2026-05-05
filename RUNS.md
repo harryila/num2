@@ -271,3 +271,91 @@ Already wired up in [testing_effect_pipeline/uniform_eval.py](testing_effect_pip
 - **20k vs 4k steps**: with 50k items at batch 16, ~6 average touches per item
 - **r=8 alongside r=16**: tighter LoRA capacity should sharpen any retrieval_practice advantage if it exists
 - **One method per GPU**: parallelizes the run across 4 GPUs, finishes in ~20 hours instead of ~40 hours
+
+---
+
+## Set 2: 10k base-model-unknown subsample (Qwen2.5-0.5B + LoRA)
+
+Same Set 1 training config (LoRA r=8 / r=16, retrieval_practice vs standard_ft, 4 GPUs in parallel) but trained on the **filtered** subset of NQ Open items the **bare base model already gets wrong** under exact-match. The hypothesis: when every training item is an item the model genuinely doesn't know, the testing-effect signal (if any) should sharpen — there's no noise from items the model already had right at step 0.
+
+### How the filtering works
+
+`testing_effect_pipeline/filter_nq_unknown.py` streams NQ Open `train` (deterministically shuffled by `--seed`), runs greedy zero-shot generation with the **bare** `AutoModelForCausalLM` (no LoRA, no adapters, eval mode), applies NQ exact-match, and appends:
+- items the base model gets **wrong** -> `data/nq_open_hard_10k.jsonl` (the training set)
+- items the base model gets **right** -> `data/nq_open_known.jsonl` (kept for analysis)
+
+Same prompt format, same generation settings, and same exact-match scorer as `RealModelAdapter`, so an item judged "unknown" here will (modulo nondeterminism we don't have because we're greedy) also be wrong at training step 0. The script is resumable: a JSON state file tracks `last_processed_index`, counters, and the resume key (`model_name` + `seed` + `split`); a mismatched key aborts to prevent corrupting the on-disk dataset.
+
+Output schema matches `load_closed_book_jsonl`:
+
+```json
+{"item_id": "nq-train-12345", "prompt": "...", "target": "ans1|||ans2|||...", "domain_tag": "nq_open"}
+```
+
+so the produced JSONL is a drop-in replacement for `data/nq_open_50k_random.jsonl` in the Set 1 launch commands.
+
+### Step 1: Smoke test the filter (~1-2 min, ~$0.02)
+
+Verifies the bare-model load path, batched greedy decode, exact-match scoring, JSONL append, atomic state writes, and the resume guard all work end-to-end on the GPU. Stops at 50 unknowns:
+
+```bash
+python -m testing_effect_pipeline.filter_nq_unknown \
+  --model-name Qwen/Qwen2.5-0.5B-Instruct \
+  --hf-token YOUR_TOKEN \
+  --target-unknown 50 \
+  --batch-size 16 \
+  --output-unknown data/nq_open_smoke_hard.jsonl \
+  --output-known data/nq_open_smoke_known.jsonl \
+  --state-path data/nq_open_smoke_filter_state.json \
+  --seed 42 \
+  --dtype bfloat16
+```
+
+Expected: progress lines printed every batch ending in `Failure rate: XX.X% | YY.Y items/s`, terminating with `Done. evaluated=N known=K unknown=50/50 complete=True`. Delete the three smoke output files (or just `data/nq_open_smoke_*`) before the full run if you want to start clean — the full run uses different paths so they won't collide either way.
+
+### Step 2: Full 10k filter run (~30-60 min, depends on failure rate)
+
+Larger batch (32 fits comfortably on a 4090 for the 0.5B model with 256-token prompts):
+
+```bash
+python -m testing_effect_pipeline.filter_nq_unknown \
+  --model-name Qwen/Qwen2.5-0.5B-Instruct \
+  --hf-token YOUR_TOKEN \
+  --target-unknown 10000 \
+  --batch-size 32 \
+  --output-unknown data/nq_open_hard_10k.jsonl \
+  --output-known data/nq_open_known.jsonl \
+  --state-path data/nq_open_filter_state.json \
+  --seed 42 \
+  --dtype bfloat16 \
+  2>&1 | tee data/nq_open_filter.log
+```
+
+If the run gets killed (preempted, OOM, ssh blip), re-running the **same command** resumes from `last_processed_index`. Changing `--model-name` or `--seed` aborts with a clear message — delete the state file and the two JSONLs to start fresh.
+
+NQ Open `train` has ~87k items. If the base 0.5B model has roughly a 70-80% failure rate on NQ exact-match (typical for a 0.5B at zero shot), expect to scan ~12-15k items to collect 10k unknowns. The filter will print the running failure rate so you can sanity-check this assumption live.
+
+### Step 3: Smoke-test the training pipeline on the filtered set (optional, ~5-10 min per GPU)
+
+Identical to the Set 1 smoke tests, just pointed at a 1k slice of the filtered file:
+
+```bash
+head -n 1000 data/nq_open_hard_10k.jsonl > data/nq_open_hard_smoke.jsonl
+```
+
+Then run the Set 1 smoke command for whichever GPU you're on with `--dataset-path data/nq_open_hard_smoke.jsonl` and `--output artifacts/smoke_test_set2_<config>_<method>.json`.
+
+### Step 4: Full Set 2 training runs (4 GPUs in parallel)
+
+Reuse the **exact** Set 1 per-GPU full-run commands, with two changes per command:
+
+1. `--dataset-path data/nq_open_hard_10k.jsonl` (instead of `nq_open_50k_random.jsonl`)
+2. `--output artifacts/set2_10k_<config>_<method>.json` and matching `.log` (instead of `set1_50k_*`)
+
+Everything else (steps, eval-every, lr, lora rank, max-training-tokens, scheduler) stays the same. Each GPU writes its own JSON; collect all 4 at the end the same way as Set 1. Wall-clock per GPU will be **shorter** than Set 1 because the dataset is 5x smaller (10k vs 50k items), but step count and eval cadence are unchanged so training time dominates — expect ~10-14 hours per GPU rather than 17-21.
+
+### Why this set
+
+- **Only-unknowns training set** removes the floor effect: in Set 1, an unknown fraction of the 50k items are already correct at step 0, so any "improvement" on those items is no-op. Filtering to base-model-wrong items means every item is a real learning opportunity.
+- **Same scheduler / method / capacity knobs as Set 1** isolates the filtering as the only independent variable when comparing Set 1 vs Set 2 results.
+- **10k vs 50k** keeps step count constant (20k) so per-item exposure goes up by 5x, which should make `retrieval_practice`'s scheduling decisions matter more if the testing effect is real at this capacity.
