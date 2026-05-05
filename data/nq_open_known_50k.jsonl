@@ -1,0 +1,1035 @@
+{"item_id": "nq-train-9918", "prompt": "the chihuahua is a breed of dog believed to originate from what country", "target": "Mexico", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85877", "prompt": "las vegas is in which state of usa", "target": "Nevada", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59458", "prompt": "which is bigger isle of wight or isle of man", "target": "Isle of Man", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87206", "prompt": "venom is the super villain of this comic book hero", "target": "Spider-Man", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62958", "prompt": "petrobas is the major oil company of what south american country", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7949", "prompt": "when did brazil organize its first world cup", "target": "1950", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19984", "prompt": "what language is spoken in the domincan republic", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86537", "prompt": "where is harvey's bristol cream sherry made", "target": "Bristol, England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13385", "prompt": "where was ed sheeran's galway girl filmed", "target": "Galway, Ireland", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58398", "prompt": "when was the atomic bomb dropped on nagasaki japan", "target": "August 9, 1945", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43058", "prompt": "which branch of philosophy is concerned with fundamental questions about the nature of reality", "target": "Metaphysics", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18732", "prompt": "when was the wizard of oz made in technicolor", "target": "1939", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46997", "prompt": "what are the types of government in nigeria", "target": "a federal republic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11993", "prompt": "what's the name of the river in chicago", "target": "Chicago River", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40885", "prompt": "when is morocco playing in the world cup", "target": "2018|||1970|||1986|||1994|||1998", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75796", "prompt": "which is the uppermost layer of the skin", "target": "epidermis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77495", "prompt": "what is the name of the clotting protein found in plasma", "target": "Fibrinogen", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57639", "prompt": "when did tyne and wear became a county", "target": "1974", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84925", "prompt": "where does most of the digestion of food take place", "target": "stomach", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35694", "prompt": "when did they add one nation under god to the pledge of allegiance", "target": "1954", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54674", "prompt": "when did england last get to the semifinals of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60674", "prompt": "when did the legend of zelda come out", "target": "1986", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84299", "prompt": "who was the self taught indian mathematician genius in the 20th century", "target": "Srinivasa Ramanujan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79151", "prompt": "the name of a condition caused by an abnormally low level of calcium in the blood is", "target": "Rickets", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57943", "prompt": "which city in germany was divided into two sides", "target": "Berlin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48588", "prompt": "maruti suzuki is a company of which country", "target": "India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38052", "prompt": "when was the new international version bible written", "target": "1978", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24023", "prompt": "when is puerto rico competing in the winter olympics", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68379", "prompt": "where did the first boer war take place", "target": "South Africa", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24750", "prompt": "which type of wastewater treatment involves forcing the wastewater through a semipermeable membrane", "target": "Reverse osmosis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53690", "prompt": "when did the pilgrims came over on the mayflower", "target": "1620", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1135", "prompt": "where has the rugby world cup been held", "target": "France|||Scotland|||England|||South Africa|||Ireland|||Australia|||New Zealand|||Wales", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69690", "prompt": "when was the declaration of human rights made", "target": "1948", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61321", "prompt": "how many acts in america's got talent finals", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38991", "prompt": "is aluminum hydroxide a solid liquid or gas", "target": "solid", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23951", "prompt": "the most abundant element in earth's crust", "target": "oxygen", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36506", "prompt": "the equal pay act of 1963 prohibits discrimination in pay based on", "target": "sex", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60806", "prompt": "when did they stop calling russia the soviet union", "target": "1991", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70749", "prompt": "which country has won the world cup football a record five times", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86437", "prompt": "after the 1525 battle of pavia italy fell under the control of", "target": "Spain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38639", "prompt": "what us state is known as the land of 10 000 lakes", "target": "Minnesota", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83985", "prompt": "he concept of basic law originated in which country", "target": "England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-355", "prompt": "where is the main famine effected continent in the world", "target": "Africa", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69050", "prompt": "nadal and federer are names related to which sport", "target": "Tennis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12507", "prompt": "when was the declaration of independence formally adopted", "target": "July 4, 1776", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38004", "prompt": "where does bram stoker's dracula take place", "target": "Transylvania|||England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18660", "prompt": "force per unit area is a measure of", "target": "Pressure", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67040", "prompt": "how many episodes in the royals season 3", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46466", "prompt": "the combination of a public key and a private key is known as a", "target": "digital signature", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63518", "prompt": "when was the social model of disability introduced", "target": "the 1980s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73947", "prompt": "when did the united states first claim new mexico", "target": "1846", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50076", "prompt": "what state of matter is silver commonly found in", "target": "solid", "domain_tag": "nq_open"}
+{"item_id": "nq-train-51043", "prompt": "when did the first earth day take place", "target": "1970", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68358", "prompt": "when was the last time chile was in the world cup", "target": "2014", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62261", "prompt": "where does the last name bailey come from", "target": "England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71021", "prompt": "when did michael jordan get drafted to the nba", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42604", "prompt": "best actor oscar winner 2 years in a row", "target": "Tom Hanks|||Spencer Tracy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50074", "prompt": "who is known as the god of war", "target": "Mars", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9865", "prompt": "the passage that leads to the internal female reproductive organs", "target": "vagina", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32588", "prompt": "who led the red shirts to victory in sicily", "target": "Giuseppe Garibaldi", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52902", "prompt": "the percentage change in the cpi can be used to measure", "target": "inflation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37543", "prompt": "when did the baseball hall of fame open", "target": "1936", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84695", "prompt": "which nation was america's primary enemy during the cold war", "target": "the Soviet Union", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6910", "prompt": "when was the last time england got to the semi final of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68020", "prompt": "when did india won first world cup in cricket", "target": "1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41585", "prompt": "where is harvard law school located what state", "target": "Massachusetts", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81540", "prompt": "when did the first nike air max come out", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50867", "prompt": "cocaethylene is produced as an active metabolite of", "target": "cocaine", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50627", "prompt": "where is the blood first filtered in a nephron", "target": "glomerulus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-783", "prompt": "when did trinidad and tobago become an independent nation", "target": "1962", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19934", "prompt": "how many episodes of agents of shield are there in season 5", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39177", "prompt": "what type of wave is the light mechanical or electromagnetic", "target": "electromagnetic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31321", "prompt": "where is the leaning tower of pisa what country", "target": "Italy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4594", "prompt": "when was the subway in new york built", "target": "1904", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29264", "prompt": "central americas oldest democratic republic which has had no standing army since 1948 is", "target": "Costa Rica", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3500", "prompt": "the number of persons per square kilometer in a country is called", "target": "population density", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42263", "prompt": "what states in the us have a mediterranean climate", "target": "California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79021", "prompt": "the general agreement on tariffs and trade (gatt) was part of american attempts to increase", "target": "trade", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39920", "prompt": "where does american airlines fly to in hawaii", "target": "Honolulu|||Kailua-Kona|||Kahului|||Lihue", "domain_tag": "nq_open"}
+{"item_id": "nq-train-51283", "prompt": "what is the value that occurs most frequently in a distribution", "target": "Mode", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3311", "prompt": "what is the main language spoken in cuba", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28461", "prompt": "where does the femoral artery supply blood to", "target": "the leg", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21520", "prompt": "when did adam smith published the wealth of nations", "target": "1776", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19620", "prompt": "the metal of choice for inlay and onlay cast restorations is", "target": "gold", "domain_tag": "nq_open"}
+{"item_id": "nq-train-51360", "prompt": "how many local government are there in lagos state nigeria", "target": "20", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44011", "prompt": "what country is the largest producer of blueberries", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-450", "prompt": "where is once upon a time in hollywood being filmed", "target": "Los Angeles, California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33621", "prompt": "production of new bony matrix is by which cell type", "target": "Osteoblasts", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56183", "prompt": "what is it called when u cant move in your sleep", "target": "Sleep paralysis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28963", "prompt": "who argued that the psyche contained three components called the id ego and super-ego", "target": "Sigmund Freud", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58440", "prompt": "what is called the sphere of air all around the earth", "target": "atmosphere", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82168", "prompt": "where is the world bank located in the world", "target": "Washington, D.C.", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26460", "prompt": "according to jean piaget what is the stage of cognitive development at infancy", "target": "sensorimotor stage", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61379", "prompt": "when was the first nightmare on elm street released", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50219", "prompt": "when did social security began in the united states", "target": "1935", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36121", "prompt": "where is the world tallest building the burj khalifa located", "target": "Dubai, United Arab Emirates", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32319", "prompt": "where is the rugby league world cup being held", "target": "New Zealand|||Papua New Guinea|||Australia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86928", "prompt": "nagaland was formed in 1963. which state was it a part of earlier", "target": "Assam", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76448", "prompt": "when was the last time italy didnt qualify for the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64180", "prompt": "the medical term for removal of the stapes is", "target": "stapedectomy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10046", "prompt": "what is the first language bible was written", "target": "Koine Greek|||Hebrew|||Aramaic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4408", "prompt": "stars on the main sequence produce energy by fusing hydrogen into", "target": "helium", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45331", "prompt": "which continent experiences the highest number of tornadoes per year", "target": "North America", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2434", "prompt": "what was the name of the book darwin published", "target": "On the Origin of Species", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49105", "prompt": "when did michael jordan get drafted in the nba", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21990", "prompt": "where can nucleic acids be found in a cell", "target": "the nucleus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12150", "prompt": "which country in latin america sends the largest number of legal immigrants to the united states", "target": "Mexico", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81358", "prompt": "when was the last time pennsylvania voted republican", "target": "2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14937", "prompt": "when did russia first host the summer olympic", "target": "1980", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33673", "prompt": "when was the last time michigan made it to the final 4", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79421", "prompt": "the species which are totally vanished from earth are known as", "target": "extinct species", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15758", "prompt": "when did croatia last qualify for world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74109", "prompt": "what state in the us has the lowest education", "target": "California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85214", "prompt": "the prophet who received the revelation of the qur'an was", "target": "Muhammad", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71899", "prompt": "who did the united states purchased the louisiana purchase from", "target": "France", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83558", "prompt": "what is the most spoken language in mexico", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60213", "prompt": "what year did star wars come out in theaters", "target": "1977", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5000", "prompt": "when was the glass pyramid added to the louvre", "target": "1989", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86315", "prompt": "when did it become illegal to prevent the marriage of an interracial couple in the united states", "target": "1967", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1154", "prompt": "what language is the king james version of the bible", "target": "English", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45974", "prompt": "what river is the western border of the state illinois", "target": "the Mississippi River", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10646", "prompt": "in 1893 new zealand became the first country in the world to grant voting rights to", "target": "women", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27681", "prompt": "how many episodes in season 6 father brown", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65446", "prompt": "where are the members of the rolling stones from", "target": "London, England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-842", "prompt": "what type of tissue is the uppermost layer of the skin", "target": "epidermis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71088", "prompt": "when was the first railway line built in britain", "target": "1825", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21861", "prompt": "the main function of the calvin cycle reactions is to produce", "target": "glucose", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11795", "prompt": "what nation is in possession of the sinai peninsula today", "target": "Egypt", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55836", "prompt": "when did beverly hills cop 2 come out", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29046", "prompt": "where was the titanic going when it sunk", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42448", "prompt": "how many episodes season 3 odd mom out", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38641", "prompt": "when did the first air jordan come out", "target": "1985", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85579", "prompt": "which world heritage site appears on the flag of cambodia", "target": "Angkor Wat", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5841", "prompt": "how many season are there of csi miami", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63874", "prompt": "what is the most important food crop in the united states", "target": "Corn", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8922", "prompt": "when did ariana grande released her first album", "target": "2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71183", "prompt": "what is the chemical formula for the base rubidium hydroxide", "target": "RbOH", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17197", "prompt": "how many episodes in series 4 of the tudors", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16886", "prompt": "what type of book is the adventures of huckleberry finn", "target": "novel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57866", "prompt": "when did the attack on fort sumter happen", "target": "April 12, 1861", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3415", "prompt": "when did the new russian calendar go into effect", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16013", "prompt": "when did trinidad and tobago became an independent country", "target": "1962", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9971", "prompt": "major westward moves in sports franchises began in earnest in the major sports in", "target": "1960s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24538", "prompt": "when did red solo cups start being made", "target": "1970s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7524", "prompt": "when was the new deal put into place", "target": "1933", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57864", "prompt": "when was the first star wars movie made", "target": "1977", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62111", "prompt": "which of the following country has madrid as it's capital", "target": "Spain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35479", "prompt": "when’s the last time the philadelphia eagles won a super bowl", "target": "2017", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1684", "prompt": "when does the new series of wentworth come out", "target": "2019", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1929", "prompt": "what was the capital of north vietnam in the mid 1950s", "target": "Hanoi", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25025", "prompt": "what is one right or freedom from the first amendment", "target": "freedom of speech", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44722", "prompt": "which religion has the highest population in africa", "target": "Christianity|||Islam", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18266", "prompt": "what is the most developed country in south asia", "target": "India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73525", "prompt": "when did scotland become part of great britain", "target": "1707", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47704", "prompt": "when was the brundtland definition of sustainability written", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76561", "prompt": "what is the name of the currency used in the european union", "target": "the euro", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28598", "prompt": "when did the movie the burbs come out", "target": "1989", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11748", "prompt": "which country has won the world cup two years in a row", "target": "Brazil|||Italy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13298", "prompt": "is new jersey a state or a city", "target": "a state", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74705", "prompt": "who did the us lend money to in ww1", "target": "Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18908", "prompt": "how many times can you be governor in oklahoma", "target": "two", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21551", "prompt": "when did nsw last win state of origin series", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28406", "prompt": "when was republic day parade started first time", "target": "1950", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59409", "prompt": "what is the upper most layer of skin", "target": "The epidermis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35323", "prompt": "when did central park open to the public", "target": "1857", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66636", "prompt": "how many cards is in a uno deck", "target": "108", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60275", "prompt": "when did east germany and west germany unite", "target": "1990", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8388", "prompt": "what is the largest of the lymphoid tissue found in the pharynx", "target": "Tonsils", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81031", "prompt": "the following country has largest spanish speaking population", "target": "Mexico", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9990", "prompt": "who did we buy the gadsden purchase from", "target": "Mexico", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1165", "prompt": "what was the name of the german government after ww1", "target": "Weimar Republic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34109", "prompt": "what is another name for an excel document", "target": "a spreadsheet", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21535", "prompt": "what is the name of the overhanging edges of a roof", "target": "eaves", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59978", "prompt": "which state in us has the largest population", "target": "California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2574", "prompt": "when did canada establish its own honours system after using british honours for years", "target": "1967", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3983", "prompt": "what is melted rock (magma) called when it reaches the earth's surface", "target": "lava", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14110", "prompt": "where did the last name sanchez originate from", "target": "Spain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42013", "prompt": "the process that converts glucose into two molecules of pyruvate is", "target": "glycolysis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40238", "prompt": "this term refers to the process of former confederate states being readmitted to the united states", "target": "Reconstruction", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64449", "prompt": "when did canada become a member of the united nations", "target": "1945", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12215", "prompt": "when did the battle of lexington and concord start", "target": "April 19, 1775", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27647", "prompt": "the active form of vitamin d also known as a hormone is called", "target": "calcitriol", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41601", "prompt": "what country does the united states export the most product to", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23352", "prompt": "when did rock and roll start in britain", "target": "1950s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57595", "prompt": "an advanced weather data measurement tool that sends out radio waves is called a(n)", "target": "Radar", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35208", "prompt": "which battle is 1757 marked the beginning of british occupation in india", "target": "Battle of Plassey", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66419", "prompt": "when did the first home video game come out", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33133", "prompt": "what is the scientific name for the borneo orangutan", "target": "Pongo pygmaeus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59883", "prompt": "which country has the most of the amazon rainforest", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48112", "prompt": "in which of the following mountain ranges would you find mont blanc", "target": "Alps", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44390", "prompt": "what was the nickname of the atomic bomb dropped on hiroshima", "target": "\"Little Boy\"", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35891", "prompt": "a database is a collection of integrated and related", "target": "data", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3826", "prompt": "is a kia soul an suv or a car", "target": "SUV", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63311", "prompt": "how much is a stone in american weight", "target": "14 pounds", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23799", "prompt": "when did the british government take over the reign of india from the east india company", "target": "1858", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34525", "prompt": "when did the irish potato famine officially start", "target": "1845", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83466", "prompt": "which nitrogenous base is the complementary base for thymine", "target": "Adenine", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40810", "prompt": "set of rules for solving a mathematical or computational problem in finite number of steps", "target": "an algorithm", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2493", "prompt": "what is the name of the storm on jupiter", "target": "The Great Red Spot", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69978", "prompt": "what is the tigers name off of aladdin", "target": "Rajah", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39758", "prompt": "where was the world cup held in 2018", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29586", "prompt": "which grain is said to be the staple food of more than one-third of the world's population", "target": "rice", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46438", "prompt": "how many seasons of adventure time are there on dvd", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39452", "prompt": "which house of congress has no term limits", "target": "Senate|||House of Representatives", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14437", "prompt": "what is the area code for the state of hawaii", "target": "808", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63682", "prompt": "which country has the largest economy in europe", "target": "Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62464", "prompt": "when does attack on titan season 2 take place", "target": "April 1, 2017", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15054", "prompt": "there are 2 layers of dentine – what lies between", "target": "pulp", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83959", "prompt": "which nation did sandinista rebels overthrow the dictator of in 1979", "target": "Nicaragua", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35584", "prompt": "where did dorothy from the wizard of oz live", "target": "Kansas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1089", "prompt": "architect who brought italianate renaissance architecture to england crossword clue", "target": "John Nash", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31932", "prompt": "how many goals has pierre emerick aubameyang scored for arsenal", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27272", "prompt": "who was the book of romans addressed to", "target": "the Romans", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5729", "prompt": "when did the last harry potter movie cone out", "target": "2011", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13190", "prompt": "the speaker of lok sabha in india is elected by the", "target": "members of the Lok Sabha", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52834", "prompt": "what is the scientific name for a lion", "target": "Panthera leo", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7812", "prompt": "who is the golden globe nominated director of dunkirk", "target": "Christopher Nolan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-454", "prompt": "topiramate (topamax trokendi) is used to treat which of the following diseases", "target": "epilepsy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69410", "prompt": "when did nigeria become a member of the united nation", "target": "1960", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66780", "prompt": "when did the name of persia change to iran", "target": "1935", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23664", "prompt": "who uses the universal declaration of human rights", "target": "the United Nations", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69540", "prompt": "how many points is the queen of spades in rummy", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29771", "prompt": "what do you call a ice cream maker", "target": "ice cream maker", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47912", "prompt": "when was the last time france went to the world cup finals", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75597", "prompt": "the amount of salt in water is called", "target": "salinity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81235", "prompt": "which country has the largest land area in south america", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61000", "prompt": "buddha's of bamiyan was located in which country", "target": "Afghanistan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76960", "prompt": "which file system is used by windows 2000 and xp", "target": "NTFS", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42536", "prompt": "when was the first message sent over the internet", "target": "1969", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69879", "prompt": "the american southwest was settled by european colonists from", "target": "Spain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11385", "prompt": "which layer of the earth is responsible for its magnetic field", "target": "outer core", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40963", "prompt": "what is the primary language in the bahamas", "target": "English", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65050", "prompt": "what territory was fought over by india and pakistan", "target": "Kashmir", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15117", "prompt": "when did the ps4 come out in the uk", "target": "November 29|||2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80820", "prompt": "what type of measurement does the uk use", "target": "metric system", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59284", "prompt": "what is the name of the san francisco baseball team", "target": "The San Francisco Giants", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10044", "prompt": "golden gate bridge facts when was it built", "target": "1937", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58618", "prompt": "when is the movie the irishman coming out", "target": "2019", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76522", "prompt": "the board of directors of a u.s. corporation is elected by", "target": "the shareholders", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62512", "prompt": "when did the nfl and the afl merge", "target": "1970", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27022", "prompt": "when did england last make the quarter final of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85186", "prompt": "when did the zhou dynasty overthrew the shang", "target": "1046 BC", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19622", "prompt": "the movement of an aircraft about its normal axis is called", "target": "yaw", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14648", "prompt": "atlanta is the capital of which usa state", "target": "Georgia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34311", "prompt": "when was the sound barrier broken for the first time", "target": "1947", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85499", "prompt": "who has won the most gold medals in swimming", "target": "Michael Phelps", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80250", "prompt": "what is the oldest monotheistic religion and is based on the hebrew bible", "target": "Judaism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22831", "prompt": "what year did the movie the toy come out", "target": "1982", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49302", "prompt": "the pedicles laminae and spinous process of a vertebra form the", "target": "vertebral arch", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36555", "prompt": "what document is the bill of rights part of", "target": "United States Constitution", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43886", "prompt": "what is the name of the suns surface layer", "target": "the photosphere", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67451", "prompt": "where does the last name hayes originate from", "target": "Scotland|||Ireland|||England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23742", "prompt": "what does tc on the minnesota twins hats stand for", "target": "Twin Cities", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48101", "prompt": "is iran part of middle east or asia", "target": "Middle East", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71106", "prompt": "when was the existence of the neutron confirmed", "target": "1932", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3025", "prompt": "when was the first video game console released", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77840", "prompt": "what is the name of cincinnati baseball team", "target": "Cincinnati Reds", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33918", "prompt": "in what country would you find the yellow river", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61572", "prompt": "how many episodes in season 4 of when calls the heart", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41101", "prompt": "how many episodes are in bates motel season 4", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23376", "prompt": "when did trinidad and tobago become an independent country", "target": "1962", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49133", "prompt": "what is the state capital of north carolina", "target": "Raleigh", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81447", "prompt": "when was the original planet of the apes released", "target": "1968", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59714", "prompt": "when did the ottoman empire conquer the balkans", "target": "1453", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59503", "prompt": "in a republican state the head of the state is", "target": "the president", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44709", "prompt": "what country does the equator pass through in south america", "target": "Ecuador|||Colombia|||Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49564", "prompt": "on the west coast of india goa was established as a small trading post by what colonial power", "target": "Portuguese", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37635", "prompt": "what is the snellen letter chart is commonly used for", "target": "to measure visual acuity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48210", "prompt": "element responsible for maintaining turgor pressure in cell", "target": "water", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71853", "prompt": "who was leader of the romans when they invaded britain in 55 and 54bc", "target": "Julius Caesar", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70304", "prompt": "what state was the battle of fredericksburg fought in", "target": "Virginia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20919", "prompt": "the stage of protein making in which a messenger-rna molecule is 'read' by a ribosome is called", "target": "translation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64706", "prompt": "when was the last time the patriots won a superbowl", "target": "2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28037", "prompt": "where does the last name cabral come from", "target": "Portuguese", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46133", "prompt": "how many chapters are there in the book of exodus", "target": "40", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27035", "prompt": "when did the movie to kill a mockingbird come out", "target": "1962", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37438", "prompt": "this is the bay that divides new brunswick and nova scotia", "target": "Bay of Fundy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28366", "prompt": "what continent is the tigris and euphrates rivers located", "target": "Asia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75105", "prompt": "when did the mafia lose control of las vegas", "target": "the 1980s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5261", "prompt": "when did california become a territory of the united states", "target": "1848", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79384", "prompt": "which religion has the highest population in the india", "target": "Hinduism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15491", "prompt": "a corporation gives out its profits as dividends paid to whom", "target": "shareholders", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10441", "prompt": "how much maternity leave are mothers entitled to in the us", "target": "12 weeks", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5017", "prompt": "a directive issued by a president or governor that has the force of law is known as", "target": "an executive order", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59836", "prompt": "blood is pumped from which part of the heart to the lungs", "target": "right ventricle", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49292", "prompt": "what state just touches new mexico at its northwest corner", "target": "Arizona|||Utah|||Colorado", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61764", "prompt": "when did the british first land in north america", "target": "1607", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17195", "prompt": "when did india won the first cricket world cup", "target": "1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60382", "prompt": "nfl teams that start with the letter t", "target": "Tampa Bay Buccaneers|||Tennessee Titans", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33217", "prompt": "how many episodes are there in season two of attack on titan", "target": "12", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56078", "prompt": "which words refers to any system that uses an exchange medium", "target": "currency", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2659", "prompt": "the dna directed synthesis of an rna molecule is called", "target": "Transcription", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77914", "prompt": "how many countries will qualify for world cup from south america", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87312", "prompt": "a nerve impulse triggers the release of what chemical at a neuromuscular junction", "target": "Acetylcholine", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50625", "prompt": "in which hemisphere is the 30degree line of latitude located", "target": "Northern Hemisphere", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83636", "prompt": "where are the majority of judaism followers located", "target": "Israel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64056", "prompt": "how many episodes in season 2 of unfortunate events", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41136", "prompt": "what is the type of government in uk", "target": "a constitutional monarchy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64106", "prompt": "what is the primary language of latin america", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86923", "prompt": "which is the higest peak in the world", "target": "Mount Everest", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44922", "prompt": "during the ming dynasty which city was once again made the capital of china", "target": "Beijing", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81414", "prompt": "when did alcohol become illegal in the united states", "target": "1920", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30736", "prompt": "what is the watery stuff that comes out of wounds", "target": "lymph|||plasma|||blood|||pus|||serum", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23000", "prompt": "which nation in oceania has the highest gdp", "target": "Australia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87754", "prompt": "top 10 largest area country in the world", "target": "Argentina|||United States|||India|||Canada|||China|||Kazakhstan|||Russia|||Algeria|||Brazil|||Australia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79411", "prompt": "when did the first explorers come to america", "target": "1492", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85142", "prompt": "where was the titanic going when it sank", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28946", "prompt": "what region of the world is israel located", "target": "Middle East,", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52193", "prompt": "what us state is closest to niagara falls", "target": "New York", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44109", "prompt": "how often are elections held for the house of representatives answers", "target": "every two years", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28889", "prompt": "what year did elton john song crocodile rock", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71096", "prompt": "article iv of the constitution explains the relationship between the states and", "target": "the others|||the federal government", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7422", "prompt": "which technique measures the electrical activity of brain cells directly", "target": "Electroencephalography (EEG)", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9955", "prompt": "is linkin park a band or a person", "target": "band", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87306", "prompt": "when did the mindy project start on hulu", "target": "2015", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36472", "prompt": "when did persia change its name to iran", "target": "1935", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57556", "prompt": "what is the shadow of an eclipse called", "target": "The umbra", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75503", "prompt": "when did england last get in the semi final of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10750", "prompt": "what is the area in physics that deals with stationary electrical charges", "target": "Electrostatics", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2611", "prompt": "when did the game of thrones books come out", "target": "1996|||2000|||2011|||2005|||1998", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31200", "prompt": "when did the us sign the nuclear non-proliferation treaty", "target": "1968", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65330", "prompt": "acromegly is a disorder due to chronically high levels of", "target": "growth hormone", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50840", "prompt": "when did the japanese surrender to the allied forces", "target": "September 2, 1945", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17488", "prompt": "this bone is commonly called the collar bone", "target": "the clavicle", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85295", "prompt": "what type of reaction is the decay of carbon-14", "target": "beta decay", "domain_tag": "nq_open"}
+{"item_id": "nq-train-72643", "prompt": "in what year did japan attack pearl harbor", "target": "1941", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57340", "prompt": "which class of the enzymes can be used to join two fragments of dna", "target": "DNA ligase", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61043", "prompt": "when will the movie the irishman be released", "target": "2019", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35113", "prompt": "how many seasons of the original teenage mutant ninja turtles", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86114", "prompt": "what is the first milk after birth called", "target": "Colostrum|||beestings|||bisnings", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80632", "prompt": "which country is the biggest population in the world", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20338", "prompt": "where are the next summer olympics being played", "target": "Tokyo, Japan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67265", "prompt": "when did the last chinese imperial dynasty end", "target": "1912", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78936", "prompt": "what day of the week do amish worship", "target": "Sunday", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78836", "prompt": "the intersection of the two sides of an angle is called the angles", "target": "vertex", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82096", "prompt": "what console is resident evil 2 remake on", "target": "PlayStation 4|||Windows|||Xbox One", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60452", "prompt": "where is yale university located city and state", "target": "New Haven, Connecticut", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10798", "prompt": "what can you get life sentence for uk", "target": "Murder", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54605", "prompt": "these is the area where your femur articulates with your pelvis", "target": "hip joint", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63286", "prompt": "what is the capital of nicaragua in spanish", "target": "Managua", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47485", "prompt": "which country in the eu has the largest population", "target": "Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4270", "prompt": "where did dorothy from wizard of oz live", "target": "Kansas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68130", "prompt": "is harry potter and the cursed child a book or script", "target": "script", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17201", "prompt": "what is the currency in the uk called", "target": "pound sterling", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10715", "prompt": "when was slavery abolished in the british caribbean", "target": "1833", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56362", "prompt": "what language do they speak in puerto rico", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17383", "prompt": "when was north korea and south korea separated", "target": "1953", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44113", "prompt": "how do you say gummy bears in german", "target": "Gummibär", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43410", "prompt": "name the president of china who will serve a second five year term this time", "target": "Xi Jinping", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43358", "prompt": "when did hebrew become the official language of israel", "target": "1948", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76507", "prompt": "while writing time the number after the two dots stands for", "target": "minutes", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2728", "prompt": "how many angles of rotation does a octagon have", "target": "8", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67241", "prompt": "china's initial economic reforms were in which sector", "target": "Agriculture|||light industry", "domain_tag": "nq_open"}
+{"item_id": "nq-train-51489", "prompt": "the most populous country in the world is", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50268", "prompt": "where was the first modern day olympic games held", "target": "Athens, Greece", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25943", "prompt": "where is the university of ohio state located", "target": "Columbus, Ohio", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57420", "prompt": "when was orange is the new black filmed", "target": "2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71867", "prompt": "where does the last name menard come from", "target": "French", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54429", "prompt": "india's first ever all india institute of ayurveda has come up in which city", "target": "New Delhi", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68689", "prompt": "when did michael jordan get drafted to the bulls", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67182", "prompt": "in what year did the russian revolution draw to a close", "target": "1917", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14738", "prompt": "what part of ireland is still under british rule", "target": "Northern Ireland", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17942", "prompt": "what's the name of the north pole", "target": "North Pole|||Terrestrial North Pole|||Geographic North Pole", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55914", "prompt": "the process of cutting down trees is called", "target": "Logging", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19898", "prompt": "when was the first fifa world cup played", "target": "1930", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84661", "prompt": "a railroad that stretches from the east coast to the west coast is called the", "target": "transcontinental railroad", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63178", "prompt": "the tropic of cancer passes through which north american country", "target": "Mexico|||Bahamas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31798", "prompt": "the word masjid (mosque) literally means a place of", "target": "worship", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8443", "prompt": "is big ben a clock or a bell", "target": "clock", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52520", "prompt": "what is it called when a company has no competition", "target": "monopoly", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82797", "prompt": "where did most german immigrants settled in america", "target": "Pennsylvania", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66343", "prompt": "sweat glands are found primarily in or on the", "target": "skin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71753", "prompt": "a style of architecture popular in western europe beginning in the 12th century was the", "target": "Gothic architecture", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50734", "prompt": "this term means a state has supreme and absolute authority within its own borders", "target": "Sovereignty", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32229", "prompt": "where is the university of california irvine located", "target": "Irvine, California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52082", "prompt": "what was the assyrians form of writing known as", "target": "cuneiform", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57486", "prompt": "what is name of fuel used in aeroplane", "target": "aviation fuel|||jet fuel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38153", "prompt": "what is the state capital of new mexico", "target": "Santa Fe", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1849", "prompt": "when is the next handmaid's tale released", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74883", "prompt": "how many episodes in better call saul season 2", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45167", "prompt": "during the 16th century the ottoman empire expanded to it's height under which ruler", "target": "Suleiman the Magnificent", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44224", "prompt": "how many episodes of mr. robot season three", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63127", "prompt": "which country in the uk has the highest population", "target": "England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40939", "prompt": "when did the french and indian war officially start", "target": "1754", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14164", "prompt": "when did the us acquire the us virgin islands", "target": "1917", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22337", "prompt": "when did england last get into semi finals", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23936", "prompt": "when was the declaration of the rights of man and citizen written", "target": "1789", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75520", "prompt": "when did the france enter the american revolutionary war", "target": "1775", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64912", "prompt": "when did the second battle of ypres start", "target": "22 April|||1915", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4516", "prompt": "avengers infinity war first release in which country", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33040", "prompt": "a series of single notes ascending or descending is called a", "target": "scale", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80463", "prompt": "what is the primary basis for the economy of saudi arabia", "target": "oil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29439", "prompt": "when was free movement in the eu introduced", "target": "1957", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13083", "prompt": "the number of elements in the fourth period is", "target": "18", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67049", "prompt": "what is the largest country in europe by square miles", "target": "Russia*", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80769", "prompt": "which civilizations developed in the fertile valley between the tigris and euphrates rivers", "target": "Mesopotamia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80864", "prompt": "when did mary kate and ashley start full house", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11146", "prompt": "high level clouds that are mainly composed of ice crystals", "target": "Cirrus clouds", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35571", "prompt": "where was the titanic headed when it crashed", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21689", "prompt": "what's the capital city of the republic of ireland", "target": "Dublin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52011", "prompt": "what is a shape that has 6 sides", "target": "hexagon", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39289", "prompt": "where is the green bay packers stadium located", "target": "Green Bay, Wisconsin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-72923", "prompt": "when did ariana grande get signed to republic records", "target": "2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83924", "prompt": "when did michael jordan come to the nba", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57790", "prompt": "the number of electrons in the innermost shell of lithium (atomic number 3)", "target": "1", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56438", "prompt": "bosnia croatia and serbia were once part of", "target": "Yugoslavia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78679", "prompt": "kuala lumpur is the capital city of which country", "target": "Malaysia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61363", "prompt": "when did michael jordan win the national championship", "target": "1998", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35250", "prompt": "who did america get the louisiana purchase from", "target": "France", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60477", "prompt": "which country has won the most world cup finals", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11392", "prompt": "what is the name given to the rows in the periodic table", "target": "periods", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34878", "prompt": "the federal reserve bank of the united states is also known as", "target": "Federal Reserve|||the Fed", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20698", "prompt": "when was the universal declaration of human rights written", "target": "1948", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43300", "prompt": "le chatelier's principle states that equilibrium of a reaction can be affected by a change in", "target": "volume|||temperature|||concentration|||pressure", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3230", "prompt": "which preservationist was instrumental in establishing a national park to protect yosemite valley", "target": "John Muir", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24952", "prompt": "who wrote the general theory of employment interest and money", "target": "John Maynard Keynes", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75558", "prompt": "when did the us try to go metric", "target": "1975", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42173", "prompt": "who has won wimbledon singles the most times", "target": "Roger Federer", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54890", "prompt": "which country has long occupied korea by the start of world war 2", "target": "Japan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64351", "prompt": "when is the lego movie sequel coming out", "target": "2019", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9359", "prompt": "india's first satellite aryabhatta was launched in", "target": "1975", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10365", "prompt": "where was ex on the beach filmed hawaii", "target": "Hilo, Hawaii", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12948", "prompt": "who was considered chief among the greek gods", "target": "Zeus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28181", "prompt": "when was the olympics hosted in the us", "target": "1904|||1984|||1996|||1932", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55714", "prompt": "what year did the mayflower land on plymouth bay", "target": "1620", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62206", "prompt": "one type of music that might be especially relevant to ethnomusicology is", "target": "folk music", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59247", "prompt": "what is the official language spoken in thailand", "target": "Thai", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74116", "prompt": "in general all photosynthetic structures of a plant body will be which color", "target": "red|||yellow|||green", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33952", "prompt": "an astronomical object that generates energy through nuclear fusion is a", "target": "star", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5299", "prompt": "how many episodes of the handmaid's tale in season one", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60309", "prompt": "when was the last time england got through to the world cup quarter finals", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65226", "prompt": "is the sea of galilee salt water or freshwater", "target": "freshwater", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15297", "prompt": "when was the last time france won worldcup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34808", "prompt": "cities in the athenian empire paid what to athens", "target": "tribute", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22538", "prompt": "in which year the first international women's year was celebrated", "target": "1975", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21444", "prompt": "the first group that tried but failed to dig a canal across panama in the late 1800s was from", "target": "France", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3571", "prompt": "what year was under god added to the pledge of allegiance", "target": "1954", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9483", "prompt": "what sports did jackie robinson play besides baseball", "target": "football|||tennis|||basketball|||track|||baseball", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56053", "prompt": "who wrote that he hoped to erect a wall of separation between church and state", "target": "Thomas Jefferson", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4363", "prompt": "joule is unit of. in mks system", "target": "energy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6273", "prompt": "when was the first beauty and the beast made", "target": "1991", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14816", "prompt": "halophiles require what in high concentrations for growth", "target": "salt", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69872", "prompt": "who wrote the hallelujah chorus from handel messiah", "target": "George Frideric Handel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5333", "prompt": "who crossed the alps and invaded italy with an army of elephants during the second punic war", "target": "Hannibal", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13743", "prompt": "the total number of genetic characteristics of a specific biological population is called", "target": "Genetic diversity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49317", "prompt": "what's the most populated country on earth", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48371", "prompt": "where does the curse of downers grove take place", "target": "Downers Grove, Illinois", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84825", "prompt": "how many electoral districts are there in the us", "target": "435", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57048", "prompt": "when was the nobel prize for literature instituted", "target": "1901", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36067", "prompt": "a state where green revolution increased agricultural production", "target": "India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84274", "prompt": "most abundant element in the earth crust is", "target": "oxygen", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29847", "prompt": "who did houston vote for in 2016 election", "target": "Donald Trump", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13909", "prompt": "when did the america gain independence from britain", "target": "July 4, 1776", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50007", "prompt": "the satsuma is named after a province in which country", "target": "Japan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35660", "prompt": "when did worldwide efforts to eradicate polio begin", "target": "1988", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31772", "prompt": "the current central bank of the united states is", "target": "Federal Reserve", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13654", "prompt": "country in west africa its capital is abuja", "target": "Nigeria", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32426", "prompt": "the bill of rights derived from the concept of rights proposed by", "target": "John Locke", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6446", "prompt": "the term that describes a function that is symmetric about the y-axis is", "target": "an even function", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52534", "prompt": "when did the great wall became a world heritage site", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28343", "prompt": "how many episodes in season 3 of longmire", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87811", "prompt": "identify the center in the universe model copernicus", "target": "the Sun", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70528", "prompt": "29. what is the primary language spoken in israel", "target": "Hebrew", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61645", "prompt": "when did last harry potter movie come out", "target": "2011", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69660", "prompt": "steam is to water as liquid is to", "target": "gas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77071", "prompt": "which language is the first language in india", "target": "Hindi", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79970", "prompt": "what year did batman return to arkham come out", "target": "2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40112", "prompt": "the neurotransmitter used at the neuromuscular junction (nmj) is", "target": "Acetylcholine", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5813", "prompt": "when does the french and indian war begin", "target": "1754", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1556", "prompt": "a composer famous for his fugues especially the collection the well-tempered clavier", "target": "Johann Sebastian Bach", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4165", "prompt": "is a t rex a carnivore or herbivore", "target": "carnivore", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29124", "prompt": "mt. rushmore is composed of which type of rock", "target": "granite", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8520", "prompt": "what is the name of the dwarf planets", "target": "Ceres|||Eris|||Pluto|||Makemake|||Haumea", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12279", "prompt": "what year was the original wizard of oz movie released", "target": "1939", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2023", "prompt": "how hard is graphite on the mohs scale", "target": "1.5", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35801", "prompt": "bernoullis theorem is based on the conservation of", "target": "energy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52466", "prompt": "rules of recruitment to all india services are determined by", "target": "government of India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14247", "prompt": "where does corrosion occur in a galvanic cell", "target": "at the anode", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79339", "prompt": "what did the ancient romans build to maintain the supply of water in their cities", "target": "aqueducts", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47134", "prompt": "when did the last harry potter movie come out in theaters", "target": "2011", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11563", "prompt": "when was the first willy wonka movie made", "target": "1971", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47776", "prompt": "in the southern hemisphere what is the direction of surface wind movement about a tropical cyclone", "target": "counterclockwise", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40600", "prompt": "when did lusaka become the capital of zambia", "target": "1964", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21524", "prompt": "what gender is piglet from winnie the pooh", "target": "Male", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59134", "prompt": "first explorer to discover new land west of europe and africa", "target": "Christopher Columbus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37239", "prompt": "who appears on the united states $20 bill in 1875", "target": "Alexander Hamilton", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31579", "prompt": "what type of government does england have today", "target": "constitutional monarchy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80524", "prompt": "the release of an egg cell is called", "target": "ovulation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11277", "prompt": "in which country in north america mount rushmore found", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29704", "prompt": "where does carrie live in the carrie diaries", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68695", "prompt": "when did the battle of lexington and concord happen", "target": "April 19, 1775", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48284", "prompt": "in simple pendulum motion restoring force is provided by", "target": "gravity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68975", "prompt": "when did democratic republic of congo become independent", "target": "1960", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18533", "prompt": "what rank is higher than captain in the army", "target": "general|||brigadier general|||major|||lieutenant general|||lieutenant colonel|||major general|||colonel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48251", "prompt": "how many episodes in season three of bloodline", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46274", "prompt": "the hormone that the pineal gland secretes is", "target": "melatonin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86352", "prompt": "what kind of art did claude monet paint", "target": "Impressionism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36787", "prompt": "odishi dance is popular dance of which state", "target": "Odisha", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74474", "prompt": "what is the equivalent of sir for females", "target": "'ma'am'|||'madam'|||'miss'", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6955", "prompt": "which is the largest country in asia by population", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43883", "prompt": "this vitamin may be synthesized as a result of sunlight exposure", "target": "Vitamin D", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53405", "prompt": "when did the black civil rights movement end", "target": "1968", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63086", "prompt": "how many lost in space episodes are there", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86566", "prompt": "who do all the swans in england belong to", "target": "the British Crown", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2331", "prompt": "what country do i live in if i live in california", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79789", "prompt": "what type of rock is crazy horse monument", "target": "granite", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25826", "prompt": "the children's online privacy protection act (1998) is a law designed to protect consumers' right to", "target": "privacy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55228", "prompt": "when did the first beauty and the beast movie come out", "target": "1991", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48777", "prompt": "name of the largest planet in the solar system", "target": "Jupiter", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45854", "prompt": "what type of animal cell is similar to plant meristematic", "target": "stem cells", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42027", "prompt": "what is the smallest state in northeast region", "target": "Rhode Island", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52152", "prompt": "what is the largest art museum in amsterdam", "target": "The Rijksmuseum", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8603", "prompt": "who did the us get louisiana purchase from", "target": "France", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3810", "prompt": "into the badlands season 2 number of episodes", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39647", "prompt": "what type of chocolate has the most sugar", "target": "White chocolate", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59886", "prompt": "when did the us lose control of cuba", "target": "1902", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26264", "prompt": "when has england won the football world cup", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18174", "prompt": "is the uk a state or a country", "target": "country", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12054", "prompt": "when did daylight saving time start in the united states", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9213", "prompt": "an increase in the average level of prices is called", "target": "inflation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24118", "prompt": "what is the color of hyperlink in html", "target": "blue", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22202", "prompt": "a type of sailing ship that starts with sch", "target": "Schooner", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12911", "prompt": "what is the si unit of time period", "target": "the second", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70608", "prompt": "when did universal suffrage happen in the uk", "target": "1928", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62837", "prompt": "when was the last time croatia went to the world cup final", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63167", "prompt": "when was free health care introduced in canada", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48471", "prompt": "when was the first video game console ever made", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22791", "prompt": "who stated that all plants are made of cells", "target": "Robert Hooke", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85236", "prompt": "who said the unexamined life isn't worth living", "target": "Socrates", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67715", "prompt": "what type of government does gambia have today", "target": "a presidential republic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77042", "prompt": "which season experiences the largest percentage of tornadoes on average in the united states", "target": "spring", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28894", "prompt": "is the capital of minnesota located east or west of the mississippi river", "target": "east", "domain_tag": "nq_open"}
+{"item_id": "nq-train-337", "prompt": "the lowest possible energy level for an electron is known as", "target": "ground state", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86323", "prompt": "what kind of bond is formed between 2 monomers of sugar to create a di- or poly-saccharide", "target": "glycosidic bond", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28957", "prompt": "what is the country of origin for subaru", "target": "Japan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60313", "prompt": "when was compulsory military service stopped in south africa", "target": "1994", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57072", "prompt": "what country's army occupied korea in the early 20th century", "target": "Japan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23200", "prompt": "china shares its border with how many countries", "target": "14", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68550", "prompt": "which company started project loon to give balloon powered internet access to the world", "target": "Google", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75380", "prompt": "what does dc stand for in washigton dc", "target": "District of Columbia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1774", "prompt": "where does the last name peinado come from", "target": "Spanish|||Basque", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10474", "prompt": "when was the un declaration of human rights written", "target": "1948", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22533", "prompt": "when was the first gaming console ever made", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77232", "prompt": "political representation in england was precipitated by the force of the king by nobles to sign the", "target": "Magna Carta", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55697", "prompt": "the bay that divides new brunswick and nova scotia", "target": "Bay of Fundy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58643", "prompt": "a scholar who studies the music of different cultural groups is called a(n)", "target": "musicologist", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81442", "prompt": "how many episodes are on ozark season 2", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8990", "prompt": "which amendment is central to understanding the debate concerning the right to bear arms", "target": "The Second Amendment", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78616", "prompt": "when did pennies stop being made of copper", "target": "1982", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53132", "prompt": "when did the united states start doing daylight savings time", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68997", "prompt": "what part of speech connects words or groups of words examples are for and nor but or yet and so", "target": "conjunction", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5022", "prompt": "which section of the small intestine receives secretions from the liver and the pancreas", "target": "duodenum", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44991", "prompt": "what is the name of the highschool in riverdale", "target": "Riverdale High School", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64738", "prompt": "what is the name of the russian money", "target": "ruble", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46675", "prompt": "which type of triangle must have perpendicular lines", "target": "a right triangle", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34258", "prompt": "when was last time chicago cubs won world series", "target": "2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5852", "prompt": "in the bible who was swallowed by a whale", "target": "Jonah", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59800", "prompt": "where is the chicago white sox stadium located", "target": "Chicago, Illinois", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64414", "prompt": "where is the world cup going to be in 2018", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82995", "prompt": "who invented the printing press which helped spread the renaissance throughout europe", "target": "Johannes Gutenberg", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42914", "prompt": "the highest officials in the government of the roman republic were", "target": "consuls", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7772", "prompt": "when did the mayflower first come to america", "target": "1620", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6050", "prompt": "who is credited with saying markets can stay irrational longer than you can stay solvent", "target": "John Maynard Keynes", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56662", "prompt": "the function of the gallbladder is to store", "target": "bile", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50361", "prompt": "when did the battle of lexington and concord take place", "target": "April 19, 1775", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11841", "prompt": "which command is used to clear the screen in linux", "target": "clear", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83255", "prompt": "when was the social model of disability developed", "target": "the 1980s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41132", "prompt": "when did the us acquire the virgin islands", "target": "1917", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85473", "prompt": "when did the us join world war ii", "target": "1941", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25190", "prompt": "how many episodes are in season 2 of chesapeake shores", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20283", "prompt": "the maximum number of electrons that the p subshell can hold is", "target": "6", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61653", "prompt": "is electricity in a house ac or dc", "target": "AC", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38056", "prompt": "who has the most gold medals in the world by country", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83702", "prompt": "which city was the capital of the former soviet union and is today the capital of russia", "target": "Moscow", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22351", "prompt": "who was the self taught indian mathematical genius in the 20th century", "target": "Srinivasa Ramanujan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11621", "prompt": "which term refers to an assumed rapid expansion of the universe immediately after the big bang", "target": "cosmic inflation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31737", "prompt": "when was the government of the united states formed", "target": "1789", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32357", "prompt": "pace maker is related to which part of body", "target": "heart", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83162", "prompt": "when did england last make the semi finals world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13545", "prompt": "how many episodes are in season 4 of skam", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16124", "prompt": "what does acs stand for in medical terms", "target": "Acute coronary syndrome", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23064", "prompt": "who receives the benefits and profits from a joint stock company", "target": "shareholders", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58421", "prompt": "the leader of the house of representatives is known as the", "target": "Speaker of the House", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68190", "prompt": "where does the last name ascencio come from", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13546", "prompt": "when did the prickly pear come to australia", "target": "the 19th century", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1120", "prompt": "when did india win its first cricket world cup", "target": "1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49190", "prompt": "when did the original star wars movies come out", "target": "1980|||1977|||1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45161", "prompt": "what is the length of a term for members of the us house of representatives", "target": "Two years", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35296", "prompt": "when was the first shot of the revolutionary war fired", "target": "April 19, 1775", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73868", "prompt": "where was the film under the tuscan sun filmed", "target": "Florence, Tuscany, Italy|||Rome, Lazio, Italy|||Montepulciano, Tuscany, Italy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33305", "prompt": "a state of matter that is not a fluid is", "target": "solid", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58548", "prompt": "who has won wimbledon the most times in a row", "target": "Roger Federer|||Björn Borg", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63173", "prompt": "a person's evaluation about his or her own worthiness is called", "target": "Self-esteem", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79782", "prompt": "what was the first state to secede from the union leading to the civil war", "target": "South Carolina", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29410", "prompt": "soccer team that won the most world cups", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85275", "prompt": "when did zebra mussels come to north america", "target": "1988", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62235", "prompt": "when was the last time england were in the quarterfinals of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6280", "prompt": "when did the united states annexed puerto rico", "target": "1898", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32393", "prompt": "when is the last time the astros won the world series", "target": "2017", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4106", "prompt": "how many episodes of broad city in season 4", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34472", "prompt": "what conference is ohio state in for football", "target": "Big Ten Conference", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46262", "prompt": "where is the national institute of health located", "target": "Bethesda, Maryland", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22837", "prompt": "in which country are the cities of asyut sohag and luxor", "target": "Egypt", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43568", "prompt": "the principle that each culture should be judged by its own standards is termed", "target": "Cultural relativism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86588", "prompt": "nucleic acid that is double stranded and contains deoxyribose sugar", "target": "DNA", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74211", "prompt": "how much memory does nintendo switch games use", "target": "32GB|||1GB|||2GB|||16GB|||8GB|||4GB", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83379", "prompt": "who has the highest networth in the world 2017", "target": "Bill Gates", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9514", "prompt": "when did the old age pension start in canada", "target": "1965", "domain_tag": "nq_open"}
+{"item_id": "nq-train-29012", "prompt": "which country in asia has the largest population", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16964", "prompt": "what does the number 8 look like in roman numerals", "target": "VIII", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18538", "prompt": "what is the most fundamental source of law in the united states", "target": "The Constitution", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14855", "prompt": "to be accurate objectives should be smart. what does the m in smart stand for", "target": "measurable", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82470", "prompt": "which year did brazil organize its first world cup", "target": "1950", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9680", "prompt": "when did the world population reach 6 billion", "target": "1999", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79868", "prompt": "what human body system is the kidney in", "target": "Urinary system|||endocrine system", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49909", "prompt": "nonverbal communication behavior including the meaning of hand signals and various body movements", "target": "Body language", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17567", "prompt": "when did the us currency stop being backed by gold", "target": "1971", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19379", "prompt": "is a chevy tahoe a truck or suv", "target": "SUV", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66830", "prompt": "google’s version of sponsored links that appear for certain keywords is called", "target": "Google AdWords", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33317", "prompt": "one of ancient greek's most influential religious figures was the oracle at", "target": "Delphi", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15330", "prompt": "what type of blood does the pulmonary vein carry", "target": "oxygenated blood", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19134", "prompt": "what is any single mark that makes up part of a typographic symbol", "target": "glyph", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41350", "prompt": "when did the first superman movie come out", "target": "1978", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7429", "prompt": "is eleven on stranger things a boy or girl", "target": "girl", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79204", "prompt": "where is the rugby league world cup 2017 held", "target": "New Zealand|||Papua New Guinea|||Australia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18435", "prompt": "the process of measuring or observing an activity for the purpose of collecting data is known as", "target": "Observation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1827", "prompt": "in which country is the city of bombay", "target": "India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68415", "prompt": "where is the original location of the alamo", "target": "San Antonio, Texas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-72490", "prompt": "when women's right to vote in uk", "target": "1928", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24547", "prompt": "when was the last time england made the semi finals of the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28000", "prompt": "when did the pilgrims step ashore what name did they give the place", "target": "1620|||Plymouth Rock", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12543", "prompt": "when was the last episode of pawn stars filmed", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24910", "prompt": "where does funding for food stamps come from", "target": "federal government", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19820", "prompt": "when did the american civil rights movement end", "target": "1968", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48667", "prompt": "the creator of the star wars film series is", "target": "George Lucas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80232", "prompt": "where does the last name escobar come from", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74154", "prompt": "when was the last time ksu was in the sweet 16", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64526", "prompt": "who sings it don't matter to me drake", "target": "Drake|||Michael Jackson", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73927", "prompt": "which european capital is served by the port of piraeus", "target": "Athens", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79130", "prompt": "which province of canada has a large french population", "target": "Quebec", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12047", "prompt": "when did equal pay for equal work begin", "target": "1963", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26119", "prompt": "what is another name for the senate in australia", "target": "upper house", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38020", "prompt": "when were the words under god added into the pledge of allegiance", "target": "1954", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56804", "prompt": "which amendment in the united states protects individuals from unreasonable search and seizure", "target": "Fourth Amendment", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67621", "prompt": "when did the first french settlers come to canada", "target": "1608", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31857", "prompt": "is los angeles on the east or west coast", "target": "west coast", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62286", "prompt": "who appeared on the american $20 bill in 1875", "target": "Alexander Hamilton", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76774", "prompt": "when was star wars the empire strikes back made", "target": "1980", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83311", "prompt": "when did us stop backing dollar with gold", "target": "1971", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7635", "prompt": "when was the national flood insurance program created", "target": "1968", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55855", "prompt": "when was the constitution of united states signed", "target": "September 17, 1787", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86443", "prompt": "what is the term for the amount of time it takes 50 of an element to decay", "target": "half-life", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46371", "prompt": "when did the us first institute daylight savings time", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24134", "prompt": "how many episodes in season 3 of ash vs evil dead", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10705", "prompt": "which one of the following rivers in india has been declared as the national river", "target": "Ganges", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53004", "prompt": "when did the east berlin wall go up", "target": "1961", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83499", "prompt": "unlike renaissance texts most medieval texts were written in", "target": "Latin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62321", "prompt": "where are proteins digested in the digestive system", "target": "in the stomach", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8416", "prompt": "when was the last time italy did not qualify for the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49828", "prompt": "how many popes did the medici family produce", "target": "four", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45245", "prompt": "when did the original little mermaid come out", "target": "1989", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25559", "prompt": "how many episodes in the season 4 of power", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60934", "prompt": "a physician who has specialized treatment in mental health issues is called a quizlet", "target": "psychiatrist", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80296", "prompt": "what nfl player has played in the most super bowls", "target": "Tom Brady", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4058", "prompt": "what is the name of the black hole in the milky way", "target": "Sagittarius A", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76359", "prompt": "hydrosphere is a part of the earth's surface covered by", "target": "water", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55817", "prompt": "when is the new planet of the apes movie released", "target": "2017", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61832", "prompt": "albinism is due to the inability to make", "target": "melanin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84489", "prompt": "when did iran change its name from persia", "target": "1935", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28712", "prompt": "what is the newest jurassic park movie called", "target": "Jurassic World: Fallen Kingdom", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38036", "prompt": "when did the black death get to europe", "target": "1347", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83795", "prompt": "what's the first state in the usa", "target": "Delaware", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38643", "prompt": "which term is defined as the chance that a given event will occur", "target": "Probability", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53496", "prompt": "which european state seized libya from the ottoman empire in 1911", "target": "Italy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15475", "prompt": "when did brooklyn and bailey start their youtube channel", "target": "2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-210", "prompt": "the point of concurrence of medians is called", "target": "centroid", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80733", "prompt": "in the 1st century bc egypt became a colony of", "target": "the Roman Empire", "domain_tag": "nq_open"}
+{"item_id": "nq-train-87706", "prompt": "what is the name of the first president of america", "target": "George Washington", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26904", "prompt": "when did bradford park avenue leave the football league", "target": "1970", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26196", "prompt": "who was the self taught indian mathematician genius in the 20 century", "target": "Srinivasa Ramanujan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63592", "prompt": "when was the original wizard of oz movie made", "target": "1939", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43371", "prompt": "what is the scientific name of the cheetah", "target": "Acinonyx jubatus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6970", "prompt": "the fibrous sac covering of the heart which is in contact with the pleura is the", "target": "The pericardium", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81486", "prompt": "the spleen is part of what system in the human body", "target": "immune system", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68313", "prompt": "where is the challenge champs vs pros filmed", "target": "Los Angeles, California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63957", "prompt": "who is the commander in chief of military", "target": "President of the United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10081", "prompt": "which country has the highest hiv in africa", "target": "South Africa", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4301", "prompt": "what is the name of washington dc airport", "target": "Washington Dulles International Airport", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40862", "prompt": "what body of water is dubai located on", "target": "Persian Gulf", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60211", "prompt": "when did south africa host rugby world cup", "target": "1995", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55160", "prompt": "which organization sets monetary policy for the united states", "target": "the Federal Reserve", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17815", "prompt": "diseases carried from person to person through other hosts such as animals or insects are known as", "target": "Zoonoses", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75915", "prompt": "when did the rule of east india company end in the sub-continent", "target": "1858", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49247", "prompt": "what ocean is off the east coast of the united states", "target": "the Atlantic Ocean", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12131", "prompt": "when was life liberty and the pursuit of happiness written", "target": "1776", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68416", "prompt": "where does the human chemical digestion of carbohydrates end", "target": "stomach", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43881", "prompt": "the festival of holi marks the end of winter and the beginning of", "target": "spring", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24453", "prompt": "engagement rings which hand to wear it on", "target": "the left hand", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15984", "prompt": "write the name of father of binomial nomenclature", "target": "Carl Linnaeus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34387", "prompt": "tropic of cancer and tropic of capricorn are lines of", "target": "latitude", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58954", "prompt": "how many episodes are in the crown on netflix", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73093", "prompt": "where is the headquarter of indian post payment bank", "target": "New Delhi, India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20659", "prompt": "​which condition is known as bone marrow depression anemia", "target": "Aplastic anemia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78654", "prompt": "the battle of hastings in 1066 was fought in which country", "target": "England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3718", "prompt": "the number of membranes surrounding a mitochondrion is", "target": "two", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77793", "prompt": "where was the first modern olympics games held", "target": "Athens, Greece", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79352", "prompt": "ok google what is the capital of california", "target": "Sacramento", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41879", "prompt": "who directed the screwball comedy classis it happened one night/", "target": "Frank Capra", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84275", "prompt": "any substance that can provoke an immune response is an", "target": "antigen", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19059", "prompt": "what european country was first introduced to the potato", "target": "Spain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14302", "prompt": "when did the reformation of the catholic church occur", "target": "1517|||1648", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21775", "prompt": "what is the official language of brazil today", "target": "Portuguese", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70272", "prompt": "hiw many episodes in season 3 of bloodline", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21804", "prompt": "what is the biggest state in the world", "target": "Russia|||Sakha Republic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28378", "prompt": "what is the name of the blue planet", "target": "Earth", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65298", "prompt": "what mountain range in russia separates europe from asia", "target": "Ural Mountains", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37687", "prompt": "most of the united states is a part of which tectonic plate", "target": "North American Plate", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36536", "prompt": "what unit of mass is 1/1000 of a kilogram", "target": "gram", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82094", "prompt": "what day of the week is the lord's day", "target": "Sunday", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24580", "prompt": "when did star trek the next generation start", "target": "1987", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30790", "prompt": "largest country in the world in terms of land area", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14536", "prompt": "when did the spanish first come to north america", "target": "1492", "domain_tag": "nq_open"}
+{"item_id": "nq-train-941", "prompt": "high blood glucose levels stimulate the release of", "target": "insulin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21650", "prompt": "the colorado plateau covers northern new mexico and what other state", "target": "Arizona|||Utah|||Colorado", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53417", "prompt": "when did the currencies of zimbabwe first come in circulation", "target": "1980", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81072", "prompt": "in an election what is the person who already holds an office", "target": "incumbent", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71386", "prompt": "when did scotland last win calcutta cup at murrayfield", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10353", "prompt": "when was the declaration of the rights of man and of the citizen written", "target": "1789", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47595", "prompt": "is abu dhabi a city or a country", "target": "city", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16696", "prompt": "who claimed that behavior is affected by positive reinforcement", "target": "B.F. Skinner", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39852", "prompt": "when did the movie the lion king come out", "target": "1994", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34060", "prompt": "chinese general military strategist and philosopher who wrote the art of war", "target": "Sun Tzu", "domain_tag": "nq_open"}
+{"item_id": "nq-train-37512", "prompt": "what physical quantity is a measure of the amount of inertia and object has", "target": "mass", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32112", "prompt": "when was the last time tunisia qualified for the world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14753", "prompt": "what was the name of the bombs dropped on hiroshima and nagasaki", "target": "Fat Man|||Little Boy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2381", "prompt": "when did black panther debut in marvel movies", "target": "Captain America: Civil War|||2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33552", "prompt": "what is the name for the supercontinent in the continental drift hypothesis", "target": "Gondwana", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2110", "prompt": "a procedure involving the surgical repair of the eyelid is called", "target": "Blepharoplasty|||canthectomy|||Ptosis|||Tarsorrhaphy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41372", "prompt": "halloween has roots in a celtic festival called what", "target": "Samhain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60121", "prompt": "in a market economy the market forces of and determine what prices will be", "target": "supply and demand", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53200", "prompt": "in terms of nationality riders from what country have the most tour de france wins", "target": "France", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54351", "prompt": "the chemicals produced in plants which stimulate growth are called", "target": "Plant hormones", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84422", "prompt": "term for a word spelled the same forward and backward", "target": "palindrome", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4332", "prompt": "where is atp made during the electron transport chain", "target": "mitochondria", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52715", "prompt": "which organization was created after world war ii in an effort to ensure peace in the world", "target": "the United Nations", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61770", "prompt": "what type of government does great britain have now", "target": "constitutional monarchy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8258", "prompt": "who is considered the figure head leader of new zealand", "target": "Queen Elizabeth II", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78186", "prompt": "when was the new range rover sport launched", "target": "2013", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44339", "prompt": "when did the green revolution started in india", "target": "1960s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-74856", "prompt": "the order in which events happen in real time is known as", "target": "chronological order", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77825", "prompt": "when was the last time novak djokovic won a grand slam", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-28102", "prompt": "when was the clean air act passed in the uk", "target": "1956", "domain_tag": "nq_open"}
+{"item_id": "nq-train-32025", "prompt": "during the first political party—in the early republic before the 1820s—most north carolinians were", "target": "democratic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59983", "prompt": "when did the dutch come to north america", "target": "1602", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69598", "prompt": "when did the original willy wonka come out", "target": "1971", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27603", "prompt": "when did alcatraz open as a federal prison", "target": "1934", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61795", "prompt": "the parietal cells of the gastric mucosa secrete", "target": "hydrochloric acid", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7732", "prompt": "the period of transition between childhood and adulthood is known as", "target": "adolescence", "domain_tag": "nq_open"}
+{"item_id": "nq-train-51463", "prompt": "when did they discover oil in saudi arabia", "target": "1938", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68717", "prompt": "usa has highest trade deficit with which country", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36694", "prompt": "where did the first modern olympics take place", "target": "Athens, Greece", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44483", "prompt": "when did england win the world cup in soccer", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12658", "prompt": "when did us dollar stop being backed by gold", "target": "1971", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9063", "prompt": "the vascular system consists of the heart and blood vessels for the circulation of", "target": "Blood", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35151", "prompt": "ok google what is the capital of belgium", "target": "Brussels", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65073", "prompt": "which country's flag is called union jack", "target": "the United Kingdom", "domain_tag": "nq_open"}
+{"item_id": "nq-train-48247", "prompt": "how many episodes in gossip girl season 6", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76595", "prompt": "what year was the first season of stranger things", "target": "2016", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75206", "prompt": "what does the skin produce in response to sunlight exposure", "target": "vitamin D|||melanin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26851", "prompt": "who was the us at war with in ww2", "target": "Japan|||Italy|||Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30633", "prompt": "what is the high school in riverdale called", "target": "Riverdale High School", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45372", "prompt": "when did england make it to world cup final", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81009", "prompt": "when was the first super mario game made", "target": "1985", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81254", "prompt": "the theft of personal information is known as", "target": "Identity theft", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43293", "prompt": "largest of the jovian planets that shows a great red spot", "target": "Jupiter", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73966", "prompt": "how many episodes of westworld will be in season 2", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78714", "prompt": "largest producer of mica in the world is", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60927", "prompt": "the measurement of moles of solute per liter of solution is known as", "target": "molarity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13745", "prompt": "when were horses first introduced to north america", "target": "the 16th century", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47052", "prompt": "when was the first modern postage stamp released", "target": "1840", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65216", "prompt": "what country has the largest number of english speakers", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49214", "prompt": "when did the stock market start in the united states", "target": "1792", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18825", "prompt": "where do neurons synapse for a reflex arc to be created", "target": "in the spinal cord", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86632", "prompt": "largest country in the world by geographical area", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20798", "prompt": "what year did the original wizard of oz movie come out", "target": "1939", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71717", "prompt": "how many episodes of making a murderer are there", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50134", "prompt": "what term refers to a distinct type of living thing", "target": "species", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81090", "prompt": "intermittent hot spring that erupts jets of hot water and steam", "target": "geyser", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47736", "prompt": "what city is russia’s largest metropolitan area as measured by population", "target": "Moscow", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71771", "prompt": "what is the name of the celtic festival halloween is thought to be based on", "target": "Samhain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12167", "prompt": "what is the basic unit of time in the si system", "target": "second", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36394", "prompt": "how many episodes of season 5 of vikings", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66173", "prompt": "which state has the largest population in the us", "target": "California", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50247", "prompt": "how many episodes in netflix lost in space", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-21793", "prompt": "what is the area code for louisville kentucky", "target": "502", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77665", "prompt": "when was under god inserted into the pledge of allegiance", "target": "1954", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78105", "prompt": "what is the value of any number raised to the zero power", "target": "1", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41473", "prompt": "where is the white house located in what state", "target": "Washington, D.C.", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1275", "prompt": "which indian state does dish bisi bele bhath belong to", "target": "Karnataka", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9936", "prompt": "which default application of windows plays audio and vedio", "target": "Windows Media Player", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75914", "prompt": "when have england reached the world cup semi finals", "target": "1966|||2018|||1990", "domain_tag": "nq_open"}
+{"item_id": "nq-train-15362", "prompt": "what is apple's intelligence voice assistance called", "target": "Siri", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62218", "prompt": "when did catalytic converters become mandatory in us", "target": "1975", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20222", "prompt": "what are the smallest unit of life called", "target": "cell", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53508", "prompt": "the process of labor and childbirth is known as", "target": "labour and delivery", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31749", "prompt": "in which country did the 1761 'battle of villinghausen' take place", "target": "Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65974", "prompt": "when is the third wolf hall book coming out", "target": "2019", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76002", "prompt": "the region generally between the tropic of cancer and the tropic of capricorn is known as", "target": "the tropics", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39302", "prompt": "where is the petra located on a map", "target": "Jordan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66749", "prompt": "when did the slave trade end in britain", "target": "1833", "domain_tag": "nq_open"}
+{"item_id": "nq-train-10047", "prompt": "where does the last name sequeira come from", "target": "Portuguese", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43012", "prompt": "when did jk rowling released the first harry potter", "target": "1997", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30599", "prompt": "where is the headquarter of the united nations situated", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69423", "prompt": "which country is highest population in the world", "target": "China", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71990", "prompt": "los angeles is east coast or west coast", "target": "west coast", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17308", "prompt": "in addition to fishes the subphylum vertebrata includes", "target": "mammals|||reptiles|||birds|||amphibians", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9870", "prompt": "which is known as the apex court of india", "target": "Supreme Court of India", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33112", "prompt": "which country has hosted commonwealth games the maximum number of time", "target": "Australia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27129", "prompt": "when was the black and white camera invented", "target": "1839", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61371", "prompt": "language which has an official designation in ethiopia", "target": "Amharic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44256", "prompt": "the book of prayers used at mass is called", "target": "Book of Common Prayer", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63681", "prompt": "when did the first star wars movie come put", "target": "1977", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13059", "prompt": "who is the public hospital sector funded by", "target": "a government", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59378", "prompt": "when did the north win the civil war", "target": "1865", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34846", "prompt": "chinese architecture has always been in harmony with", "target": "nature", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2041", "prompt": "branch of science that involves the classification of living things", "target": "Biology", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46219", "prompt": "which chess piece holds the least value on a chess board", "target": "pawn", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73055", "prompt": "when did avengers age of ultron come out", "target": "2015", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12115", "prompt": "a method to remove large particles from water", "target": "filtration", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22920", "prompt": "when did the mlb hall of fame start", "target": "1936", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39248", "prompt": "when did the uk last win the world cup", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44268", "prompt": "prior to independence nigeria was ruled as a colony of", "target": "Britain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-71663", "prompt": "when was the people's republic of china recognized", "target": "1949", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50469", "prompt": "where is the real housewives of dallas filmed", "target": "Dallas, Texas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34278", "prompt": "when did england last win a world cup", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45304", "prompt": "what is the area code of washington dc", "target": "202", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60299", "prompt": "bogota is the capital of which south american country", "target": "Colombia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27893", "prompt": "when did the black death start in europe", "target": "1347", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9295", "prompt": "where does the last name montes de oca come from", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44687", "prompt": "what kind of triangle has a 90 degree angle", "target": "A right triangle", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4285", "prompt": "when did the vietnam war end what year", "target": "1975", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81728", "prompt": "the dionysia was a religious festival honoring which greek god", "target": "Dionysus", "domain_tag": "nq_open"}
+{"item_id": "nq-train-1780", "prompt": "brazil is the world's largest exporter of what crop", "target": "beef|||soybeans|||coffee|||crop-based ethanol", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7452", "prompt": "who is given power under the constitution to grant individual pardons", "target": "President of the United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79669", "prompt": "what is the name of the principal stock exchange in the united kingdom (i.e. england)", "target": "The London Stock Exchange", "domain_tag": "nq_open"}
+{"item_id": "nq-train-18904", "prompt": "which field of economics studies how the number of firms effects", "target": "Microeconomics", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77568", "prompt": "total water content of the soil is known as", "target": "soil moisture", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36482", "prompt": "when did the spanish arrived in the philippines", "target": "1521", "domain_tag": "nq_open"}
+{"item_id": "nq-train-20005", "prompt": "subatomic particle that has a negative charge is called", "target": "electron", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24201", "prompt": "when was the first james bond movie made", "target": "1962", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61899", "prompt": "when was hobbit and lord of the rings written", "target": "between 1937 and 1949|||1937", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54396", "prompt": "which state of india has lowest forest area", "target": "Haryana", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82502", "prompt": "what is the solid outermost layer of the earth", "target": "crust", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16398", "prompt": "is copper ii nitrate a compound or element", "target": "compound", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68384", "prompt": "where is the next world cup held in 2018", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38471", "prompt": "what is the name of the instrument used to measure wind speed", "target": "anemometer", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66961", "prompt": "the contract that exists between the insurer and the insured", "target": "the insurance policy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-33255", "prompt": "when was the euro introduced as legal currency", "target": "1 January 1999", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4033", "prompt": "what is a number that is the same forwards and backwards", "target": "palindrome", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45203", "prompt": "who makes the legally enforceable promises in a unilateral insurance policy", "target": "the insurer", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61603", "prompt": "whats the fastest growing sport in the us", "target": "soccer", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84807", "prompt": "what kind of government does the united state have", "target": "federal republic", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79638", "prompt": "how many episodes are in silicon valley season 4", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69302", "prompt": "how many episodes in season six of longmire", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-75183", "prompt": "what are you called if you're from washington", "target": "Washingtonian", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47836", "prompt": "to which nation does the sinai peninsula belong", "target": "Egypt", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45809", "prompt": "how many episodes are there in season 1 of supergirl", "target": "20", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16305", "prompt": "starting with r what is the indonesian monetary unit called", "target": "Rupiah", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81467", "prompt": "in what year did east india officially become part of the british colonial empire course hero", "target": "1858", "domain_tag": "nq_open"}
+{"item_id": "nq-train-72109", "prompt": "what type of election allows the party's voters to nominate candidates", "target": "primary election", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78579", "prompt": "imperial dynasty that ruled china from 1368 to 1644", "target": "Ming dynasty", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65615", "prompt": "which country has played the most world cup matches", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-69917", "prompt": "the liquid that collects in the cavity of the glomerular (bowman's) capsule is", "target": "glomerular filtrate", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86438", "prompt": "what do dc stand for in washington dc", "target": "District of Columbia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67686", "prompt": "what class of vertebrates do seals belong to", "target": "mammals", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83521", "prompt": "how many episodes in season one game of thrones", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47429", "prompt": "where is the headquater of the united nations situated", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81946", "prompt": "the number of base units in si are", "target": "seven", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22621", "prompt": "are sebaceous glands in the dermis or epidermis", "target": "The dermis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4696", "prompt": "what do we call the currency of australia", "target": "The Australian dollar", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25117", "prompt": "how many times have penguins won stanley cup", "target": "five times", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41124", "prompt": "what country has the largest english speaking population", "target": "United States", "domain_tag": "nq_open"}
+{"item_id": "nq-train-68929", "prompt": "what year did the berlin wall came down", "target": "1989", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35211", "prompt": "what was the codename given to the evacuation of dunkirk", "target": "Operation Dynamo", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34676", "prompt": "the repetition of initial consonant sounds is the definition of which type of literary device", "target": "Alliteration", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27480", "prompt": "when was the first genetically modified food created", "target": "1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-44595", "prompt": "which state there is a vidhan parishad for legislative purpose", "target": "Jammu and Kashmir|||Maharashtra|||Bihar|||Andhra Pradesh|||Telangana|||Uttar Pradesh|||Karnataka", "domain_tag": "nq_open"}
+{"item_id": "nq-train-55504", "prompt": "what country casablanca and marrakech are located in", "target": "Morocco", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34841", "prompt": "when did the lion king movie come out", "target": "1994", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35181", "prompt": "number of nfl teams that make the playoffs", "target": "12", "domain_tag": "nq_open"}
+{"item_id": "nq-train-39583", "prompt": "who has won most academy awards for best actress", "target": "Katharine Hepburn", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19180", "prompt": "what is the largest state in south india in area", "target": "Karnataka", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9041", "prompt": "what country did america fight in world war 1", "target": "the Austro-Hungarian Empire|||Germany", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14214", "prompt": "who has the authority to decide if a drug is marketed as an otc or prescription-only product", "target": "The FDA", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73402", "prompt": "in doing statistical inference data are gathered by the process of", "target": "sampling", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45497", "prompt": "when was daylight savings time started in usa", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-16827", "prompt": "who emphasized that education should be a social process", "target": "John Dewey", "domain_tag": "nq_open"}
+{"item_id": "nq-train-7242", "prompt": "when did michael jackson started his music career", "target": "1964", "domain_tag": "nq_open"}
+{"item_id": "nq-train-38175", "prompt": "what name was given to the literary movement that occurred from the end of ww2", "target": "The Beat Generation", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57725", "prompt": "what wars did the tuskegee airmen fight in", "target": "World War II", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11192", "prompt": "the prime minister of great britain during world war 2 was", "target": "Winston Churchill|||Neville Chamberlain", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24526", "prompt": "when did england win the soccer world cup", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67465", "prompt": "the point where the x and y axis meet is called", "target": "origin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8411", "prompt": "what does a bird have that no other animal has", "target": "Feathers", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6398", "prompt": "when did the broncos last win the superbowl", "target": "2015", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62108", "prompt": "where will next fifa world cup be held", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11452", "prompt": "a quantity of 5 m/s2 is a measure of", "target": "acceleration", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85623", "prompt": "last president to get lifetime secret service protection", "target": "Barack Obama", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82227", "prompt": "when did the colonies start to rebel against britain", "target": "1765", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64331", "prompt": "what is the largest country in europe by area", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14206", "prompt": "when did bram stoker's dracula come out", "target": "1897", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53503", "prompt": "when did sa win the rugby world cup", "target": "1995|||2007", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53738", "prompt": "hamas is a militant organization fighting against which country", "target": "Israel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14822", "prompt": "when did the us make the louisiana purchase", "target": "1803", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63726", "prompt": "daily standup meeting of development project should be attended by", "target": "All team members", "domain_tag": "nq_open"}
+{"item_id": "nq-train-84247", "prompt": "when was the only time the world cup was held in england", "target": "1966", "domain_tag": "nq_open"}
+{"item_id": "nq-train-45431", "prompt": "what is the most popular holiday in america", "target": "Christmas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67101", "prompt": "when was the office of the prime minister created in nigeria", "target": "1960", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3958", "prompt": "how many episodes in black sails season 3", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9380", "prompt": "radiocarbon dating is based on which decay process", "target": "radioactive decay", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9685", "prompt": "when was the film the wizard of oz made", "target": "1939", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59852", "prompt": "to escape from a planets gravity an object must reach a speed called the", "target": "escape velocity", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43176", "prompt": "a piece of thrown pottery is created using this potter's tool", "target": "potter's wheel", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54206", "prompt": "who has been nominated for the most golden globes", "target": "Meryl Streep", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67315", "prompt": "where is the prime minister of israel located", "target": "Jerusalem", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13959", "prompt": "what was the first successful english colony in the new world", "target": "Jamestown, Virginia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34798", "prompt": "what is the most widely spoken language in brazil", "target": "Portuguese", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64600", "prompt": "where did the last name robinson come from", "target": "England", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23639", "prompt": "what was the period before the enlightenment called", "target": "Middle Ages", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56208", "prompt": "what languages did martin luther translated the bible into", "target": "German", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26650", "prompt": "power supply at home is ac or dc", "target": "AC", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3941", "prompt": "large island part of north america but belongs to europe", "target": "Greenland", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17353", "prompt": "when did the first rocket launch to the moon", "target": "1969", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63883", "prompt": "where is this years world cup being held", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-19541", "prompt": "what kind of car does dale earnhardt jr drive", "target": "Chevrolet Camaro|||Chevrolet SS", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17038", "prompt": "when did the british east india company take over india", "target": "1757", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62198", "prompt": "what is the si unit of measurement for temperature", "target": "kelvin", "domain_tag": "nq_open"}
+{"item_id": "nq-train-24041", "prompt": "how many episodes in mr robot first season", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23221", "prompt": "the major schools of thought that emerged in china between 500 b.c. and 200 b.c. were", "target": "Legalism|||Mohism|||Taoism|||Confucianism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47793", "prompt": "when did michael jordan first play in the nba", "target": "1984", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50348", "prompt": "scratches in rock produced by glacial abrasion are called", "target": "Glacial striations", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30775", "prompt": "which country is bali an island and province of", "target": "Indonesia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-52455", "prompt": "the shoreline of which u.s. state is broken by albemarle sound", "target": "North Carolina", "domain_tag": "nq_open"}
+{"item_id": "nq-train-57363", "prompt": "when was the last time colombia qualified for world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-83792", "prompt": "what political system originated in the ancient greek city of athens", "target": "democracy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9018", "prompt": "when did the us buy the louisiana territory", "target": "1803", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3624", "prompt": "what is the name of the large city in southeastern nevada", "target": "Las Vegas", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36485", "prompt": "when was lead paint banned for industrial use", "target": "1978", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2328", "prompt": "major blood vessels that carry blood away from the heart", "target": "the arteries", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61714", "prompt": "where did world war 1 take place first", "target": "Europe", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31071", "prompt": "when did we start using daylight savings time in the united states", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14899", "prompt": "when was the first home video game console released", "target": "1972", "domain_tag": "nq_open"}
+{"item_id": "nq-train-27389", "prompt": "other states in southeast asia that were influenced by india include", "target": "Cambodia|||Vietnam|||Thailand|||Malay Peninsula|||Burma|||Indonesia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-79193", "prompt": "what is the true shape of earths orbit", "target": "ellipse", "domain_tag": "nq_open"}
+{"item_id": "nq-train-14061", "prompt": "is capital one a bank or credit union", "target": "bank", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65054", "prompt": "what is it called when the president commutes a prison sentence", "target": "executive clemency", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81936", "prompt": "where does the last name abarca come from", "target": "Spanish", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58266", "prompt": "which country in africa drinks the most alcohol", "target": "South Africa", "domain_tag": "nq_open"}
+{"item_id": "nq-train-9846", "prompt": "which layer of the earth is responsible for generating the earth magnetic field", "target": "outer core", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59966", "prompt": "where does james fly his giant peach to", "target": "New York City", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59133", "prompt": "a dot plot can serve as an alternative to which type of graph", "target": "the bar chart", "domain_tag": "nq_open"}
+{"item_id": "nq-train-26074", "prompt": "what is currently the largest crop in the usa", "target": "Corn", "domain_tag": "nq_open"}
+{"item_id": "nq-train-70248", "prompt": "what is the full form of gdp in economics", "target": "Gross domestic product", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50774", "prompt": "the second person of the trinity who became man", "target": "Jesus Christ", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85588", "prompt": "how many episodes of genius picasso are there", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-49370", "prompt": "which of the great lakes flows into niagara falls", "target": "Lake Erie", "domain_tag": "nq_open"}
+{"item_id": "nq-train-5994", "prompt": "when did the us get the louisiana purchase", "target": "1803", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8547", "prompt": "country with largest land area in western hemisphere", "target": "Canada", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82019", "prompt": "when did daylight saving time start what year", "target": "1918", "domain_tag": "nq_open"}
+{"item_id": "nq-train-540", "prompt": "what is the term for the onset of the first menstrual cycle", "target": "Menarche", "domain_tag": "nq_open"}
+{"item_id": "nq-train-2622", "prompt": "who was known as the father of roman poetry and wrote annales an epic poem about the history of rome", "target": "Quintus Ennius", "domain_tag": "nq_open"}
+{"item_id": "nq-train-35672", "prompt": "where is the uss west virginia battleship located", "target": "Newport News, Virginia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-56645", "prompt": "when did back to the future take place", "target": "1985", "domain_tag": "nq_open"}
+{"item_id": "nq-train-25888", "prompt": "when did we start celebrating national hispanic heritage month", "target": "1988", "domain_tag": "nq_open"}
+{"item_id": "nq-train-46468", "prompt": "when did the french and indian war end", "target": "1763", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13363", "prompt": "largest country in the world by land area", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-34200", "prompt": "what is the largest city in georgia by population", "target": "Atlanta", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80266", "prompt": "what is the most populated city in pennsylvania", "target": "Philadelphia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8281", "prompt": "when did the red sox win 100 games", "target": "1915|||1912|||1946|||2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40643", "prompt": "when did morocco last qualify for world cup", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8573", "prompt": "it is the point on a wave with the maximum value or upward displacement within a cycle", "target": "crest", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67371", "prompt": "how many episodes are in rick and morty season 3 so far", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67127", "prompt": "where was the constitutional convention held in 1787", "target": "Philadelphia, Pennsylvania", "domain_tag": "nq_open"}
+{"item_id": "nq-train-63504", "prompt": "the speed of sound wave in air depends on", "target": "composition|||temperature", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54370", "prompt": "what nfl team did sony michele go to", "target": "the New England Patriots", "domain_tag": "nq_open"}
+{"item_id": "nq-train-43560", "prompt": "what game are they playing in casino royale", "target": "Baccarat", "domain_tag": "nq_open"}
+{"item_id": "nq-train-36864", "prompt": "when has the united states hosted the olympics", "target": "1904|||1984|||1996|||1980|||2002|||1932|||1960", "domain_tag": "nq_open"}
+{"item_id": "nq-train-30196", "prompt": "where is the ohio state fair located at", "target": "Columbus, Ohio", "domain_tag": "nq_open"}
+{"item_id": "nq-train-4271", "prompt": "according to science how many days are in a year", "target": "365.25 days", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78196", "prompt": "into what body of water does the danube river flow", "target": "Black Sea", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8600", "prompt": "when did we drop the atomic bomb on hiroshima", "target": "August 6, 1945", "domain_tag": "nq_open"}
+{"item_id": "nq-train-66294", "prompt": "country has played in every fifa world cup tournament", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-23325", "prompt": "the fast pace growth of cities is called", "target": "Urbanization", "domain_tag": "nq_open"}
+{"item_id": "nq-train-17908", "prompt": "when was machu picchu listed as a world heritage site", "target": "1983", "domain_tag": "nq_open"}
+{"item_id": "nq-train-58260", "prompt": "when did the movie titanic first come out", "target": "1997", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42768", "prompt": "where is the next world cup being held", "target": "Russia", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81818", "prompt": "when did it become legal to advertise prescription drugs on tv", "target": "1953|||1985|||2008|||1981", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11338", "prompt": "when did the united states purchase the louisiana territory", "target": "1803", "domain_tag": "nq_open"}
+{"item_id": "nq-train-67824", "prompt": "when was the last time michigan was in the national championship game", "target": "2018", "domain_tag": "nq_open"}
+{"item_id": "nq-train-62138", "prompt": "a mountain on which four us presidents are carved", "target": "Mount Rushmore", "domain_tag": "nq_open"}
+{"item_id": "nq-train-60563", "prompt": "what is the name of the satellite that orbits earth", "target": "Moon", "domain_tag": "nq_open"}
+{"item_id": "nq-train-53260", "prompt": "who set off a wave of controversy with his performance at the 1965 newport folk festival", "target": "Bob Dylan", "domain_tag": "nq_open"}
+{"item_id": "nq-train-41650", "prompt": "shock top belgian wheat is what style of beer", "target": "ale", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80633", "prompt": "is the bubonic plague a bacteria or virus", "target": "bacteria", "domain_tag": "nq_open"}
+{"item_id": "nq-train-61991", "prompt": "where is the florida georgia game played at", "target": "Jacksonville, Florida", "domain_tag": "nq_open"}
+{"item_id": "nq-train-65875", "prompt": "what is the name of polygon with 7 sides", "target": "heptagon", "domain_tag": "nq_open"}
+{"item_id": "nq-train-6228", "prompt": "when did the final surrender of the civil war occur", "target": "April 9, 1865", "domain_tag": "nq_open"}
+{"item_id": "nq-train-78794", "prompt": "when did alabama became the state of the usa", "target": "1819", "domain_tag": "nq_open"}
+{"item_id": "nq-train-80153", "prompt": "what is any process that changes a rock's chemical composition", "target": "metamorphism", "domain_tag": "nq_open"}
+{"item_id": "nq-train-76872", "prompt": "what state is mount rushmore in south dakota", "target": "South Dakota", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47956", "prompt": "how many stripes does the united states flag have", "target": "13", "domain_tag": "nq_open"}
+{"item_id": "nq-train-3863", "prompt": "what cell division process is responsible for the formation of gametes", "target": "meiosis", "domain_tag": "nq_open"}
+{"item_id": "nq-train-47229", "prompt": "1 solar day is equal to how many hours", "target": "24 hours", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54324", "prompt": "what year was martin luther king jr time magazine's man of the year", "target": "1963", "domain_tag": "nq_open"}
+{"item_id": "nq-train-50502", "prompt": "how many episodes are there of one strange rock", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-22163", "prompt": "when did mexico come under spanish colonial rule", "target": "1521", "domain_tag": "nq_open"}
+{"item_id": "nq-train-73977", "prompt": "in which decade green revolution started in india", "target": "1960s", "domain_tag": "nq_open"}
+{"item_id": "nq-train-59731", "prompt": "the protagonist in ramayana whose wife is abducted by the demonking of lanka ravana", "target": "Rama", "domain_tag": "nq_open"}
+{"item_id": "nq-train-77652", "prompt": "the dominant grain crop of eastern india is", "target": "Rice", "domain_tag": "nq_open"}
+{"item_id": "nq-train-64586", "prompt": "a type of variable that can have an infinite number of values within a specified range is", "target": "A continuous variable", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81930", "prompt": "the great ape project argues that great apes have the right to", "target": "life|||the protection of individual liberty|||the prohibition of torture", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86119", "prompt": "what is the full form of icu in hospital", "target": "intensive care unit", "domain_tag": "nq_open"}
+{"item_id": "nq-train-12316", "prompt": "what is the initial product of the transcription process", "target": "RNA", "domain_tag": "nq_open"}
+{"item_id": "nq-train-81573", "prompt": "how old do you have to be to purchase a handgun in indiana", "target": "18 years old", "domain_tag": "nq_open"}
+{"item_id": "nq-train-86319", "prompt": "what south american country was settled by the portuguese", "target": "Brazil", "domain_tag": "nq_open"}
+{"item_id": "nq-train-31165", "prompt": "when did the us drop the atomic bomb on hiroshima", "target": "August 6, 1945", "domain_tag": "nq_open"}
+{"item_id": "nq-train-85586", "prompt": "inferior vena cava delivers deoxygenated blood to which chamber of the heart", "target": "the right atrium", "domain_tag": "nq_open"}
+{"item_id": "nq-train-13174", "prompt": "what type of government does united kingdom have", "target": "constitutional monarchy", "domain_tag": "nq_open"}
+{"item_id": "nq-train-40830", "prompt": "which bennet sister did mr. collins first propose to", "target": "Elizabeth Bennet", "domain_tag": "nq_open"}
+{"item_id": "nq-train-8935", "prompt": "when did the palestinian and israeli conflict start", "target": "1948", "domain_tag": "nq_open"}
+{"item_id": "nq-train-11454", "prompt": "when did nigeria became a member of united nation", "target": "1960", "domain_tag": "nq_open"}
+{"item_id": "nq-train-82178", "prompt": "where is the republic of the congo located", "target": "Central Africa", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42022", "prompt": "what is the name of the deepest location in the worlds ocean", "target": "Mariana Trench", "domain_tag": "nq_open"}
+{"item_id": "nq-train-54775", "prompt": "how many episodes of six are there in season 2", "target": "10", "domain_tag": "nq_open"}
+{"item_id": "nq-train-42336", "prompt": "when did the samsung s8 active come out", "target": "2017|||11 August", "domain_tag": "nq_open"}

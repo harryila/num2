@@ -1,0 +1,38 @@
+2026-05-04 09:01:21,175 INFO testing_effect_pipeline.real_model: Loading tokenizer: Qwen/Qwen2.5-0.5B-Instruct
+2026-05-04 09:01:22,525 INFO testing_effect_pipeline.real_model: Loading model: Qwen/Qwen2.5-0.5B-Instruct  dtype=bfloat16  device=cuda
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-04 09:01:22,678 WARNING transformers.configuration_utils: `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-04 09:01:23,398 INFO testing_effect_pipeline.real_model: LoRA applied: 540,672 trainable / 494,573,440 total params (0.11%)
+2026-05-04 09:01:23,400 INFO __main__: Calibrating item difficulty from real model (10000 items)...
+2026-05-04 09:01:37,884 INFO __main__:   calibrated 500 / 10000
+2026-05-04 09:01:52,279 INFO __main__:   calibrated 1000 / 10000
+2026-05-04 09:02:06,350 INFO __main__:   calibrated 1500 / 10000
+2026-05-04 09:02:20,367 INFO __main__:   calibrated 2000 / 10000
+2026-05-04 09:02:34,493 INFO __main__:   calibrated 2500 / 10000
+2026-05-04 09:02:48,658 INFO __main__:   calibrated 3000 / 10000
+2026-05-04 09:03:02,756 INFO __main__:   calibrated 3500 / 10000
+2026-05-04 09:03:16,822 INFO __main__:   calibrated 4000 / 10000
+2026-05-04 09:03:31,074 INFO __main__:   calibrated 4500 / 10000
+2026-05-04 09:03:45,844 INFO __main__:   calibrated 5000 / 10000
+2026-05-04 09:04:00,576 INFO __main__:   calibrated 5500 / 10000
+2026-05-04 09:04:15,145 INFO __main__:   calibrated 6000 / 10000
+2026-05-04 09:04:29,710 INFO __main__:   calibrated 6500 / 10000
+2026-05-04 09:04:44,179 INFO __main__:   calibrated 7000 / 10000
+2026-05-04 09:04:58,612 INFO __main__:   calibrated 7500 / 10000
+2026-05-04 09:05:13,053 INFO __main__:   calibrated 8000 / 10000
+2026-05-04 09:05:27,444 INFO __main__:   calibrated 8500 / 10000
+2026-05-04 09:05:41,683 INFO __main__:   calibrated 9000 / 10000
+2026-05-04 09:05:55,716 INFO __main__:   calibrated 9500 / 10000
+2026-05-04 09:06:09,825 INFO __main__:   calibrated 10000 / 10000
+2026-05-04 09:06:09,826 INFO __main__: === seed=0  method=retrieval_practice ===
+2026-05-04 09:06:09,830 INFO testing_effect_pipeline.real_model: LoRA adapter reset for new run
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-05-04 09:06:10,933 WARNING transformers.generation.configuration_utils: The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-05-04 09:07:42,624 INFO testing_effect_pipeline.trainer: step 50/200 | studied=8+8due tested=8 correct=0 due=9608 mastered=0 | train_tokens=9255
+2026-05-04 09:09:08,343 INFO testing_effect_pipeline.trainer: step 100/200 | studied=8+8due tested=8 correct=0 due=9608 mastered=0 | train_tokens=18306
+2026-05-04 09:17:22,797 INFO testing_effect_pipeline.trainer:   periodic uniform eval: 195/10000 (1.9%)
+2026-05-04 09:18:52,669 INFO testing_effect_pipeline.trainer: step 150/200 | studied=8+8due tested=8 correct=0 due=9608 mastered=0 | train_tokens=27476
+2026-05-04 09:20:20,959 INFO testing_effect_pipeline.trainer: step 200/200 | studied=8+8due tested=8 correct=0 due=9608 mastered=0 | train_tokens=36697
+2026-05-04 09:28:39,885 INFO testing_effect_pipeline.trainer:   periodic uniform eval: 232/10000 (2.3%)
+2026-05-04 09:36:57,707 INFO __main__:   uniform eval: 232 / 10000 correct (2.3%), mean_loss=2.2977
+Wrote metrics to artifacts/smoke_test_set2_hard.json
