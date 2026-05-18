@@ -17,3 +17,7 @@ artifacts_t4UniformSteps
 data/nq_open_smoke.jsonl
 data/nq_open_smoke_*
 set1_curves.html
+
+# Analysis runtime artifacts (logs, partial outputs); commit when complete instead
+analysis/logs/
+analysis/results/
