@@ -1,0 +1,145 @@
+{"item_id": "synthetic-00000", "question": "who directed the movie inception", "target": "christopher nolan", "prediction": "james peters", "correct": false, "loss": null}
+{"item_id": "synthetic-00001", "question": "main character in breaking bad", "target": "walter white", "prediction": "joseph john carlson", "correct": false, "loss": null}
+{"item_id": "synthetic-00002", "question": "largest mammal in the world", "target": "blue whale", "prediction": "the blue whale", "correct": true, "loss": null}
+{"item_id": "synthetic-00003", "question": "author of a tale of two cities", "target": "charles dickens", "prediction": "james curtis", "correct": false, "loss": null}
+{"item_id": "synthetic-00005", "question": "where was the titanic built", "target": "belfast", "prediction": "norwegian port in virginia", "correct": false, "loss": null}
+{"item_id": "synthetic-00013", "question": "who is the greek god of war", "target": "ares", "prediction": "helios", "correct": false, "loss": null}
+{"item_id": "synthetic-00014", "question": "who plays jack sparrow in pirates of the caribbean", "target": "johnny depp", "prediction": "james davis", "correct": false, "loss": null}
+{"item_id": "synthetic-00015", "question": "who wrote pride and prejudice", "target": "jane austen", "prediction": "james lafferty", "correct": false, "loss": null}
+{"item_id": "synthetic-00018", "question": "who is the lead singer of coldplay", "target": "chris martin", "prediction": "jason james ross", "correct": false, "loss": null}
+{"item_id": "synthetic-00020", "question": "who won the 1999 women's world cup", "target": "united states", "prediction": "australia", "correct": false, "loss": null}
+{"item_id": "synthetic-00023", "question": "who played the joker in the dark knight", "target": "heath ledger", "prediction": "jared leto", "correct": false, "loss": null}
+{"item_id": "synthetic-00029", "question": "who won the 2014 fifa world cup", "target": "germany", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00034", "question": "who wrote the song bohemian rhapsody", "target": "freddie mercury", "prediction": "david and dave", "correct": false, "loss": null}
+{"item_id": "synthetic-00041", "question": "who won the 2018 world cup", "target": "france", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00042", "question": "author of pride and prejudice", "target": "jane austen", "prediction": "david harris", "correct": false, "loss": null}
+{"item_id": "synthetic-00047", "question": "who painted the mona lisa", "target": "leonardo da vinci", "prediction": "paul duveen", "correct": false, "loss": null}
+{"item_id": "synthetic-00049", "question": "largest planet in the solar system", "target": "jupiter", "prediction": "jupiter", "correct": true, "loss": null}
+{"item_id": "synthetic-00050", "question": "winner of the 2016 nba finals", "target": "cleveland cavaliers", "prediction": "the indians", "correct": false, "loss": null}
+{"item_id": "synthetic-00054", "question": "what is the speed of light in vacuum", "target": "299792458 m/s", "prediction": "c", "correct": false, "loss": null}
+{"item_id": "synthetic-00055", "question": "smallest bone in the human body", "target": "stapes", "prediction": "the phalanges", "correct": false, "loss": null}
+{"item_id": "synthetic-00060", "question": "what is the smallest bone in the human body", "target": "stapes", "prediction": "the phalanges", "correct": false, "loss": null}
+{"item_id": "synthetic-00061", "question": "who directed jaws", "target": "steven spielberg", "prediction": "james peters", "correct": false, "loss": null}
+{"item_id": "synthetic-00064", "question": "who won best actress oscar in 2020", "target": "ren\u00e9e zellweger", "prediction": "sasha colin", "correct": false, "loss": null}
+{"item_id": "synthetic-00067", "question": "who won the 2023 wimbledon men's singles", "target": "carlos alcaraz", "prediction": "jordan thompson", "correct": false, "loss": null}
+{"item_id": "synthetic-00068", "question": "what is the smallest country in the world", "target": "vatican city", "prediction": "manx land", "correct": false, "loss": null}
+{"item_id": "synthetic-00072", "question": "who played jack sparrow in pirates of the caribbean", "target": "johnny depp", "prediction": "james davis", "correct": false, "loss": null}
+{"item_id": "synthetic-00073", "question": "who won the first super bowl", "target": "green bay packers", "prediction": "the green Bay Packers", "correct": true, "loss": null}
+{"item_id": "synthetic-00074", "question": "who is the current president of france", "target": "emmanuel macron", "prediction": "fran\u00e7ois fr\u00e9d\u00e9ric francis de macron", "correct": false, "loss": null}
+{"item_id": "synthetic-00076", "question": "who was the last czar of russia", "target": "nicholas ii", "prediction": "vladislav iv", "correct": false, "loss": null}
+{"item_id": "synthetic-00077", "question": "which country won the 1998 fifa world cup", "target": "france", "prediction": "spanish", "correct": false, "loss": null}
+{"item_id": "synthetic-00079", "question": "largest planet in our solar system", "target": "jupiter", "prediction": "jupiter", "correct": true, "loss": null}
+{"item_id": "synthetic-00081", "question": "winner of 2022 super bowl", "target": "los angeles rams", "prediction": "chuck brian", "correct": false, "loss": null}
+{"item_id": "synthetic-00083", "question": "country that hosted the 2016 summer olympics", "target": "brazil", "prediction": "paris", "correct": false, "loss": null}
+{"item_id": "synthetic-00085", "question": "winner of the 2021 nobel peace prize", "target": "maria ressa and dmitry muratov", "prediction": "al-Qaeda", "correct": false, "loss": null}
+{"item_id": "synthetic-00088", "question": "fastest land animal", "target": "cheetah", "prediction": "the giraffe", "correct": false, "loss": null}
+{"item_id": "synthetic-00096", "question": "which element has the atomic number 1", "target": "hydrogen", "prediction": "iron", "correct": false, "loss": null}
+{"item_id": "synthetic-00098", "question": "what is the smallest country by area", "target": "vatican city", "prediction": "manchester", "correct": false, "loss": null}
+{"item_id": "synthetic-00100", "question": "famous detective created by arthur conan doyle", "target": "sherlock holmes", "prediction": "the casebook project", "correct": false, "loss": null}
+{"item_id": "synthetic-00107", "question": "who was the british prime minister in 1940", "target": "winston churchill", "prediction": "albert wilson", "correct": false, "loss": null}
+{"item_id": "synthetic-00117", "question": "what is the powerhouse of the cell", "target": "mitochondria", "prediction": "cell wall", "correct": false, "loss": null}
+{"item_id": "synthetic-00120", "question": "highest waterfall in the world", "target": "angel falls", "prediction": "the ganges", "correct": false, "loss": null}
+{"item_id": "synthetic-00122", "question": "what country is called the land of the rising sun", "target": "japan", "prediction": "china", "correct": false, "loss": null}
+{"item_id": "synthetic-00123", "question": "prime minister of the united kingdom in 2023", "target": "rishi sunak", "prediction": "paul henry", "correct": false, "loss": null}
+{"item_id": "synthetic-00124", "question": "who was the 16th president of the united states", "target": "abraham lincoln", "prediction": "clarence houston ross", "correct": false, "loss": null}
+{"item_id": "synthetic-00129", "question": "what element has the atomic number 6", "target": "carbon", "prediction": "iron", "correct": false, "loss": null}
+{"item_id": "synthetic-00135", "question": "who composed the four seasons", "target": "antonio vivaldi", "prediction": "james carlson", "correct": false, "loss": null}
+{"item_id": "synthetic-00137", "question": "who won the first nobel prize in literature", "target": "sully prudhomme", "prediction": "james david henry", "correct": false, "loss": null}
+{"item_id": "synthetic-00139", "question": "who wrote the novel pride and prejudice", "target": "jane austen", "prediction": "james curtis rossie schumacher", "correct": false, "loss": null}
+{"item_id": "synthetic-00142", "question": "who won the 2022 fifa world cup", "target": "argentina", "prediction": "australia", "correct": false, "loss": null}
+{"item_id": "synthetic-00146", "question": "who played jack in titanic", "target": "leonardo dicaprio", "prediction": "david bradley", "correct": false, "loss": null}
+{"item_id": "synthetic-00151", "question": "who won the 2018 fifa world cup", "target": "france", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00154", "question": "who voiced darth vader", "target": "james earl jones", "prediction": "david bradley", "correct": false, "loss": null}
+{"item_id": "synthetic-00155", "question": "where did the titanic sink", "target": "north atlantic ocean", "prediction": "in the pacific ocean off of new york", "correct": false, "loss": null}
+{"item_id": "synthetic-00160", "question": "who won the 1999 fifa women's world cup", "target": "united states", "prediction": "england", "correct": false, "loss": null}
+{"item_id": "synthetic-00161", "question": "what is the largest mammal in the world", "target": "blue whale", "prediction": "the blue whale", "correct": true, "loss": null}
+{"item_id": "synthetic-00166", "question": "who was the first woman in space", "target": "valentina tereshkova", "prediction": "linda marie holtman", "correct": false, "loss": null}
+{"item_id": "synthetic-00167", "question": "who painted the sistine chapel ceiling", "target": "michelangelo", "prediction": "james harris", "correct": false, "loss": null}
+{"item_id": "synthetic-00168", "question": "who won the 1994 fifa world cup", "target": "brazil", "prediction": "australia", "correct": false, "loss": null}
+{"item_id": "synthetic-00169", "question": "what is the square root of 64", "target": "8", "prediction": "8", "correct": true, "loss": null}
+{"item_id": "synthetic-00170", "question": "what country won the first world cup", "target": "uruguay", "prediction": "french republic", "correct": false, "loss": null}
+{"item_id": "synthetic-00171", "question": "who won the 100m men's race at 2012 olympics", "target": "usain bolt", "prediction": "england", "correct": false, "loss": null}
+{"item_id": "synthetic-00173", "question": "who was british prime minister in 1940", "target": "winston churchill", "prediction": "winston whipsley", "correct": false, "loss": null}
+{"item_id": "synthetic-00175", "question": "who was the roman god of war", "target": "mars", "prediction": "virginia", "correct": false, "loss": null}
+{"item_id": "synthetic-00176", "question": "who is the greek goddess of wisdom", "target": "athena", "prediction": "sophia", "correct": false, "loss": null}
+{"item_id": "synthetic-00177", "question": "who directed the film jaws", "target": "steven spielberg", "prediction": "james davis", "correct": false, "loss": null}
+{"item_id": "synthetic-00182", "question": "who played hannibal lecter in silence of the lambs", "target": "anthony hopkins", "prediction": "james onofre", "correct": false, "loss": null}
+{"item_id": "synthetic-00184", "question": "world's largest desert", "target": "antarctica", "prediction": "the arctic deserts", "correct": false, "loss": null}
+{"item_id": "synthetic-00185", "question": "capital of iceland", "target": "reykjavik", "prediction": "heimtown", "correct": false, "loss": null}
+{"item_id": "synthetic-00187", "question": "actor who played james bond in skyfall", "target": "daniel craig", "prediction": "david jake dunn", "correct": false, "loss": null}
+{"item_id": "synthetic-00188", "question": "composer of the four seasons", "target": "antonio vivaldi", "prediction": "james harris", "correct": false, "loss": null}
+{"item_id": "synthetic-00190", "question": "current president of france", "target": "emmanuel macron", "prediction": "fran\u00e7ois fran\u00e7ois antony de tournay", "correct": false, "loss": null}
+{"item_id": "synthetic-00192", "question": "what is the capital of iceland", "target": "reykjavik", "prediction": "heimtown", "correct": false, "loss": null}
+{"item_id": "synthetic-00193", "question": "what element has the atomic number 1", "target": "hydrogen", "prediction": "helium", "correct": false, "loss": null}
+{"item_id": "synthetic-00194", "question": "which country hosted the 2016 summer olympics", "target": "brazil", "prediction": "paris", "correct": false, "loss": null}
+{"item_id": "synthetic-00197", "question": "winner of fifa world cup 2014", "target": "germany", "prediction": "jordan", "correct": false, "loss": null}
+{"item_id": "synthetic-00200", "question": "which country has the most volcanoes", "target": "indonesia", "prediction": "the united kingdom", "correct": false, "loss": null}
+{"item_id": "synthetic-00201", "question": "first country to grant women the vote", "target": "new zealand", "prediction": "canada", "correct": false, "loss": null}
+{"item_id": "synthetic-00204", "question": "who won the 2022 super bowl", "target": "los angeles rams", "prediction": "chicago bears", "correct": false, "loss": null}
+{"item_id": "synthetic-00205", "question": "who is the author of pride and prejudice", "target": "jane austen", "prediction": "james michellemarie mackie", "correct": false, "loss": null}
+{"item_id": "synthetic-00207", "question": "who was president of the usa in 1960", "target": "dwight d. eisenhower", "prediction": "truman", "correct": false, "loss": null}
+{"item_id": "synthetic-00209", "question": "national animal of china", "target": "giant panda", "prediction": "the giant panda", "correct": true, "loss": null}
+{"item_id": "synthetic-00210", "question": "former president of south africa who ended apartheid", "target": "nelson mandela", "prediction": "thomas thomas", "correct": false, "loss": null}
+{"item_id": "synthetic-00211", "question": "country known as the land of the rising sun", "target": "japan", "prediction": "japanese japan", "correct": false, "loss": null}
+{"item_id": "synthetic-00214", "question": "current prime minister of the uk", "target": "rishi sunak", "prediction": "paul parker", "correct": false, "loss": null}
+{"item_id": "synthetic-00216", "question": "what is the smallest planet in the solar system", "target": "mercury", "prediction": "jupiter", "correct": false, "loss": null}
+{"item_id": "synthetic-00217", "question": "who was the british prime minister in 2016", "target": "david cameron", "prediction": "paul kerr", "correct": false, "loss": null}
+{"item_id": "synthetic-00218", "question": "who played tony stark in the marvel movies", "target": "robert downey jr.", "prediction": "james david jones", "correct": false, "loss": null}
+{"item_id": "synthetic-00220", "question": "who portrayed joker in the dark knight", "target": "heath ledger", "prediction": "joe bryant", "correct": false, "loss": null}
+{"item_id": "synthetic-00221", "question": "what is the smallest planet in our solar system", "target": "mercury", "prediction": "jupiter", "correct": false, "loss": null}
+{"item_id": "synthetic-00222", "question": "who won the fifa world cup 2018", "target": "france", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00226", "question": "what is the national flower of japan", "target": "cherry blossom", "prediction": "cherry", "correct": false, "loss": null}
+{"item_id": "synthetic-00227", "question": "who was known as the king of pop", "target": "michael jackson", "prediction": "dick adams", "correct": false, "loss": null}
+{"item_id": "synthetic-00230", "question": "who played joker in the dark knight", "target": "heath ledger", "prediction": "joe bryant", "correct": false, "loss": null}
+{"item_id": "synthetic-00231", "question": "which element has atomic number 1", "target": "hydrogen", "prediction": "helium", "correct": false, "loss": null}
+{"item_id": "synthetic-00232", "question": "who won the fifa world cup in 2018", "target": "france", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00234", "question": "what is the smallest continent", "target": "australia", "prediction": "the earth", "correct": false, "loss": null}
+{"item_id": "synthetic-00237", "question": "who won best actor at the 2022 oscars", "target": "will smith", "prediction": "jacob davis", "correct": false, "loss": null}
+{"item_id": "synthetic-00241", "question": "which team won the 2018 fifa world cup", "target": "france", "prediction": "australia", "correct": false, "loss": null}
+{"item_id": "synthetic-00242", "question": "which country hosted the 2008 summer olympics", "target": "china", "prediction": "switzerland", "correct": false, "loss": null}
+{"item_id": "synthetic-00244", "question": "who wrote the raven", "target": "edgar allan poe", "prediction": "james curtis rossie schumacher", "correct": false, "loss": null}
+{"item_id": "synthetic-00245", "question": "who won the 2021 nba championship", "target": "milwaukee bucks", "prediction": "the indians", "correct": false, "loss": null}
+{"item_id": "synthetic-00247", "question": "who discovered gravity", "target": "isaac newton", "prediction": "thomas newton", "correct": false, "loss": null}
+{"item_id": "synthetic-00248", "question": "who won super bowl 50", "target": "denver broncos", "prediction": "the new england patriots", "correct": false, "loss": null}
+{"item_id": "synthetic-00249", "question": "which greek god is the god of war", "target": "ares", "prediction": "helios", "correct": false, "loss": null}
+{"item_id": "synthetic-00251", "question": "what is the national dish of spain", "target": "paella", "prediction": "chicken cooked in tomato sauce", "correct": false, "loss": null}
+{"item_id": "synthetic-00255", "question": "who directed the film inception", "target": "christopher nolan", "prediction": "james mitchell", "correct": false, "loss": null}
+{"item_id": "synthetic-00256", "question": "how many continents are there", "target": "7", "prediction": "five", "correct": false, "loss": null}
+{"item_id": "synthetic-00269", "question": "where is mount kilimanjaro located", "target": "tanzania", "prediction": "in equatorial Africa", "correct": false, "loss": null}
+{"item_id": "synthetic-00270", "question": "what is the capital of turkey", "target": "ankara", "prediction": "oslobudzhna (atmospheric capital)", "correct": false, "loss": null}
+{"item_id": "synthetic-00272", "question": "who won the 2020 academy award for best picture", "target": "parasite", "prediction": "the cast of the american superhero comedy-drama television series \"superman\"", "correct": false, "loss": null}
+{"item_id": "synthetic-00274", "question": "what is the freezing point of water in fahrenheit", "target": "32", "prediction": "\u221218.04", "correct": false, "loss": null}
+{"item_id": "synthetic-00277", "question": "who played rachel on friends", "target": "jennifer aniston", "prediction": "kate morgan", "correct": false, "loss": null}
+{"item_id": "synthetic-00279", "question": "who played indiana jones", "target": "harrison ford", "prediction": "jennifer bransford", "correct": false, "loss": null}
+{"item_id": "synthetic-00283", "question": "who plays james bond in skyfall", "target": "daniel craig", "prediction": "michael johnny walker", "correct": false, "loss": null}
+{"item_id": "synthetic-00285", "question": "who won the 2020 super bowl", "target": "kansas city chiefs", "prediction": "chicago bears", "correct": false, "loss": null}
+{"item_id": "synthetic-00286", "question": "which country hosted the 2016 olympics", "target": "brazil", "prediction": "paris", "correct": false, "loss": null}
+{"item_id": "synthetic-00290", "question": "who won the first ever fifa world cup", "target": "uruguay", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00291", "question": "who wrote the novel moby dick", "target": "herman melville", "prediction": "james johnson", "correct": false, "loss": null}
+{"item_id": "synthetic-00293", "question": "who authored pride and prejudice", "target": "jane austen", "prediction": "william james claver coxe", "correct": false, "loss": null}
+{"item_id": "synthetic-00300", "question": "who was the british prime minister during world war ii", "target": "winston churchill", "prediction": "albert lehman", "correct": false, "loss": null}
+{"item_id": "synthetic-00301", "question": "who won the 1998 fifa world cup", "target": "france", "prediction": "spanish team", "correct": false, "loss": null}
+{"item_id": "synthetic-00304", "question": "who played jack dawson in titanic", "target": "leonardo dicaprio", "prediction": "david jones", "correct": false, "loss": null}
+{"item_id": "synthetic-00306", "question": "in which constellation is the north star", "target": "ursa minor", "prediction": "polar bear", "correct": false, "loss": null}
+{"item_id": "synthetic-00307", "question": "what is the most populous city in the world", "target": "tokyo", "prediction": "new zealand", "correct": false, "loss": null}
+{"item_id": "synthetic-00309", "question": "who won the fifa world cup in 1998", "target": "france", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00311", "question": "who is the author of the shining", "target": "stephen king", "prediction": "james carlson", "correct": false, "loss": null}
+{"item_id": "synthetic-00313", "question": "who won the nba championship in 2016", "target": "cleveland cavaliers", "prediction": "the indians", "correct": false, "loss": null}
+{"item_id": "synthetic-00314", "question": "who is the villain in star wars episode iv", "target": "darth vader", "prediction": "the evil twin", "correct": false, "loss": null}
+{"item_id": "synthetic-00315", "question": "who won the 2019 nba finals mvp", "target": "kawhi leonard", "prediction": "jason baruchel", "correct": false, "loss": null}
+{"item_id": "synthetic-00319", "question": "who won the first fifa world cup", "target": "uruguay", "prediction": "argentina", "correct": false, "loss": null}
+{"item_id": "synthetic-00321", "question": "who played frodo in the lord of the rings", "target": "elijah wood", "prediction": "james david willis", "correct": false, "loss": null}
+{"item_id": "synthetic-00322", "question": "who voices elsa in frozen", "target": "idina menzel", "prediction": "jane morgan", "correct": false, "loss": null}
+{"item_id": "synthetic-00326", "question": "what is the main gas in earth's atmosphere", "target": "nitrogen", "prediction": "carbon dioxide", "correct": false, "loss": null}
+{"item_id": "synthetic-00330", "question": "what country is known as the land of the rising sun", "target": "japan", "prediction": "japanese japan", "correct": false, "loss": null}
+{"item_id": "synthetic-00331", "question": "who is the head coach of the new england patriots", "target": "bill belichick", "prediction": "jason jordan", "correct": false, "loss": null}
+{"item_id": "synthetic-00332", "question": "who won the nba mvp award in 2020", "target": "giannis antetokounmpo", "prediction": "jason baruchel", "correct": false, "loss": null}
+{"item_id": "synthetic-00333", "question": "who is the creator of the simpsons", "target": "matt groening", "prediction": "george peters", "correct": false, "loss": null}
+{"item_id": "synthetic-00336", "question": "element with the atomic number 6", "target": "carbon", "prediction": "neon", "correct": false, "loss": null}
+{"item_id": "synthetic-00339", "question": "smallest country by land area", "target": "vatican city", "prediction": "manx\u7fa4\u5c9b", "correct": false, "loss": null}
+{"item_id": "synthetic-00340", "question": "first human to travel into space", "target": "yuri gagarin", "prediction": "sally leonard", "correct": false, "loss": null}
+{"item_id": "synthetic-00342", "question": "largest mammal on earth", "target": "blue whale", "prediction": "the blue whale", "correct": true, "loss": null}
+{"item_id": "synthetic-00343", "question": "currency of the united kingdom", "target": "pound sterling", "prediction": "pound", "correct": false, "loss": null}
+{"item_id": "synthetic-00351", "question": "how many players are on a basketball team", "target": "5", "prediction": "two players per court", "correct": false, "loss": null}
+{"item_id": "synthetic-00352", "question": "which element has the atomic number 8", "target": "oxygen", "prediction": "selenium", "correct": false, "loss": null}
+{"item_id": "synthetic-00353", "question": "which country is known as the land of the rising sun", "target": "japan", "prediction": "japan", "correct": true, "loss": null}

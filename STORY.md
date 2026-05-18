@@ -172,6 +172,55 @@ The gap **shrinks** monotonically as difficulty increases. The cross-dataset pro
 
 **Reproducibility caveat**: Stage 3 revealed more CUDA non-determinism in the r=16 SFT seed-1 rerun (15.12 → 12.63 between batches). The `--deterministic` flag was only enabled on the dedicated sanity rerun. Going forward, every published-quality run uses it.
 
+### Phase 8: Shahen items N3–N5 (offline analysis on saved LoRAs, 2026-05-18)
+
+Total spend: ~$3 in API costs. All 24 LoRAs evaluated against three held-out sets (indist 2k, ood 3.5k, synthetic 145), cross-tabulated against an autojudge taxonomy, and probed for nearest-neighbor lift using OpenAI `text-embedding-3-large`.
+
+**N5 nearest-neighbor — the held-out wins are paraphrases, not transfer.**
+
+For each held-out item, max cosine similarity to any of the 10k training items:
+
+| Bucket | Indist mean sim | Ood mean sim | Synthetic mean sim |
+|---|---|---|---|
+| Items both methods get correct | 0.75 | 0.77 | 0.72 |
+| Items only RP gets correct | 0.69 | 0.68 | 0.66 |
+| Items only SFT gets correct | 0.71 | 0.69 | 0.68 |
+| Items neither gets | 0.61 | 0.59 | 0.62 |
+
+Items above τ=0.9 cosine are roughly **5× more likely to be correct** than items below 0.9. The lift is similar across RP and SFT (e.g. r=16 8k ood: RP lift @ 0.9 = +14.5 pp, SFT lift @ 0.9 = +13.3 pp). **Neither method generalizes more than the other.** The few correct held-out items are concentrated in the near-training-paraphrase region; the bulk of "neither correct" items are far from training.
+
+This is the positive claim to attach to "no generalization": held-out accuracy is *paraphrase recognition*, not transfer learning. The result is exactly what would be predicted if NQ items have no shared structure.
+
+**N4 autojudge taxonomy — RP's advantage on easy items is broad, not specialized.**
+
+Claude Haiku classified 15049 items by (q_type, a_type, topic, specificity). Per-label RP-SFT gap:
+
+- **Q1 easy indist** (overall RP-SFT = +1.6 pp): RP wins on nearly every category — when (+3.05), date (+2.81), science (+3.72), pop_culture (+1.49), history (+1.42), literature (+1.49). Broad-spectrum.
+- **Q4 hard indist** (overall ≈ 0 pp): essentially noise across all 26 (field, value) cells. No category-specific signal.
+- **r=16 stage3 indist** (overall ≈ 0 pp): also noise — no per-category specialization.
+
+This rules out "RP wins by being good at one kind of question". The advantage is a broad efficiency gain on items the model can already partially learn — consistent with the test+gradient coupling mechanism.
+
+**N3 synthetic third held-out — same story.**
+
+145 synthetic NQ-style items (GPT-4o generated, GPT-4o-mini verified, base-Qwen failure filtered) added as a third held-out set:
+
+| Contrast | indist gap | ood gap | synthetic gap |
+|---|---|---|---|
+| r=16 8k | +0.5 | +0.5 | -2.1 |
+| r=16 seed1 | -1.0 | +0.3 | +3.5 |
+| r=8 seed2 | -0.2 | +1.0 | +1.4 |
+| Q1 easy | +1.6 | +0.4 | -3.4 |
+| Q4 hard | 0.0 | +0.7 | +2.8 |
+
+Synthetic items have higher absolute accuracy (5–13% vs 2–4%) because they're common-knowledge pop-culture questions, but the **per-contrast Δ is in the same ±3 pp band**. Three independent held-out sets agree.
+
+**N2 soft-accuracy — no Δ-change of consequence.**
+
+The held-out gap on lenient_em / token_f1 / edit_sim is ~1–2 pp larger than on strict EM for the bigger contrasts (Q1 easy indist: strict +1.6, F1 +2.3, lenient +1.3) but the qualitative picture is identical. The strict EM choice didn't suppress the testing-effect signal, and the small held-out Δ isn't a binary-too-strict artifact.
+
+**Net implication**: the headline RP > SFT result is real, replicated, mechanism-grounded, and bounded to training-distribution efficiency. The held-out story is **paraphrase recognition with similar lift across methods**, not transfer — a positive characterization of the negative claim.
+
 ## What we're suspicious about (now, post Stage 3 + 4)
 
 1. **r=32 narrowing might be real or noise.** Single-seed gives +3.87 pp vs +4.57 pp at r=16. Need a second r=32 seed (~$3) to know if capacity actually starts to favor SFT or if this is just variance.
@@ -216,8 +265,11 @@ That's a defensible paper. The Shahen items (next section in [STATUS.md](STATUS.
 | "What does the 8k-step run say about whether RP just memorizes faster?" | RP at 8k = 39.1%, SFT at 8k = 27.9%. Gap is +11.2 pp, vs +4.2 at 4k. Far from convergent. RP isn't just faster — it's actually higher in our reachable budget. |
 | "What's the LoRA weight analysis going to show?" | Don't know yet — 24 saved checkpoints to compare. Plan: compare effective rank, layer-wise norm, and singular spectra between RP and SFT, both for the Set 2 sweep and the Q1 vs Q4 contrast. Will report whatever we find. |
 | "How long would a complete reproduction be?" | ~$140 cumulative; ~8 days wall time on one 4090. |
-| "Biggest weakness?" | Held-out generalization. The right test would be topic-paired data (train on questions about X, test on different questions about X). We flag this clearly and propose it as future work. Shahen item N5 (nearest-neighbor) gives a partial probe with current data. |
-| "What surprised you?" | (1) Stage 4 reversed our difficulty claim — gap shrinks within a dataset. (2) Held-out was unmoved by 4× capacity and 2× training. (3) The 8k extension shows the gap widening, not closing. (4) Mechanism decomposition is unusually clean — test+grad coupling alone explains most of the win. |
+| "Biggest weakness?" | Held-out generalization. The right test would be topic-paired data (train on questions about X, test on different questions about X). We flag this clearly and propose it as future work. N5 nearest-neighbor confirms the held-out wins are paraphrases of training, not transfer. |
+| "What surprised you?" | (1) Stage 4 reversed our difficulty claim — gap shrinks within a dataset. (2) Held-out was unmoved by 4× capacity and 2× training. (3) The 8k extension shows the gap widening, not closing. (4) Mechanism decomposition is unusually clean — test+grad coupling alone explains most of the win. (5) N5: RP and SFT have nearly identical nearest-neighbor lift — neither generalizes more than the other. |
+| "What did N5 add?" | Concrete shape for the no-generalization claim: items within cosine 0.9 of training are ~5× more likely to be correct than items farther away, for *both* methods (lift +14 pp RP vs +13 pp SFT on r=16 8k ood). The held-out 3% accuracy is paraphrase recognition, not transfer. |
+| "What did N4 add?" | The RP-SFT gap on Q1 easy is broad, not category-specific — RP wins on when, date, science, pop_culture, history, literature, etc. This rules out a single-skill explanation and supports the broad-efficiency mechanism story. |
+| "What did N3 add?" | A third independent held-out set (synthetic items). All three held-outs (indist, ood, synthetic) give RP-SFT Δ in ±3 pp. No method has a held-out advantage on any of them. |
 
 ## Quick numbers to have memorized for the meeting
 

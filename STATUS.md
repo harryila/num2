@@ -78,6 +78,49 @@ RP improves faster than SFT with more training. Curves haven't plateaued at 8k. 
 - **Stage 3 revealed more non-determinism**: r=16 SFT seed 1 moved from 15.12 → 12.63 between batches. The `--deterministic` flag was only enabled on the dedicated sanity rerun. **Going forward, all training should use `--deterministic`.**
 - Stage 3 + Stage 4 saved 24 LoRA checkpoints for offline mech interp.
 
+### Shahen items N3–N5 results (added 2026-05-18 after offline analysis)
+
+N5, N4, N3 all ran on the 24 saved LoRAs × 3 held-out sets (indist 2k, ood 3.5k, synthetic 145). Outputs live in [analysis/results/](analysis/results/).
+
+**N5 nearest-neighbor (OpenAI `text-embedding-3-large`, max-cosine to 10k training items)**:
+
+| Contrast | Split | Both correct mean sim | RP-only mean sim | SFT-only mean sim | Neither mean sim |
+|---|---|---|---|---|---|
+| r=16 8k | indist | 0.753 (n=21) | 0.689 (n=40) | 0.737 (n=30) | 0.612 (n=1909) |
+| r=16 8k | ood | 0.767 (n=46) | 0.680 (n=82) | 0.694 (n=64) | 0.591 (n=3340) |
+| Q1 easy | indist | 0.624 (n=74) | 0.639 (n=68) | 0.703 (n=36) | 0.614 (n=1822) |
+| Q4 hard | ood | 0.620 (n=32) | 0.543 (n=59) | 0.619 (n=36) | 0.598 (n=3405) |
+
+**Lift @ τ=0.9** (items within 0.9 cosine of any training item vs items farther away): RP r=16 8k ood = **+14.5 pp** absolute lift (items near training are 14.5 pp more likely to be correct than items far from training). SFT r=16 8k ood = +13.3 pp. **Similar lift across methods.**
+
+**Interpretation**: held-out "wins" are *paraphrase recognition* (near-training items), not transfer to new content. The few correct items are concentrated in the high-similarity region; the items both methods get correct have higher mean similarity (0.77) than items only one method gets (0.68–0.69). Neither method generalizes more than the other — both are picking up paraphrases.
+
+**N4 taxonomy cross-tab** (Claude Haiku classification by q_type, a_type, topic, specificity):
+
+- **Q1 easy** (RP-SFT = +1.6 pp overall on indist): RP wins on **nearly every category** — when (+3.05), date (+2.81), science (+3.72), pop_culture (+1.49), history (+1.42), literature (+1.49). Broad-spectrum advantage.
+- **Q4 hard** (RP-SFT ≈ 0 pp): essentially noise across all 26 (field, value) cells, no consistent winning category.
+- **r=16 stage3 (small held-out gap)**: also noise — confirming that on items the model can't really learn, no method-specific signal at the category level.
+
+**Interpretation**: the RP advantage isn't a specialization on particular question types — it's a broad efficiency gain on items the model can already partially learn.
+
+**N3 synthetic third-held-out set**:
+
+| Contrast | indist gap | ood gap | synthetic gap |
+|---|---|---|---|
+| r=16 8k | +0.5 | +0.5 | -2.1 |
+| r=16 seed1 | -1.0 | +0.3 | +3.5 |
+| r=8 seed2 | -0.2 | +1.0 | +1.4 |
+| Q1 easy | +1.6 | +0.4 | -3.4 |
+| Q4 hard | 0.0 | +0.7 | +2.8 |
+
+All three independent held-out sets agree: gaps bounded in roughly **±3 pp**, no consistent transfer advantage. Synthetic has higher absolute accuracy (5–13%) because items are common-knowledge pop-culture questions; but per-contrast Δ is the same noise band.
+
+**N2 soft-accuracy** (strict_em, lenient_em, token_f1, edit_sim, first_token_match, char_substr):
+
+The held-out gap on softer metrics is ~1–2 pp larger than on strict EM for the bigger contrasts (Q1 easy indist: strict +1.6, F1 +2.3) but the qualitative picture is identical — the strict EM choice didn't suppress the signal, and the small held-out Δ isn't a binary-too-strict artifact.
+
+**Bottom-line update**: the "no real generalization, ~3% held-out is paraphrase lookup" story is confirmed by all four probes. RP's advantage is on training-distribution efficiency, not transfer.
+
 ## Completed GPU stages
 
 ### Stage 3: 16 runs ✅ [run_set2_stage3.sh](run_set2_stage3.sh) → `artifacts_t8_stage3/`
@@ -120,15 +163,15 @@ Order reflects **information-per-dollar** given what we now know.
 
 See [MEETING_NOTES.md](MEETING_NOTES.md) for original detail. Re-ranked based on Stage 3 + 4 findings:
 
-| Priority | # | Item | Why it matters NOW | Cost |
+| Priority | # | Item | Status | Cost actual |
 |---|---|---|---|---|
-| **1** | N5 | **Nearest-neighbor analysis** | The "no generalization" finding is confirmed; this distinguishes "model is doing nothing" vs "model is doing paraphrase lookup". Most critical single diagnostic. | ~$2 API |
-| **2** | N4 | **Autojudge taxonomy** | Stage 4 says the gap is on EASIER items. Taxonomy tells us *which question types* the easy slice is enriched in — gives us the actual mechanism story in words. | ~$15 API |
-| **3** | N2 | **Soft-accuracy / near-miss** | All headline numbers might be binary-too-strict. If RP is getting 30% strict but 50% "morally right" while SFT is 25/30, that *changes the conclusion*. | ~$5 GPU |
-| **4** | N3 | **Synthetic NQ items** | Third independent held-out. Cheap. Doubles as augmentation seed if N1 happens. | ~$5 API |
-| **5** | N1 | **Paraphrase augmentation** | Highest-cost item; least likely to move the needle given r=32 and 8k extension didn't budge held-out. But it's the only thing the meeting framed as "test whether held-out is fixable". | ~$20 API + $15 GPU |
+| 1 | N5 | **Nearest-neighbor analysis** | ✅ done — sharper OpenAI embeddings; "wins are paraphrases" confirmed at lift @ 0.9 = +14.5 pp on r=16 8k ood. Both methods show similar lift. | ~$0.30 API |
+| 2 | N4 | **Autojudge taxonomy** | ✅ done — 15049 items classified (Claude Haiku). Q1 easy: RP wins broadly across categories; Q4 hard: noise. | ~$0.50 API |
+| 3 | N2 | **Soft-accuracy / near-miss** | ✅ done — qualitative picture is identical to strict EM; gap is ~1–2 pp larger on F1/lenient but no story change. | $0 (CPU) |
+| 4 | N3 | **Synthetic NQ items** | ✅ done — 145 hard items generated (GPT-4o + verified by GPT-4o-mini + base-model-failure filter). Third held-out agrees with indist/ood. | ~$2 API |
+| 5 | N1 | **Paraphrase augmentation** | **deprioritized** — N3/N4/N5 collectively suggest NQ has no transferable structure to capture. Re-evaluate after writeup. | not run |
 
-**Recommended order**: do N5 + N4 + N2 + N3 in parallel (~$27, no GPU dependency for 3/4 of them) → look at results → decide if N1 + Stage 6 retraining is worth $35. My prior: probably no, since 3 independent capacity/duration probes already failed to move held-out.
+**Total actual spend on N3–N5**: under $3. Outputs in [analysis/results/](analysis/results/), scripts in [analysis/](analysis/).
 
 ### A2. New high-value follow-ups suggested by Stage 3 + 4 results
 

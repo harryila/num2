@@ -18,6 +18,8 @@ data/nq_open_smoke.jsonl
 data/nq_open_smoke_*
 set1_curves.html
 
-# Analysis runtime artifacts (logs, partial outputs); commit when complete instead
+# Analysis runtime artifacts
 analysis/logs/
-analysis/results/
+analysis/cache_openai_embeddings.npz
+analysis/results/soft_acc_per_item.jsonl
+analysis/results/neighbors_per_item.jsonl
